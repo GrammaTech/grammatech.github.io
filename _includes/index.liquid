@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="GrammaTech Research">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.14.0/css/all.css">
+    <link rel="stylesheet" href="{{ "/gt.css" |url }}">
+    <link rel="icon" href="{{ "/favicon.ico" |url }}">
+  </head>
+<body style="color: #bdc1c6; background: #202124;">
+
+<!-- Header -->
+<header class="w3-center">
+  <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+  <a href="javascript:void(0)" class="w3-top w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="navbar_toggle()">
+    <i class="fa fa-bars w3-right"></i>
+  </a>
+  <img class="w3-image" src="{{ "img/rostyslav-savchyn-9XtjVafxMUg-unsplash.jpg"|url }}" alt="GT" width="1500" height="600" style="opacity:0.75;">
+  <div class="w3-hide-medium w3-hide-small w3-padding-large w3-border w3-wide w3-text-light-grey w3-center"
+       style="position:absolute;left:50%;top:12.5%;transform:translate(-50%,-25%);-ms-transform:translate(-50%,-25%)">
+    <h1 class="w3-xxxlarge">GrammaTech</h1>
+    <h3 style="color:#f1f1f1;">Research</h3>
+  </div>
+  <div class="w3-hide-large w3-padding-large w3-border w3-wide w3-text-light-grey w3-center"
+       style="position:absolute;left:50%;top:20%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%)">
+    <h1 class="w3-xxlarge">GrammaTech</h1>
+    <h3>Research</h3>
+  </div>
+  
+  <!-- Navbar (placed at the bottom of the header image) -->
+  <div class="w3-bar w3-dark-grey w3-round w3-hide-small">
+    {% for anchor in anchors %}
+    <a href="#{{ anchor.slug }}" class="w3-bar-item w3-button">{{ anchor.text }}</a>
+    {% endfor %}
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-dark-grey w3-hide w3-hide-large w3-hide-medium w3-top w3-card">
+    <a href="#" class="w3-bar-item w3-button" onclick="navbar_toggle()">Home</a>
+    {% for anchor in anchors %}
+    <a href="#{{ anchor.slug }}" class="w3-bar-item w3-button" onclick="navbar_toggle()">{{ anchor.text }}</a>
+    {% endfor %}
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-margin-top w3-padding-large">
+  <div class="w3-container">
+    {{ content | safe }}
+  </div>
+</body>
+
+<script>
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function navbar_toggle() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+      } else {
+          x.className = x.className.replace(" w3-show", "");
+      }
+  }
+  function navbar_hide() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") != -1) {
+          x.className = x.className.replace(" w3-show", "");
+      }
+  }
+</script>
+
+</html>

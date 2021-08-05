@@ -1,0 +1,37 @@
+/* GrammaTech pallet: */
+.gt-text-red{ color: rgb(216,30,5)!important }
+.gt-text-darkgrey{ color: rgb(98,110,128)!important }
+.gt-text-lightgrey{ color: rgb(110,124,146)!important }
+.gt-text-darkred{ color: rgb(128,0,0)!important }
+.gt-text-orange{ color: rgb(255,128,0)!important }
+.gt-text-blue{ color: rgb(0,68,153)!important }
+
+@media (min-width:600px){
+    .gt-large-only-middle-line{
+        background-image: linear-gradient(#f1f1f1, #f1f1f1);
+        background-size: 2px 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .gt-large-only-bottom-line{
+        border-bottom: 1px solid #f1f1f1;
+    }
+    .gt-small-only-bottom-line{}
+}
+
+@media (max-width:600px){
+    .gt-large-only-middle-line{
+    }
+    .gt-large-only-bottom-line{}
+    .gt-small-only-bottom-line{
+        border-bottom: 1px solid #f1f1f1;
+    }
+}
+
+blockquote {
+    color: pink;
+    padding-left: 1em;
+    border: 1px dotted #f1f1f1;
+}
+
+/* h3 { color: rgb(255,128,0); } */
