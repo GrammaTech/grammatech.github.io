@@ -16,6 +16,7 @@ module.exports = function(eleventyConfig) {
   // Files to copy
   eleventyConfig.addPassthroughCopy("favicon.ico");
   eleventyConfig.addPassthroughCopy("gt.css");
+  eleventyConfig.addPassthroughCopy("w3.css");
   // eleventyConfig.addPassthroughCopy("img/logo.png");
   // eleventyConfig.addPassthroughCopy("img/GT-hexes.jpg");
   // eleventyConfig.addPassthroughCopy("w3.css");
