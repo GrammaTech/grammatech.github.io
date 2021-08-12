@@ -19,7 +19,9 @@
     </header>
     <div class="w3-content w3-padding-large w3-margin-top" style="margin-left: 90px;">
       <h1>{{ title }}</h1>
+      {% if image %}
       <img src="{{ image|url }}" width="100%" class="w3-right w3-third w3-round">
+      {% endif %}
       <div class="w3-container">
         {{ content | safe }}
       </div>
