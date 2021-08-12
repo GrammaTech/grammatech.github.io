@@ -6,6 +6,11 @@
 .gt-text-orange{ color: rgb(255,128,0)!important }
 .gt-text-blue{ color: rgb(0,68,153)!important }
 
+.gt-scootch-up {
+    position: relative;
+    top: -1em;
+}
+
 @media (min-width:600px){
     .gt-large-only-middle-line{
         background-image: linear-gradient(#f1f1f1, #f1f1f1);
