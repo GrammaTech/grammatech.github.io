@@ -20,6 +20,7 @@
     <div class="w3-content w3-padding-large w3-margin-top">
       <h1>{{ title }}</h1>
       <div class="w3-container">
+        {% if techs %}
         <div class="w3-right w3-third w3-border w3-padding w3-round">
           <h3>Technologies</h3>
           <ul>
@@ -28,6 +29,7 @@
           {% endfor %}
           </ul>
         </div>
+        {% endif %}
         {{ content | safe }}
       </div>
     {% include bottom %}

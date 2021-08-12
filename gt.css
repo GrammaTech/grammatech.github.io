@@ -40,3 +40,8 @@ blockquote {
 }
 
 /* h3 { color: rgb(255,128,0); } */
+
+svg{
+    fill: #f1f1f1;
+    stroke:#f1f1f1;
+}
