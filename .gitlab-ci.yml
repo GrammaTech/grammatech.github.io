@@ -1,0 +1,15 @@
+default:
+  image: node
+  tags: ["kubernetes", "cluster"]
+  before_script:
+    - npm install @11ty/eleventy -g
+    - npm install markdown-it markdown-it-anchor markdown-it-deflist
+
+pages:
+  script:
+    - eleventy --pathprefix=grammatech.github.io/ --output=./public
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "main"'
