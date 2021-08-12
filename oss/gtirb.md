@@ -39,6 +39,7 @@ A growing number of tools are emerging that emit and consume GTIRB:
 | [gtirb-rewriting][]     | Python API for rewriting GTIRB files                   |
 | [gtirb-functions][]     | APIs for working with functions in GTIRB files         |
 | [gtirb-ghidra-plugin][] | Import/Export GTIRB files to/from Ghidra               |
+| [gtirb-capstone][]      | Integration with the [Capstone][] decoder              |
 | [gtirb-stack-stamp][]   | Example hardening transform over GTIRB                 |
 
 </center>
@@ -54,3 +55,5 @@ A growing number of tools are emerging that emit and consume GTIRB:
 [gtirb-functions]: https://github.com/grammatech/gtirb-functions
 [gtirb-ghidra-plugin]: https://github.com/grammatech/gtirb-ghidra-plugin
 [gtirb-stack-stamp]: https://github.com/grammatech/gtirb-stack-stamp
+[gtirb-capstone]: https://github.com/GrammaTech/gtirb-capstone
+[Capstone]: https://www.capstone-engine.org
