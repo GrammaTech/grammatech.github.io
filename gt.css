@@ -11,6 +11,12 @@
     top: -1em;
 }
 
+.gt-flex-wrap {
+    display: flex;
+    flex-flow: row wrap;
+    flex: 1 100%
+}
+
 @media (min-width:600px){
     .gt-large-only-middle-line{
         background-image: linear-gradient(#f1f1f1, #f1f1f1);

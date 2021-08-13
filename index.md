@@ -101,7 +101,3 @@ open-source software repositories on
 </div>
 </div>
 </div>
-
-<center style="margin-top: 1em;">
-<img src="{{ "img/grammatech-white.png"|url }}" width="50%">
-</center>
