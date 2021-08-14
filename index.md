@@ -16,20 +16,6 @@ anchors:
 <div class="w3-half w3-margin-bottom">
 <div class="w3-container gt-small-only-bottom-line">
 
-### Research Areas
-
-{% for ra in collections.ra %}
-
-[{{ ra.data.title }}]({{ ra.url |url }})
-:   {{ ra.data.brief }}
-
-{% endfor %}
-
-</div>
-</div>
-<div class="w3-half w3-margin-bottom">
-<div class="w3-container gt-small-only-bottom-line">
-
 ### Open Source Software
 
 GrammaTech recognizes that, just as reproducible experimental
@@ -57,7 +43,7 @@ software development community, through both
 [multiple](https://github.com/angr/angr/commit/8a13278d5bd54b0ea45d492eb0a56aa745f8b24f)
 [contributions](https://github.com/souffle-lang/souffle) to
 [significant](https://github.com/llvm/llvm-project/blob/master/clang/include/clang/AST/JSONNodeDumper.h)
-open-source projects, and through the [accepting significant
+open-source projects, and through [accepting significant
 contributions](https://github.com/GrammaTech/ddisasm/blob/master/README.md#external-contributors)
 to projects we maintain in return.
 
@@ -68,19 +54,31 @@ open-source software repositories on
 
 </div>
 </div>
-</div>
-<div class="w3-row-padding gt-large-only-middle-line gt-large-only-bottom-line">
 <div class="w3-half w3-margin-bottom">
 <div class="w3-container gt-small-only-bottom-line">
 
-### Products
-
-> Should we include research projects here too?
+### Tools
 
 {% for ap in collections.ap %}
 
 [{{ ap.data.title }}]({{ ap.url |url }})
 :   {{ ap.data.brief }}
+
+{% endfor %}
+
+</div>
+</div>
+</div>
+<div class="w3-row-padding gt-large-only-middle-line gt-large-only-bottom-line">
+<div class="w3-half w3-margin-bottom">
+<div class="w3-container gt-small-only-bottom-line">
+
+### Research Areas
+
+{% for ra in collections.ra %}
+
+[{{ ra.data.title }}]({{ ra.url |url }})
+:   {{ ra.data.brief }}
 
 {% endfor %}
 
