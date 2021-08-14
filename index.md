@@ -61,8 +61,17 @@ repositories on [GitHub/GrammaTech](https://github.com/GrammaTech) and
 </div>
 </div>
 </div>
-<div class="w3-row-padding gt-large-only-middle-line gt-large-only-bottom-line">
-<div class="w3-half w3-margin-bottom">
+<div class="w3-row-padding gt-large-only-third-lines gt-large-only-bottom-line">
+<div class="w3-third w3-margin-bottom">
+<div class="w3-container gt-small-only-bottom-line">
+
+### Projects
+
+> TODO!
+
+</div>
+</div>
+<div class="w3-third w3-margin-bottom">
 <div class="w3-container gt-small-only-bottom-line">
 
 ### Research Areas
@@ -76,7 +85,7 @@ repositories on [GitHub/GrammaTech](https://github.com/GrammaTech) and
 
 </div>
 </div>
-<div class="w3-half w3-margin-bottom">
+<div class="w3-third w3-margin-bottom">
 <div class="w3-container gt-small-only-bottom-line">
 
 ### Technologies
