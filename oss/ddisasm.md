@@ -11,15 +11,23 @@ techs:
 brief: |
     A fast and accurate disassembler.  DDisasm is able to disassemble
     real-world stripped binaries with accuracy sufficient to enable modification
-    and reassembly.  The core disassembly logic is implemented in datalog
-    resulting in *fast* parallel disassembly, and the easy declarative specification
-    of disassembly heuristics.
+    and reassembly.
 ---
 
-The engine underlying our industry-leading binary analysis and
-rewriting technology has been
-[published](https://www.usenix.org/conference/usenixsecurity20/presentation/flores-montoya)
-and released as open-source software, including the
-[manuals](https://grammatech.github.io/gtirb) and
-[tutorials](https://grammatech.github.io/gtirb/md_stack-stamp.html)
-required for use and evaluation.
+DDisasm is a *fast* disassembler which is *accurate* enough for the
+resulting assembly code to be reassembled.  DDisasm is implemented
+using the datalog ([souffle](https://github.com/souffle-lang/souffle))
+declarative logic programming language to compile disassembly rules
+and heuristics.  The disassembler first parses ELF file information
+and decodes a superset of possible instructions to create an initial
+set of datalog facts.  These facts are analyzed to identify *code
+location*, *symbolization*, and *function boundaries*.  The results of
+this analysis, a refined set of datalog facts, are then translated to
+the [GTIRB](https://github.com/grammatech/gtirb) intermediate
+representation for binary analysis and reverse engineering.  The
+[GTIRB pretty printer](https://github.com/grammatech/gtirb-pprinter)
+may then be used to pretty print the GTIRB to reassemblable assembly
+code.
+
+Use the [grammatech/ddisasm](https://hub.docker.com/r/grammatech/ddisasm)
+Docker image to try out `ddisasm` quickly.

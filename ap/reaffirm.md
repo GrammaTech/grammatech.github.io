@@ -5,11 +5,7 @@ title: REAFFIRM
 brief: |
     REAFFIRM (Reverse Engineer, Analyze and Fix Firmware) is a platform
     for firmware analysis, component identification and extraction, and
-    testing. REAFFIRM facilitates cyber security assessments for
-    cyber-physical systems used in the military (weapons controls,
-    navigation systems), critical infrastructure (industrial-control
-    systems) and everyday applications (automotive controls, medical
-    devices).
+    testing.
 ---
 
 REAFFIRM

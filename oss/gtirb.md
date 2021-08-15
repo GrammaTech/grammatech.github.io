@@ -4,11 +4,8 @@ tags: oss
 title: GTIRB
 link: https://github.com/grammatech/gtirb
 brief: |
-    A fast and accurate disassembler.  DDisasm is able to disassemble
-    real-world stripped binaries with accuracy sufficient to enable modification
-    and reassembly.  The core disassembly logic is implemented in datalog
-    resulting in *fast* parallel disassembly, and the easy declarative specification
-    of disassembly heuristics.
+    An intermediate representation for binary analysis and rewriting.
+    GTIRB seeks to be an LLVM-IR for reverse engineering.
 ---
 
 GTIRB is GrammaTech's Intermediate Representation for Binary analysis
