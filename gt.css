@@ -58,19 +58,48 @@
         background-repeat: no-repeat;
         background-position: center center;
     }
-    .gt-large-only-third-lines{
-        background: repeating-linear-gradient(
-            to right,
-            #f1f1f1,
-            rgba(0,0,0,0) 3px,
-            rgba(0,0,0,0) 33.33%,
-            #f1f1f1 33.33%
-        )
-    }
     .gt-large-only-bottom-line{
         border-bottom: 1px solid #f1f1f1;
     }
     .gt-small-only-bottom-line{}
+
+    /* From: https://css-tricks.com/css-only-carousel/ */
+    .gt-slides{
+        overflow: hidden;
+        display: flex;
+
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+    }
+    .gt-slides::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+    }
+    .gt-slides::-webkit-scrollbar-thumb {
+        background: #729fcf;
+        border-radius: 10px;
+    }
+    .gt-slides::-webkit-scrollbar-track {
+        background: transparent;
+    }
+    .gt-slides > div {
+        background: #2e3436;
+        margin: 1em;
+
+        scroll-snap-align: start;
+        flex-shrink: 0;
+        width: 520px;
+        height: 800px;
+        margin-right: 50px;
+        border-radius: 10px;
+        transform-origin: center center;
+        transform: scale(1);
+        transition: transform 0.5s;
+        position: relative;
+    }
 }
 
 @media (max-width:600px){

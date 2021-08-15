@@ -2,14 +2,16 @@
 layout: index
 title: GrammaTech Research
 anchors:
-  - text: Research Areas
+  - text: "Research by:"
+    slug: research
+  - text: Use Case
+    slug: use-cases
+  - text: Area
     slug: research-areas
-  - text: Technologies
+  - text: Technology
     slug: technologies
-  - text: Products
-    slug: products
-  - text: Open Source Software
-    slug: open-source-software
+  - text: Project
+    slug: projects
 ---
 
 <div class="w3-row-padding gt-large-only-middle-line gt-large-only-bottom-line">
@@ -61,18 +63,28 @@ repositories on [GitHub/GrammaTech](https://github.com/GrammaTech) and
 </div>
 </div>
 </div>
-<div class="w3-row-padding gt-large-only-third-lines gt-large-only-bottom-line">
-<div class="w3-third w3-margin-bottom">
-<div class="w3-container gt-small-only-bottom-line">
+<div class="gt-large-only-bottom-line gt-small-only-bottom-line">
+<center>
 
-### Projects
+## Research
 
-> TODO!
+GrammaTech's research may be organized along a number of dimensions:
+[Use Cases](#use-cases),
+[Research Areas](#research-areas),
+[Technologies](#technologies),
+[Projects](#projects).
+
+</center>
+</div>
+<div class="w3-row-padding gt-slides gt-large-only-bottom-line">
+<div class="w3-container w3-margin-bottom gt-small-only-bottom-line">
+
+### Use Cases
+
+> Write up some use cases.
 
 </div>
-</div>
-<div class="w3-third w3-margin-bottom">
-<div class="w3-container gt-small-only-bottom-line">
+<div class="w3-container w3-margin-bottom gt-small-only-bottom-line">
 
 ### Research Areas
 
@@ -84,9 +96,7 @@ repositories on [GitHub/GrammaTech](https://github.com/GrammaTech) and
 {% endfor %}
 
 </div>
-</div>
-<div class="w3-third w3-margin-bottom">
-<div class="w3-container gt-small-only-bottom-line">
+<div class="w3-container w3-margin-bottom gt-small-only-bottom-line">
 
 ### Technologies
 
@@ -98,5 +108,11 @@ repositories on [GitHub/GrammaTech](https://github.com/GrammaTech) and
 {% endfor %}
 
 </div>
+<div class="w3-container w3-margin-bottom gt-small-only-bottom-line">
+
+### Projects
+
+> Write up some projects.
+
 </div>
 </div>
