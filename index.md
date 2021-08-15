@@ -81,7 +81,12 @@ GrammaTech's research may be organized along a number of dimensions:
 
 ### Use Cases
 
-> Write up some use cases.
+{% for use in collections.use %}
+
+[{{ use.data.title }}]({{ use.url |url }})
+:   {{ use.data.brief }}
+
+{% endfor %}
 
 </div>
 <div class="w3-container w3-margin-bottom gt-small-only-bottom-line">
@@ -112,7 +117,12 @@ GrammaTech's research may be organized along a number of dimensions:
 
 ### Projects
 
-> Write up some projects.
+{% for prj in collections.prj %}
+
+[{{ prj.data.title }}]({{ prj.url |url }})
+:   {{ prj.data.brief }}
+
+{% endfor %}
 
 </div>
 </div>
