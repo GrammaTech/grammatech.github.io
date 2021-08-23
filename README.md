@@ -11,7 +11,7 @@ To preview locally:
 
     ```shell
     npm install @11ty/eleventy -g
-    npm install markdown-it markdown-it-anchor
+    npm install markdown-it markdown-it-anchor markdown-it-deflist
     ```
 
 2. Run the following to launch a local server to preview the built site.
