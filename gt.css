@@ -112,6 +112,12 @@
     }
 }
 
+.gt-card {
+    background: #2e3436;
+    margin: 1em;
+    border-radius: 10px;
+}
+
 blockquote {
     color: #e9b2e3;
     padding-left: 1em;

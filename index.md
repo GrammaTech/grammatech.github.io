@@ -12,12 +12,31 @@ anchors:
 
 ### Cyber Security Solutions
 
+{% assign row = 0 %}
 {% for ap in collections.ap %}
+
+{% if row == 0 %}
+<div class="w3-row-padding">
+{% endif %}
+
+<div class="w3-half w3-margin-bottom">
+<div class="w3-container w3-card gt-card">
 
 [{{ ap.data.title }}]({{ ap.url |url }})
 :   {{ ap.data.brief }}
 
+</div>
+</div>
+
+{% if row == 1 %}
+</div>
+{% assign row = 0 %}
+{% endif %}
+
+{% assign row = row | plus: 1 %}
 {% endfor %}
+
+</div>
 
 ### Research Areas
 
