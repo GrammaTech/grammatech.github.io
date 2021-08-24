@@ -1,6 +1,6 @@
 ---
-layout: ap
-tags: ap
+layout: prj
+tags: prj
 title: GenPatcher
 brief: |
     GenPatcher is a tool for automated software repair.

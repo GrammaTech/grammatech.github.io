@@ -1,6 +1,6 @@
 ---
-layout: ap
-tags: ap
+layout: prj
+tags: prj
 title: SSR
 brief: |
     Software Search Replace (SSR) is an AST-aware `sed` that enpowers

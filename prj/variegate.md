@@ -1,6 +1,6 @@
 ---
-layout: ap
-tags: ap
+layout: prj
+tags: prj
 title: Variegate
 brief: |
     Variegate applies source-to-source transformations for binary diversification.

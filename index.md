@@ -2,21 +2,31 @@
 layout: index
 title: GrammaTech Research
 anchors:
-  - text: "Research by:"
-    slug: research
-  - text: Use Case
-    slug: use-cases
-  - text: Area
+  - text: Cyber Security Solutions
+    slug: cyber-security-solutions
+  - text: Research Areas
     slug: research-areas
-  - text: Technology
-    slug: technologies
-  - text: Project
-    slug: projects
+  - text: Open Source Software
+    slug: open-source-software
 ---
 
-<div class="w3-row-padding gt-large-only-middle-line gt-large-only-bottom-line">
-<div class="w3-half w3-margin-bottom">
-<div class="w3-container gt-small-only-bottom-line">
+### Cyber Security Solutions
+
+{% for ap in collections.ap %}
+
+[{{ ap.data.title }}]({{ ap.url |url }})
+:   {{ ap.data.brief }}
+
+{% endfor %}
+
+### Research Areas
+
+{% for ra in collections.ra %}
+
+[{{ ra.data.title }}]({{ ra.url |url }})
+:   {{ ra.data.brief }}
+
+{% endfor %}
 
 ### Open Source Software
 
@@ -45,84 +55,3 @@ contributions](https://github.com/GrammaTech/ddisasm/blob/master/README.md#exter
 to projects we maintain in return.  Find more of our open-source
 repositories on [GitHub/GrammaTech](https://github.com/GrammaTech) and
 [GitLab/GrammaTech](https://gitlab.com/GrammaTech).
-
-</div>
-</div>
-<div class="w3-half w3-margin-bottom">
-<div class="w3-container gt-small-only-bottom-line">
-
-### Tools
-
-{% for ap in collections.ap %}
-
-[{{ ap.data.title }}]({{ ap.url |url }})
-:   {{ ap.data.brief }}
-
-{% endfor %}
-
-</div>
-</div>
-</div>
-<div class="gt-large-only-bottom-line gt-small-only-bottom-line">
-<center>
-
-## Research
-
-GrammaTech's research may be organized along a number of dimensions:
-[Use Cases](#use-cases),
-[Research Areas](#research-areas),
-[Technologies](#technologies),
-[Projects](#projects).
-
-</center>
-</div>
-<div class="w3-row-padding gt-slides gt-large-only-bottom-line">
-<div class="w3-container w3-margin-bottom gt-small-only-bottom-line">
-
-### Use Cases
-
-{% for use in collections.use %}
-
-[{{ use.data.title }}]({{ use.url |url }})
-:   {{ use.data.brief }}
-
-{% endfor %}
-
-</div>
-<div class="w3-container w3-margin-bottom gt-small-only-bottom-line">
-
-### Research Areas
-
-{% for ra in collections.ra %}
-
-[{{ ra.data.title }}]({{ ra.url |url }})
-:   {{ ra.data.brief }}
-
-{% endfor %}
-
-</div>
-<div class="w3-container w3-margin-bottom gt-small-only-bottom-line">
-
-### Technologies
-
-{% for tech in collections.tech %}
-
-[{{ tech.data.title }}]({{ tech.url |url }})
-:   {{ tech.data.brief }}
-
-{% endfor %}
-
-</div>
-<div class="w3-container w3-margin-bottom gt-small-only-bottom-line">
-
-### Projects
-
-{% for prj in collections.prj %}
-
-[{{ prj.data.title }}]({{ prj.url |url }})
-:   {{ prj.data.brief }}
-
-{% endfor %}
-
-</div>
-</div>

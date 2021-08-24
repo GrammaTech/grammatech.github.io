@@ -1,6 +1,6 @@
 ---
-layout: ap
-tags: ap
+layout: prj
+tags: prj
 title: Merge Resolver
 brief: |
     MergeResolver is a new GitHub app that automates resolving merge conflicts
