@@ -10,15 +10,15 @@ anchors:
     slug: open-source-software
 ---
 
+<div class="gt-bottom-line">
+
 ### Cyber Security Solutions
 
 {% assign row = 0 %}
 {% for ap in collections.ap %}
-
 {% if row == 0 %}
 <div class="w3-row-padding">
 {% endif %}
-
 <div class="w3-half w3-margin-bottom">
 <div class="w3-container w3-card gt-card">
 
@@ -27,25 +27,42 @@ anchors:
 
 </div>
 </div>
-
-{% if row == 1 %}
+{% if row > 0 %}
 </div>
 {% assign row = 0 %}
+{% else %}
+{% assign row = 1 %}
 {% endif %}
-
-{% assign row = row | plus: 1 %}
 {% endfor %}
-
 </div>
+</div>
+
+<div class="gt-bottom-line">
 
 ### Research Areas
 
+{% assign row = 0 %}
 {% for ra in collections.ra %}
+{% if row == 0 %}
+<div class="w3-row-padding">
+{% endif %}
+<div class="w3-half w3-margin-bottom">
+<div class="w3-container w3-card gt-card">
 
 [{{ ra.data.title }}]({{ ra.url |url }})
 :   {{ ra.data.brief }}
 
+</div>
+</div>
+{% if row > 0 %}
+</div>
+{% assign row = 0 %}
+{% else %}
+{% assign row = 1 %}
+{% endif %}
 {% endfor %}
+</div>
+</div>
 
 ### Open Source Software
 

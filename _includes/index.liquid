@@ -43,8 +43,6 @@
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-dark-grey w3-hide w3-hide-large w3-hide-medium w3-top w3-card">
     <a href="#" class="w3-bar-item w3-button" onclick="navbar_toggle()">Home</a>
-    <a href="#open-source-software" class="w3-bar-item w3-button" onclick="navbar_toggle()">Open Source Software</a>
-    <a href="#tools" class="w3-bar-item w3-button" onclick="navbar_toggle()">Tools</a>
     {% for anchor in anchors %}
     <a href="#{{ anchor.slug }}" class="w3-bar-item w3-button" onclick="navbar_toggle()">{{ anchor.text }}</a>
     {% endfor %}

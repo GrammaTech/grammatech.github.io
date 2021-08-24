@@ -112,9 +112,12 @@
     }
 }
 
+.gt-bottom-line{
+    border-bottom: 1px solid #f1f1f1;
+}
+
 .gt-card {
     background: #2e3436;
-    margin: 1em;
     border-radius: 10px;
 }
 
