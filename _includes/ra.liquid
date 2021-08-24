@@ -19,13 +19,21 @@
     </header>
     <div class="w3-content w3-padding-large w3-margin-top" style="margin-left: 90px;">
       <h1>{{ title }}</h1>
-      {% if image %}
-      <img src="{{ image|url }}" width="100%" class="w3-right w3-third w3-round">
-      {% endif %}
       <div class="w3-container">
+        {% if prjs %}
+        <div class="w3-right w3-third w3-border w3-padding w3-round">
+          <h3>Projects</h3>
+          <ul>
+            {% for prj in prjs %}
+            <li><a href="{{ "/prj/"|append: prj.slug|url  }}">{{ prj.name }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
         {{ content | safe }}
       </div>
     {% include bottom %}
+    </div>
 </body>
   <script>
   </script>

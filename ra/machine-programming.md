@@ -3,6 +3,15 @@ layout: ra
 tags: ra
 title: Machine Programming
 image: /img/synthesis.png
+prjs:
+  - name: Merge Resolver
+    slug: merge-resolver
+  - name: Variegate
+    slug: variegate
+  - name: Software Search Replace
+    slug: ssr
+  - name: GenPatcher
+    slug: genpatcher
 brief: |
     Combine machine-learning and genetic-programming techniques (aka
     evolutionary computation) to automate the software-development
