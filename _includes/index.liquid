@@ -73,6 +73,50 @@
           x.className = x.className.replace(" w3-show", "");
       }
   }
+
+  area_projects = {
+    {% for ra in collections.ra %}
+    {% if ra.data.slug %}
+    {% if ra.data.prjs %}
+    "{{ ra.data.slug }}": [
+      {% for prj in ra.data.prjs %}
+      "{{ prj.name }}",
+      {% endfor %}
+    ],
+    {% endif %}
+    {% endif %}
+    {% endfor %}
+  }
+
+  project_areas = {}
+  Object.values(area_projects).reduce((a, b) => a.concat(b)).forEach((prj) => {
+    project_areas[prj] = Object.keys(area_projects).filter((key) => area_projects[key].includes(prj))
+  })
+
+  function cell_highlight(cell, area){
+    cell.addEventListener("mouseover",(event) => {
+      document.getElementById(area).classList.add("gt-highlight");
+    })
+    cell.addEventListener("mouseout",(event) => {
+      document.getElementById(area).classList.remove("gt-highlight");
+    })
+  }
+
+  // RA highlight in use-case table
+  var uc_table = document.getElementById("use-case-table").children[1];
+  for (var i = 0, row; row = uc_table.rows[i]; i++) {
+    for (var j = 0, cell; cell = row.cells[j]; j++) {
+      var contents = cell.innerHTML.toLowerCase();
+      for (var k = 0, prj; prj = Object.keys(project_areas)[k]; k++) {
+        if ( contents.includes(prj.toLowerCase()) ){
+          var area = project_areas[prj];
+          cell.classList.add("gt-area-cell-"+area);
+          cell_highlight(cell, area);
+        }
+      }
+    }
+  }
+
 </script>
 
 </html>
