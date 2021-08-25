@@ -165,11 +165,13 @@ dt { color: #eeeeec; }
     --mp-color: #729fcf;
     --rw-color: #c4a000;
     --re-color: #8ae234;
+    --ps-color: #75507b;
 }
 
 .gt-area-cell-mp { background-color: var(--mp-color); filter: brightness(1.5); }
 .gt-area-cell-rw { background-color: var(--rw-color); filter: brightness(1.5); }
 .gt-area-cell-re { background-color: var(--re-color); filter: brightness(1.5); }
+.gt-area-cell-ps { background-color: var(--ps-color); filter: brightness(2); }
 .gt-area-cell-re.gt-area-cell-mp{ background-image: linear-gradient(var(--re-color),
                                                                     var(--mp-color));
                                   filter: brightness(1.5); }
