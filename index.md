@@ -41,13 +41,26 @@ anchors:
 
 ### Research Areas
 
+<div id="use-case-table" class="w3-table w3-table-all w3-gray w3-margin-bottom">
+<center>Projects by use case and research area.</center>
+
+|               | Design | Develop               | Test/Integrate                                                           | Deploy/Maintain                                    | Reuse                                                               |
+|---------------|--------|-----------------------|--------------------------------------------------------------------------|----------------------------------------------------|---------------------------------------------------------------------|
+| Automate      |        | Mnemosyne             | REAFFIRM, Proteus, Mnemosyne, STAMP (APIAD), Bug Injector                |                                                    | REAFFIRM (RE-MODEL capability labeling), ReMath                     |
+| Optimize      |        |                       | Debloat?                                                                 | Debloat?                                           | Debloat?                                                            |
+| Transform     |        | Mnemosyne, Variegate? |                                                                          | Autonomic (responses)                              | BRASS                                                               |
+| Harden/Assure | TFPGA? | Mnemosyne             | ARCOS (requirement-based testing), TBDC (fuzz to find policy violations) | Autonomic (monitors, responses)                    | ARCOS (evidence for COTS certification)                             |
+| Assess        |        |                       | REAFFIRM, Proteus, Mnemosyne, STAMP (APIAD)                              | Autonomic, ConSec, ReMath, CodeSentry, LPS/malware | CodeSentry, REAFFIRM (RE-MODEL capability labeling), ReMath, ConSec |
+
+</div>
+
 {% assign row = 0 %}
 {% for ra in collections.ra %}
 {% if row == 0 %}
 <div class="w3-row-padding">
 {% endif %}
 <div class="w3-half w3-margin-bottom">
-<div class="w3-container w3-card gt-card">
+<div id="{{ ra.data.slug }}" class="w3-container w3-card gt-card">
 
 [{{ ra.data.title }}]({{ ra.url |url }})
 :   {{ ra.data.brief }}
