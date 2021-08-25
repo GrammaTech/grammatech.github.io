@@ -4,8 +4,20 @@ tags: ra
 title: Binary Rewriting
 slug: rw
 prjs:
-  - name: Debloat
-    slug: debloat
+  - name: Datalog Disassembler
+    slug: ddisasm
+  - name: GTIRB
+    slug: gtirb
+  - name: To Static binary transform
+    slug: to-static
+  - name: Stack Stamp binary transform
+    slug: stack-stamp
+  - name: CFG-based binary reduction
+    slug: cfg-reduce
+  - name: Test-based binary reduction
+    slug: test-reduce
+  - name: Binary PGO and Shuffle
+    slug: pgo
 brief: |
     Using high-fidelity binary ingestion, perform automated
     transformation of binary software executables and libraries to
@@ -13,9 +25,6 @@ brief: |
     Specific aims include software hardening, optimization,
     diversification, and attack-surface reduction.
 ---
-
-Binary Rewriting
-================
 
 ## About the area
 Automatic transformation of binary software executables and libraries
