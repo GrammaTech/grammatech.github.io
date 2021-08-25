@@ -2,6 +2,10 @@
 layout: ra
 tags: ra
 title: Binary Rewriting
+slug: rw
+prjs:
+  - name: Debloat
+    slug: debloat
 brief: |
     Using high-fidelity binary ingestion, perform automated
     transformation of binary software executables and libraries to

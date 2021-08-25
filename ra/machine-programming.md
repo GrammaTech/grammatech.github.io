@@ -3,7 +3,10 @@ layout: ra
 tags: ra
 title: Machine Programming
 image: /img/synthesis.png
+slug: mp
 prjs:
+  - name: Mnemosyne
+    slug: mnemosyne
   - name: Merge Resolver
     slug: merge-resolver
   - name: Variegate

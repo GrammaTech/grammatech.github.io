@@ -2,6 +2,18 @@
 layout: ra
 tags: ra
 title: Application Security and Reverse Engineering
+slug: re
+prjs:
+  - name: REAFFIRM
+    slug: reaffirm
+  - name: Proteus
+    slug: proteus
+  - name: ReMath
+    slug: remath
+  - name: ConSec
+    slug: consec
+  - name: ARCOS
+    slug: arcos
 brief: |
     Combine state-of-the-art program-analysis techniques to construct
     an understanding of the functionality, strengths, and weaknesses
