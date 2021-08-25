@@ -17,5 +17,5 @@ brief: |
 
 > TODO!
 
-[SEL]: {{ "/oss/sel"|url }}
+[SEL]: {{ "/prj/sel"|url }}
 [machine programming]: {{ "/ra/machine-programming"|url }}

@@ -26,5 +26,5 @@ to free developers from the tedious and automatable work of
 professional software development.
 
 [https://mergeresolver.github.io]: https://mergeresolver.github.io
-[SEL]: {{ "/oss/sel"|url }}
+[SEL]: {{ "/prj/sel"|url }}
 [machine programming]: {{ "/ra/machine-programming"|url }}

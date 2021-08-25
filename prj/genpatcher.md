@@ -41,5 +41,5 @@ a partial patch which has not received developer review is preferable
 to an un-patched critical bug.
 
 
-[SEL]: {{ "/oss/sel"|url }}
+[SEL]: {{ "/prj/sel"|url }}
 [machine programming]: {{ "/ra/machine-programming"|url }}

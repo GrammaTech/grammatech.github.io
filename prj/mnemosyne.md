@@ -41,7 +41,7 @@ Mnemosyne is open-source with development taking place on
 [GitLab/GrammaTech/Mnemosyne][].
 
 [Mnemosyne's main page]: https://grammatech.gitlab.io/Mnemosyne/docs/
-[SEL]: {{ "/oss/sel"|url }}
+[SEL]: {{ "/prj/sel"|url }}
 [GitLab/GrammaTech/Mnemosyne]: https://gitlab.com/GrammaTech/Mnemosyne
 
 <script src="https://cdn.plyr.io/3.6.7/plyr.js"></script>

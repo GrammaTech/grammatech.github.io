@@ -32,5 +32,5 @@ TEST-SCRIPT.  The second, TEST-SCRIPT, argument should take an
 executable compiled from SOURCE as its only argument and should exit 0
 if the executables successfully passes the regression tests.
 
-[SEL]: {{ "/oss/sel"|url }}
+[SEL]: {{ "/prj/sel"|url }}
 [machine programming]: {{ "/ra/machine-programming"|url }}

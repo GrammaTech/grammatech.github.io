@@ -46,7 +46,7 @@ A growing number of tools are emerging that emit and consume GTIRB:
 [manual]: https://grammatech.github.io/gtirb
 [tutorial]: https://grammatech.github.io/gtirb/md_stack-stamp.html
 [standard AuxData tables]: https://grammatech.github.io/gtirb/md__aux_data.html#sanctioned-auxdata-tables
-[DDisasm]: {{ "/oss/ddisasm"|url }}
+[DDisasm]: {{ "/prj/ddisasm"|url }}
 [GTIRB-PPrinter]: https://github.com/grammatech/gtirb-pprinter
 [gtirb-rewriting]: https://github.com/grammatech/gtirb-rewriting
 [gtirb-functions]: https://github.com/grammatech/gtirb-functions
