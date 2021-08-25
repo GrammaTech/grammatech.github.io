@@ -161,12 +161,24 @@ h3 { color: #729fcf; }
 dt { color: #eeeeec; }
 
 /* Research Areas in Use-case table */
-.gt-area-cell-mp { background-color: #729fcf; filter: brightness(1.5); }
-.gt-area-cell-rw { background-color: #c4a000; filter: brightness(1.5); }
-.gt-area-cell-re { background-color: #8ae234; filter: brightness(1.5); }
-.gt-area-cell-re.gt-area-cell-mp{ background-image: linear-gradient(#8ae234, #729fcf); filter: brightness(1.5); }
-.gt-area-cell-re.gt-area-cell-rw{ background-image: linear-gradient(#8ae234, #c4a000); filter: brightness(1.5); }
-.gt-area-cell-rw.gt-area-cell-mp{ background-image: linear-gradient(#c4a000, #729fcf); filter: brightness(1.5); }
+:root {
+    --mp-color: #729fcf;
+    --rw-color: #c4a000;
+    --re-color: #8ae234;
+}
+
+.gt-area-cell-mp { background-color: var(--mp-color); filter: brightness(1.5); }
+.gt-area-cell-rw { background-color: var(--rw-color); filter: brightness(1.5); }
+.gt-area-cell-re { background-color: var(--re-color); filter: brightness(1.5); }
+.gt-area-cell-re.gt-area-cell-mp{ background-image: linear-gradient(var(--re-color),
+                                                                    var(--mp-color));
+                                  filter: brightness(1.5); }
+.gt-area-cell-re.gt-area-cell-rw{ background-image: linear-gradient(var(--re-color),
+                                                                    var(--rw-color));
+                                  filter: brightness(1.5); }
+.gt-area-cell-rw.gt-area-cell-mp{ background-image: linear-gradient(var(--rw-color),
+                                                                    var(--mp-color));
+                                  filter: brightness(1.5); }
 
 /* Highlight RA cards on hover (see javascript in index.liquid). */
 .gt-highlight{ filter: brightness(1.75); }
