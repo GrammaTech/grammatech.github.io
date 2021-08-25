@@ -44,13 +44,14 @@ anchors:
 <div id="use-case-table" class="w3-table w3-table-all w3-gray w3-margin-bottom">
 <center>Projects by use case and research area.</center>
 
-|               | Design | Develop               | Test/Integrate                                                           | Deploy/Maintain                                    | Reuse                                                               |
-|---------------|--------|-----------------------|--------------------------------------------------------------------------|----------------------------------------------------|---------------------------------------------------------------------|
-| Automate      |        | Mnemosyne             | REAFFIRM, Proteus, Mnemosyne, STAMP (APIAD), Bug Injector                |                                                    | REAFFIRM (RE-MODEL capability labeling), ReMath                     |
-| Optimize      |        |                       | Debloat?                                                                 | Debloat?                                           | Debloat?                                                            |
-| Transform     |        | Mnemosyne, Variegate? |                                                                          | Autonomic (responses)                              | BRASS                                                               |
-| Harden/Assure | TFPGA? | Mnemosyne             | ARCOS (requirement-based testing), TBDC (fuzz to find policy violations) | Autonomic (monitors, responses)                    | ARCOS (evidence for COTS certification)                             |
-| Assess        |        |                       | REAFFIRM, Proteus, Mnemosyne, STAMP (APIAD)                              | Autonomic, ConSec, ReMath, CodeSentry, LPS/malware | CodeSentry, REAFFIRM (RE-MODEL capability labeling), ReMath, ConSec |
+|               | Design | Develop    | Test/Integrate                                                           | Deploy/Maintain                         | Reuse                                                               |
+|---------------|--------|------------|--------------------------------------------------------------------------|-----------------------------------------|---------------------------------------------------------------------|
+| Automate      |        | Mnemosyne  | REAFFIRM, Proteus, Mnemosyne, STAMP (APIAD), Bug Injector                |                                         | REAFFIRM (RE-MODEL capability labeling), ReMath                     |
+| Optimize      |        |            | Debloat?                                                                 | Debloat                                 | Debloat                                                             |
+| Repair        |        | GenPatcher |                                                                          | Proteus                                 | Proteus, REAFFIRM                                                   |
+| Diversify     |        | Variegate  |                                                                          | Debloat                                 | Debloat                                                             |
+| Harden/Assure | TFPGA? | Mnemosyne  | ARCOS (requirement-based testing), TBDC (fuzz to find policy violations) | WARP, Debloat                           | Debloat, ARCOS (evidence for COTS certification)                    |
+| Assess        |        |            | REAFFIRM, Proteus, Mnemosyne, STAMP (APIAD)                              | ConSec, ReMath, CodeSentry, LPS/malware | CodeSentry, REAFFIRM (RE-MODEL capability labeling), ReMath, ConSec |
 
 </div>
 
