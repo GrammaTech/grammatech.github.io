@@ -2,6 +2,10 @@
 layout: ra
 tags: ra
 title: Platform Security
+slug: ps
+prjs:
+  - name: TFPGA
+    slug: tfpga
 brief: |
     Ensure trust in the computing platform, including hardware and
     virtualization layers, from design through deployment.  Assess
