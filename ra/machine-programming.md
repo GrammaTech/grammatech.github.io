@@ -15,6 +15,8 @@ prjs:
     slug: ssr
   - name: GenPatcher
     slug: genpatcher
+  - name: Bug-Injector
+    slug: bug-injector
 brief: |
     Combine machine-learning and genetic-programming techniques (aka
     evolutionary computation) to automate the software-development
