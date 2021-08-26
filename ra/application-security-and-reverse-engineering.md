@@ -4,18 +4,29 @@ tags: ra
 title: Application Security and Reverse Engineering
 slug: re
 prjs:
-  - name: REAFFIRM
-    slug: reaffirm
-  - name: WARP
-    slug: warp
+  - name: AMBER
+    slug: arcos
+  - name: ARTCAT
+    slug: arcos
+  - name: ARCOS
+    slug: arcos
+  - name: AVAMP
+    slug: avamp
+  - name: Bindle
+    slug: bindle
+  - name: ConSec
+    slug: consec
   - name: Proteus
     slug: proteus
   - name: ReMath
     slug: remath
-  - name: ConSec
-    slug: consec
-  - name: ARCOS
-    slug: arcos
+  - name: REAFFIRM
+    slug: reaffirm
+  - name: TBDC
+    slug: tbdc
+  - name: WARP
+    slug: warp
+
 brief: |
     Combine state-of-the-art program-analysis techniques to construct
     an understanding of the functionality, strengths, and weaknesses
@@ -41,10 +52,3 @@ Our Reverse Engineering technologies combine static and dynamic approaches to co
 * Jupyter Notebooks support semiautomated processes, bringing data science workflows to Reverse Engineering.
 * Binary and source rewriting, virtual machine introspection, and dynamic instrumentation allow runtime monitoring of programs.
 
-## Diagram
-
-* TODO; see the REAFFIRM pipeline diagram from the datasheet at GT Business Development - Documents\Research Datasheets & Quad Charts\REAFFIRM
-
-## Links to major projects/contracts
-
-* TODO; REAFFIRM, ARCOS, ConSec, one of the autonomic contracts (ARTCAT or AVAMP)
