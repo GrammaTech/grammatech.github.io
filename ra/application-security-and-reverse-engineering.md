@@ -8,16 +8,16 @@ prjs:
     slug: amber
   - name: ARTCAT
     slug: artcat
-  - name: ARCOS
-    slug: arcos
+  - name: A-CERT
+    slug: acert
   - name: AVAMP
     slug: avamp
   - name: Bindle
     slug: bindle
   - name: Bin2Math
     slug: bin2math
-  - name: ConSec
-    slug: consec
+  - name: ConfINE
+    slug: confine
   - name: Proteus
     slug: proteus
   - name: REAFFIRM
