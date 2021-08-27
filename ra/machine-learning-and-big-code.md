@@ -4,10 +4,10 @@ tags: ra
 title: Machine Learning and Big Code
 slug: ml
 prjs:
+  - name: Bin2Math
+    slug: bin2math
   - name: Discover
     slug: discover
-  - name: ReMath
-    slug: remath
   - name: Swap Detector
     slug: swap-detector
 image: /img/ml-and-big-code.png
@@ -25,6 +25,7 @@ Our Big Code technologies combine statistical/machine learning techniques with p
 ## Benefits
 
 - Identify library components that are part of a binary application to obtain a Bill of Materials. The Bill of Materials is then correlated with a vulnerability database (such as the National Vulnerability Database) to detect n-day vulnerabilities that may be affecting the binary application.
+- Recover mathematical algorithms implemented in binary software for Subject Matter Expert inspection, to facilitate understanding and reuse.
 - Increase the coverage of source-level static analysis tools for detecting incorrect uses of library API functions. This approach reduces the false negatives in static analysis tools.
 - Improve developer productivity by auto-completing code snippets and help search for relevant code.
 

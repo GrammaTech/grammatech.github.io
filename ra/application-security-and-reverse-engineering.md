@@ -14,18 +14,16 @@ prjs:
     slug: avamp
   - name: Bindle
     slug: bindle
+  - name: Bin2Math
+    slug: bin2math
   - name: ConSec
     slug: consec
   - name: Proteus
     slug: proteus
-  - name: ReMath
-    slug: remath
   - name: REAFFIRM
     slug: reaffirm
   - name: TBDC
     slug: tbdc
-  - name: WARP
-    slug: warp
 
 brief: |
     Combine state-of-the-art program-analysis techniques to construct
