@@ -5,9 +5,9 @@ title: Application Security and Reverse Engineering
 slug: re
 prjs:
   - name: AMBER
-    slug: arcos
+    slug: amber
   - name: ARTCAT
-    slug: arcos
+    slug: artcat
   - name: ARCOS
     slug: arcos
   - name: AVAMP
