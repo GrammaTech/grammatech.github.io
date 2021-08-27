@@ -10,8 +10,6 @@ prjs:
     slug: artcat
   - name: A-CERT
     slug: acert
-  - name: AVAMP
-    slug: avamp
   - name: Bindle
     slug: bindle
   - name: Bin2Math
@@ -22,6 +20,8 @@ prjs:
     slug: proteus
   - name: REAFFIRM
     slug: reaffirm
+  - name: SySense
+    slug: sysense
   - name: TBDC
     slug: tbdc
 
