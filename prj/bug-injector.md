@@ -8,7 +8,7 @@ brief: |
 ---
 
 
-<center class="w3-text-light-grey">
+<center class="w3-text-light-grey gt-smaller-on-small">
   {% include ../img/bi-ci-cd.svg %}
 </center>
 

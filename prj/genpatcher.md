@@ -16,7 +16,7 @@ Automated program repair done in this manner has been show able to fix
 a wide range of real-world bugs, and is currently used in production
 by large software companies.
 
-<center class="w3-text-light-grey">
+<center class="w3-text-light-grey gt-smaller-on-small">
   {% include ../img/genpatcher.svg %}
 </center>
 

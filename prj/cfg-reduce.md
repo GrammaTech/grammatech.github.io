@@ -15,7 +15,7 @@ graph of the binary and identifying symbolic references.  This may be
 particularly useful when reducing library code as libraries often include much
 more functionality than what is needed for any particular application.
 
-<center class="w3-text-dark-grey">
+<center class="w3-text-dark-grey gt-smaller-on-small">
   {% include ../img/cfg-reduce.svg %}
 </center>
 

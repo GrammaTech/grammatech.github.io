@@ -21,7 +21,7 @@ in a search-based algorithm that maximizes diversity can evolve a
 population of functionally equivalent variants with significant
 differences from the original binary and from one another
 
-<center class="w3-text-light-grey">
+<center class="w3-text-light-grey gt-smaller-on-small">
   {% include ../img/variegate.svg %}
 </center>
 

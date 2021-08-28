@@ -15,7 +15,7 @@ other's work. GTIRB is described in a [blog][], [whitepaper][],
 [tutorial][], and in its [manual][].  GTIRB is a relatively simple
 data structure (shown below).
 
-<center>
+<center class="gt-smaller-on-small">
   <!-- <img class="w3-round" src="{{ "/img/gtirb.svg"|url }}" width="80%"> -->
   {% include ../img/gtirb.svg %}
 </center>

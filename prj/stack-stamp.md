@@ -18,7 +18,7 @@ has a more difficult task, since the replacement data would need to be
 properly encoded, such that when it is un-stamped, it results in the
 desired address.
 
-<center class="w3-text-dark-grey">
+<center class="w3-text-dark-grey gt-smaller-on-small">
   <div class="w3-light-grey w3-round" style="width:382.60567pt">
   {% include ../img/stack-stamp.svg %}
   </div>
