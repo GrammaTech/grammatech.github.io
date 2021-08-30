@@ -46,12 +46,12 @@ anchors:
 
 |               | Design | Develop    | Test/Integrate                                                           | Deploy/Maintain                         | Reuse                                                               |
 |---------------|--------|------------|--------------------------------------------------------------------------|-----------------------------------------|---------------------------------------------------------------------|
-| Automate      |        | Mnemosyne  | REAFFIRM, Proteus, Mnemosyne, STAMP (APIAD), Bug Injector                |                                         | REAFFIRM (RE-MODEL capability labeling), ReMath                     |
+| Automate      |        | [Mnemosyne][]  | [Bindle][], [Bug-Injector][], [Mnemosyne][], [Proteus][], [REAFFIRM][], [Swap Detector][]                |                                         |                      |
 | Optimize      |        |            | Debloat?                                                                 | Debloat                                 | Debloat                                                             |
-| Repair        |        | GenPatcher |                                                                          | Proteus                                 | Proteus, REAFFIRM                                                   |
-| Diversify     |        | Variegate  |                                                                          | Debloat                                 | Debloat                                                             |
-| Harden/Assure | TFPGA? | Mnemosyne  | ARCOS (requirement-based testing), TBDC (fuzz to find policy violations) | WARP, Debloat                           | Debloat, ARCOS (evidence for COTS certification)                    |
-| Assess        |        |            | REAFFIRM, Proteus, Mnemosyne, STAMP (APIAD)                              | ConSec, ReMath, CodeSentry, LPS/malware | CodeSentry, REAFFIRM (RE-MODEL capability labeling), ReMath, ConSec |
+| Repair        |        | [GenPatcher][] |  [Proteus][], [REAFFIRM][]                                                  | [AMBER][], [ARTCAT][],  [SySense][]                                 | [Proteus][], [REAFFIRM][]                                                   |
+| Diversify     |        | [Variegate][]  |                                                                          | Debloat                                 | Debloat                                                             |
+| Harden/Assure | TFPGA? | [Mnemosyne][]  | [A-CERT][], [Proteus][], [REAFFIRM][] | [AMBER][], [ARTCAT][], Debloat, [SySense][]                           | [A-CERT][], [Proteus][], [REAFFIRM][]                    |
+| Assess        |        |            | [A-CERT][], [Bin2Math][], [Discover][], [Mnemosyne][], [Proteus][], [REAFFIRM][]                              | [AMBER][], [ARTCAT][], [ConfINE][], [SySense][] | [A-CERT][], [Bin2Math][], [Discover][], [Proteus][], [REAFFIRM][] |
 
 </div>
 
@@ -105,3 +105,22 @@ contributions](https://github.com/GrammaTech/ddisasm/blob/master/README.md#exter
 to projects we maintain in return.  Find more of our open-source
 repositories on [GitHub/GrammaTech](https://github.com/GrammaTech) and
 [GitLab/GrammaTech](https://gitlab.com/GrammaTech).
+
+[REAFFIRM]: {{ "/prj/reaffirm"|url }}
+[AMBER]: {{ "/prj/amber"|url }}
+[ARTCAT]: {{ "/prj/artcat"|url }}
+[A-CERT]: {{ "/prj/acert"|url }}
+[Bindle]: {{ "/prj/bindle"|url }}
+[Bin2Math]: {{ "/prj/bin2math"|url }}
+[Proteus]: {{ "/prj/proteus"|url }}
+[ConfINE]: {{ "/prj/confine"|url }}
+[SySense]: {{ "/prj/sysense"|url }}
+[Discover]: {{ "/prj/discover"|url }}
+[TBDC]: {{ "/prj/tbdc"|url }}
+[Swap Detector]: {{ "/prj/swap-detector"|url }}
+[GenPatcher]: {{ "/prj/genpatcher"|url }}
+[Mnemosyne]: {{ "/prj/mnemosyne"|url }}
+[Variegate]: {{ "/prj/variegate"|url }}
+[Bug-Injector]: {{ "/prj/bug-injector"|url }}
+
+
