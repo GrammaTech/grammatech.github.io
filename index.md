@@ -50,7 +50,7 @@ anchors:
 | Optimize      |        |            | Debloat?                                                                 | Debloat                                 | Debloat                                                             |
 | Repair        |        | [GenPatcher][] |  [Proteus][], [REAFFIRM][]                                                  | [AMBER][], [ARTCAT][],  [SySense][]                                 | [Proteus][], [REAFFIRM][]                                                   |
 | Diversify     |        | [Variegate][]  |                                                                          | Debloat                                 | Debloat                                                             |
-| Harden/Assure | TFPGA? | [Mnemosyne][]  | [A-CERT][], [Proteus][], [REAFFIRM][] | [AMBER][], [ARTCAT][], Debloat, [SySense][]                           | [A-CERT][], [Proteus][], [REAFFIRM][]                    |
+| Harden/Assure | TFPGA? | [Mnemosyne][]  | [A-CERT][], [Proteus][], [REAFFIRM][] | [AMBER][], [ARTCAT][], [ConfINE][], Debloat, [SySense][]                           | [A-CERT][], [Proteus][], [REAFFIRM][]                    |
 | Assess        |        |            | [A-CERT][], [Bin2Math][], [Discover][], [Mnemosyne][], [Proteus][], [REAFFIRM][]                              | [AMBER][], [ARTCAT][], [ConfINE][], [SySense][] | [A-CERT][], [Bin2Math][], [Discover][], [Proteus][], [REAFFIRM][] |
 
 </div>
