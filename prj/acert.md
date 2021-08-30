@@ -11,7 +11,7 @@ A-CERT (Advancing Certification Evidence Rigor and Traceability) is a solution t
 A-CERT uses cutting-edge technologies to achieve several key automation goals:
 * Natural Language Processing, to automate the generation of requirements-based testing scenarios from natural language requirements.
 * Our [REAFFIRM][] tool, to support white-box testing of binaries without the original source and/or build chain.
-* Binary analysis and instrumentation, to establish a reliable metric for test suite effectivness in binary-only workflows, instead of traditional source-based coverage criteria (e.g., [MC/DC](https://shemesh.larc.nasa.gov/fm/papers/Hayhurst-2001-tm210876-MCDC.pdf))
+* Binary analysis and instrumentation, to establish a reliable metric for test suite effectiveness in binary-only workflows, instead of traditional source-based coverage criteria (e.g., [MC/DC](https://shemesh.larc.nasa.gov/fm/papers/Hayhurst-2001-tm210876-MCDC.pdf))
 * Fuzzing and other techniques, to automate the generation of test cases that improve a test suite’s effectiveness.
 
 [REAFFIRM]: {{ "/prj/reaffirm"|url }}
