@@ -3,11 +3,6 @@ layout: oss
 tags: oss
 title: DDisasm
 link: https://github.com/grammatech/ddisasm
-techs:
-  - name: Logic Programming
-    slug: logic-programming
-  - name: Static Analysis
-    slug: static-analysis
 brief: |
     A fast and accurate disassembler.  DDisasm is able to disassemble
     real-world stripped binaries with accuracy sufficient to enable modification

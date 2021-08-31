@@ -3,9 +3,6 @@ layout: oss
 tags: oss
 title: SEL
 link: https://github.com/grammatech/sel
-techs:
-  - name: Static Analysis
-    slug: static-analysis
 brief: |
     Software Evolution Library (SEL) provides a programmatic interface
     for the parsing, analysis, and rewriting of software source code in

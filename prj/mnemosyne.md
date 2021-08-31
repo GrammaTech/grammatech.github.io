@@ -3,13 +3,6 @@ layout: oss
 tags: oss
 title: Mnemosyne
 link: https://grammatech.gitlab.io/Mnemosyne/docs/
-techs:
-  - name: Machine Learning
-    slug: machine-learning
-  - name: Formal Methods
-    slug: formal-methods
-  - name: Static Analysis
-    slug: static-analysis
 brief: |
     An extensible software development assistant bringing cutting edge
     program synthesis research to bear against real-world programming
