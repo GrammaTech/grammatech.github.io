@@ -15,7 +15,20 @@ brief: |
   {% include ../img/ssr.svg %}
 </div>
 
-> TODO!
+Software Search and Replace (SSR) is a software transformation and
+exploration tool that operates on abstract syntax trees (ASTs), such
+as those produced by parsers for C, C++, Javascript, and other
+languages. Rules specify which ASTs to match and what actions to take
+against matches: for example, users can specify code rewriting actions
+to implement sophisticated refactorings. Rule application order,
+including simultaneous application, is fully under user control;
+multiple SSR passes can be used to iterate to a stable,
+fully-rewritten result.
+
+SSR is based on the Software Evolution Library ([SEL][]), a modular
+toolkit for representating and manipulating software objects. This
+foundation allows SSR to support all languages supported by SEL,
+including C, C++, JavaScript, Java, and Common-Lisp.
 
 [SEL]: {{ "/prj/sel"|url }}
 [machine programming]: {{ "/ra/machine-programming"|url }}
