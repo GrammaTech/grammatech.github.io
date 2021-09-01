@@ -44,14 +44,14 @@ anchors:
 <div id="use-case-table" class="w3-table w3-table-all w3-gray w3-margin-bottom">
 <center>Projects by use case and research area.</center>
 
-|               | Design | Develop    | Test/Integrate                                                           | Deploy/Maintain                         | Reuse                                                               |
-|---------------|--------|------------|--------------------------------------------------------------------------|-----------------------------------------|---------------------------------------------------------------------|
-| Automate      |        | [Mnemosyne][]  | [Bindle][], [Bug-Injector][], [Mnemosyne][], [Proteus][], [REAFFIRM][], [Swap Detector][]                |                                         |                      |
-| Optimize      |        |            | Debloat?                                                                 | Debloat                                 | Debloat                                                             |
-| Repair        |        | [GenPatcher][] |  [Proteus][], [REAFFIRM][]                                                  | [AMBER][], [ARTCAT][],  [SySense][]                                 | [Proteus][], [REAFFIRM][]                                                   |
-| Diversify     |        | [Variegate][]  |                                                                          | Debloat                                 | Debloat                                                             |
-| Harden/Assure | TFPGA? | [Mnemosyne][]  | [A-CERT][], [Proteus][], [REAFFIRM][] | [AMBER][], [ARTCAT][], [ConfINE][], Debloat, [SySense][]                           | [A-CERT][], [Proteus][], [REAFFIRM][]                    |
-| Assess        |        |            | [A-CERT][], [Bin2Math][], [Discover][], [Mnemosyne][], [Proteus][], [REAFFIRM][]                              | [AMBER][], [ARTCAT][], [ConfINE][], [SySense][] | [A-CERT][], [Bin2Math][], [Discover][], [Proteus][], [REAFFIRM][] |
+|               | Design | Develop                                                        | Test/Integrate                                                                            | Deploy/Maintain                                                                                                 | Reuse                                                                                                                             |
+|---------------|--------|----------------------------------------------------------------|-------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
+| Automate      |        | [Mnemosyne][], [Merge Resolver][], [Software Search Replace][] | [Bindle][], [Bug-Injector][], [Mnemosyne][], [Proteus][], [REAFFIRM][], [Swap Detector][] |                                                                                                                 |                                                                                                                                   |
+| Optimize      |        |                                                                | [Binary-Reduce][]                                                                         | [Binary-Reduce][]                                                                                               | [Binary-Reduce][]                                                                                                                 |
+| Repair        |        | [GenPatcher][]                                                 | [Proteus][], [REAFFIRM][]                                                                 | [AMBER][], [ARTCAT][],  [SySense][]                                                                             | [Proteus][], [REAFFIRM][]                                                                                                         |
+| Diversify     |        | [Variegate][]                                                  |                                                                                           |                                                                                                                 |                                                                                                                                   |
+| Harden/Assure | TFPGA? | [Mnemosyne][]                                                  | [A-CERT][], [Proteus][], [REAFFIRM][]                                                     | [AMBER][], [ARTCAT][], [ConfINE][], [SySense][]                                                                 | [A-CERT][], [Proteus][], [REAFFIRM][]                                                                                             |
+| Assess        |        |                                                                | [A-CERT][], [Bin2Math][], [Discover][], [Mnemosyne][], [Proteus][], [REAFFIRM][]          | [AMBER][], [ARTCAT][], [ConfINE][], [SySense][], [DDisasm][], [To-Static][], [Binary-Reduce][], [Stack-Stamp][] | [A-CERT][], [Bin2Math][], [Discover][], [Proteus][], [REAFFIRM][], [DDisasm][], [To-Static][], [Binary-Reduce][], [Stack-Stamp][] |
 
 </div>
 
@@ -122,5 +122,9 @@ repositories on [GitHub/GrammaTech](https://github.com/GrammaTech) and
 [Mnemosyne]: {{ "/prj/mnemosyne"|url }}
 [Variegate]: {{ "/prj/variegate"|url }}
 [Bug-Injector]: {{ "/prj/bug-injector"|url }}
-
-
+[Merge Resolver]: {{ "/prj/merge-esolver"|url }}
+[Software Search Replace]: {{ "/prj/ssr"|url }}
+[DDisasm]: {{ "/prj/ddisasm"|url }}
+[To-Static]: {{ "/prj/to-static"|url }}
+[Stack-Stamp]: {{ "/prj/stack-stamp"|url }}
+[Binary-Reduce]: {{ "/prj/binary-reduce"|url }}

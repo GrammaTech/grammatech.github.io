@@ -4,7 +4,7 @@ tags: ra
 title: Binary Rewriting
 slug: rw
 prjs:
-  - name: Datalog Disassembler
+  - name: DDisasm
     slug: ddisasm
   - name: GTIRB
     slug: gtirb
@@ -12,7 +12,7 @@ prjs:
     slug: to-static
   - name: Stack Stamp binary transform
     slug: stack-stamp
-  - name: Binary reduction
+  - name: Binary-Reduce
     slug: binary-reduce
 brief: |
     Using high-fidelity binary ingestion, perform automated
