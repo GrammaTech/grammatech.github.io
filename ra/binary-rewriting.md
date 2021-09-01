@@ -12,12 +12,8 @@ prjs:
     slug: to-static
   - name: Stack Stamp binary transform
     slug: stack-stamp
-  - name: CFG-based binary reduction
-    slug: cfg-reduce
-  - name: Test-based binary reduction
-    slug: test-reduce
-  - name: Binary PGO and Shuffle
-    slug: pgo
+  - name: Binary reduction
+    slug: binary-reduce
 brief: |
     Using high-fidelity binary ingestion, perform automated
     transformation of binary software executables and libraries to

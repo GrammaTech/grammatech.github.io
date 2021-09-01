@@ -23,8 +23,8 @@ flow integrity (CFI), hardening, debloating, optimization---will
 automatically apply to library code as well as to the main executable
 code.
 
-<center class="w3-text-light-grey gt-smaller-on-small">
-  {% include ../img/to-static.svg %}
+<center>
+    <img src="{{ "/img/to-static.svg"|url }}" class="w3-light-grey gt-smaller-on-small w3-padding w3-round">
 </center>
 
 ## Use Cases
