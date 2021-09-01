@@ -44,7 +44,7 @@ anchors:
 <div id="use-case-table" class="w3-table w3-table-all w3-gray w3-margin-bottom">
 <center>Projects by use case and research area.</center>
 
-|           | Develop                                                        | Test/Integrate                                                                            | Deploy/Maintain                                 | Reuse                                                                                    |
+|           | Develop                                                        | Test/Integrate                                                                            | Deploy/Execute                                  | Reuse                                                                                    |
 |-----------|----------------------------------------------------------------|-------------------------------------------------------------------------------------------|-------------------------------------------------|------------------------------------------------------------------------------------------|
 | Automate  | [Mnemosyne][], [Merge Resolver][], [Software Search Replace][] | [Bindle][], [Bug-Injector][], [Mnemosyne][], [Proteus][], [REAFFIRM][], [Swap Detector][] |                                                 |                                                                                          |
 | Optimize  |                                                                | [Binary-Reduce][]                                                                         | [Binary-Reduce][]                               | [Binary-Reduce][]                                                                        |
