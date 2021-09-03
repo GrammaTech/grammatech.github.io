@@ -193,6 +193,12 @@ dt { color: #eeeeec; }
 .gt-area-cell-rw.gt-area-cell-mp{ background-image: linear-gradient(var(--rw-color),
                                                                     var(--mp-color));
                                   filter: brightness(1.5); }
+.gt-area-cell-re.gt-area-cell-rw.gt-area-cell-ml.gt-area-cell-ps{
+    background-image: linear-gradient(var(--re-color),
+                                      var(--rw-color),
+                                      var(--ml-color),
+                                      var(--ps-color));
+    filter: brightness(1.5); }
 
 /* Highlight RA cards on hover (see javascript in index.liquid). */
 .gt-highlight{ filter: brightness(1.75); }

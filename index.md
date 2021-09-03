@@ -46,13 +46,13 @@ anchors:
 
 |           | Develop                                                        | Test/Integrate                                                                            | Deploy/Execute                                  | Reuse                                                                                    |
 |-----------|----------------------------------------------------------------|-------------------------------------------------------------------------------------------|-------------------------------------------------|------------------------------------------------------------------------------------------|
-| Automate  | [Mnemosyne][], [Merge Resolver][], [Software Search Replace][] | [Bindle][], [Bug-Injector][], [Mnemosyne][], [Proteus][], [REAFFIRM][], [Swap Detector][] |                                                 |                                                                                          |
+| Automate  | [Merge Resolver][], [Mnemosyne][], [Software Search Replace][] | [Bindle][], [Bug-Injector][], [Mnemosyne][], [Proteus][], [REAFFIRM][], [Swap Detector][] |                                                 |                                                                                          |
 | Optimize  |                                                                | [Binary-Reduce][]                                                                         |                                                 | [Binary-Reduce][]                                                                        |
 | Repair    | [GenPatcher][]                                                 | [Proteus][], [REAFFIRM][]                                                                 | [AMBER][], [ARTCAT][],  [SySense][]             | [Proteus][], [REAFFIRM][]                                                                |
 | Diversify | [Variegate][]                                                  |                                                                                           |                                                 |                                                                                          |
-| Harden    | [Mnemosyne][]                                                  | [Proteus][], [REAFFIRM][], [To-Static][], [Binary-Reduce][], [Stack-Stamp][]              | [AMBER][], [ARTCAT][], [ConfINE][], [SySense][] | [Proteus][], [REAFFIRM][], [To-Static][], [Binary-Reduce][], [Stack-Stamp][]             |
+| Harden    | [Mnemosyne][]                                                  | [Binary-Reduce][], [Proteus][], [REAFFIRM][], [Stack-Stamp][], [To-Static][]               | [AMBER][], [ARTCAT][], [ConfINE][], [SySense][] | [Binary-Reduce][], [Proteus][], [REAFFIRM][], [Stack-Stamp][], [To-Static][]             |
 | Assure    |                                                                | [A-CERT][]                                                                                |                                                 | [A-CERT][]                                                                               |
-| Assess    |                                                                | [A-CERT][], [Discover][], [Mnemosyne][], [Proteus][], [REAFFIRM][]                        | [AMBER][], [ARTCAT][], [ConfINE][], [SySense][] | [A-CERT][], [Bin2Math][], [Discover][], [Proteus][], [REAFFIRM][], [DDisasm][], [TBDC][] |
+| Assess    |                                                                | [A-CERT][], [Discover][], [Mnemosyne][], [Proteus][], [REAFFIRM][]                        | [AMBER][], [ARTCAT][], [ConfINE][], [SySense][] | [A-CERT][], [Bin2Math][], [DDisasm][], [Discover][], [FVA][], [Proteus][], [REAFFIRM][], [TBDC][], [TFPGA][] |
 
 </div>
 
@@ -129,3 +129,5 @@ repositories on [GitHub/GrammaTech](https://github.com/GrammaTech) and
 [To-Static]: {{ "/prj/to-static"|url }}
 [Stack-Stamp]: {{ "/prj/stack-stamp"|url }}
 [Binary-Reduce]: {{ "/prj/binary-reduce"|url }}
+[FVA]: {{ "/prj/fva"|url }}
+[TFPGA]: {{ "/prj/tfpga"|url }}
