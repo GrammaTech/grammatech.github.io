@@ -54,3 +54,5 @@ A growing number of tools are emerging that emit and consume GTIRB:
 [gtirb-stack-stamp]: https://github.com/grammatech/gtirb-stack-stamp
 [gtirb-capstone]: https://github.com/GrammaTech/gtirb-capstone
 [Capstone]: https://www.capstone-engine.org
+
+<!-- TODO: add gtirb-rewriting section, link to video -->
