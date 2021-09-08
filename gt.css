@@ -206,3 +206,8 @@ dt { color: #eeeeec; }
 
 /* Highlight RA cards on hover (see javascript in index.liquid). */
 .gt-highlight{ filter: brightness(1.75); }
+
+.mermaid > svg {
+    display: block;
+    margin: auto;
+}
