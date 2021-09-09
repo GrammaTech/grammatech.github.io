@@ -166,43 +166,43 @@ dt { color: #eeeeec; }
 
 /* Research Areas in Use-case table */
 :root {
-    --mp-color: #729fcf;
-    --rw-color: #c4a000;
-    --re-color: #8ae234;
-    --ps-color: #75507b;
-    --ml-color: #ff4b4b;
+    --mp-color: #183E71;
+    --rw-color: #D81E05;
+    --re-color: #FFBF37;
+    --ps-color: #D4D8D7;
+    --ml-color: #8F1A1C;
 }
 
-.gt-area-cell-mp { background-color: var(--mp-color); filter: brightness(1.5); }
-.gt-area-cell-rw { background-color: var(--rw-color); filter: brightness(1.5); }
-.gt-area-cell-re { background-color: var(--re-color); filter: brightness(1.5); }
-.gt-area-cell-ps { background-color: var(--ps-color); filter: brightness(2); }
-.gt-area-cell-ml { background-color: var(--ml-color); filter: brightness(2); }
+.gt-area-cell-mp { color: white; background-color: var(--mp-color); filter: brightness(1); }
+.gt-area-cell-rw { color: white; background-color: var(--rw-color); filter: brightness(1); }
+.gt-area-cell-re { color: white; background-color: var(--re-color); filter: brightness(1); }
+.gt-area-cell-ps { color: white; background-color: var(--ps-color); filter: brightness(1); }
+.gt-area-cell-ml { color: white; background-color: var(--ml-color); filter: brightness(1); }
 .gt-area-cell-re.gt-area-cell-mp{ background-image: linear-gradient(var(--re-color),
                                                                     var(--mp-color));
-                                  filter: brightness(1.5); }
+                                  filter: brightness(1); }
 .gt-area-cell-re.gt-area-cell-mp.gt-area-cell-ml{
     background-image: linear-gradient(var(--mp-color),
                                       var(--re-color),
                                       var(--ml-color));
-    filter: brightness(1.5); }
+    filter: brightness(1); }
 .gt-area-cell-re.gt-area-cell-rw{ background-image: linear-gradient(var(--re-color),
                                                                     var(--rw-color));
-                                  filter: brightness(1.5); }
+                                  filter: brightness(1); }
 .gt-area-cell-re.gt-area-cell-rw.gt-area-cell-ml{
     background-image: linear-gradient(var(--re-color),
                                       var(--rw-color),
                                       var(--ml-color));
-    filter: brightness(1.5); }
+    filter: brightness(1); }
 .gt-area-cell-rw.gt-area-cell-mp{ background-image: linear-gradient(var(--rw-color),
                                                                     var(--mp-color));
-                                  filter: brightness(1.5); }
+                                  filter: brightness(1); }
 .gt-area-cell-re.gt-area-cell-rw.gt-area-cell-ml.gt-area-cell-ps{
     background-image: linear-gradient(var(--re-color),
                                       var(--rw-color),
                                       var(--ml-color),
                                       var(--ps-color));
-    filter: brightness(1.5); }
+    filter: brightness(1); }
 
 /* Highlight RA cards on hover (see javascript in index.liquid). */
 .gt-highlight{ filter: brightness(1.75); }
