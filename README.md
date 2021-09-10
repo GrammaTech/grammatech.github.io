@@ -11,7 +11,7 @@ https://grammatech.github.io/
 
     ```shell
     npm install @11ty/eleventy -g
-    npm install markdown-it markdown-it-anchor markdown-it-deflist
+    npm install markdown-it markdown-it-anchor markdown-it-deflist markdown-it-mermaid-plugin
     ```
 
 2. Run the following to launch a local server to preview the built site.
