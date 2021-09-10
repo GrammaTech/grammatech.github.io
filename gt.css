@@ -157,8 +157,8 @@ svg{
 }
 
 h1,h2,h3,h4,h5,h6{ font-family: "Helvetica Neue", Helvetica Neue, Helvetica, Arial, sans-serif; font-weight: bold; }
-body,p,blockquote { font-family: "Helvetica Neue", Helvetica Neue, Helvetica, Arial, sans-serif; font-weight: 200 }
-pre { font-family: "Helvetica Monospaced", Helvetica Monospaced; font-weight: 200; }
+body,p,blockquote { font-family: "Helvetica Neue", Helvetica Neue, Helvetica, Arial, sans-serif; font-weight: 250 }
+pre { font-family: "Helvetica Monospaced", Helvetica Monospaced; font-weight: 250; }
 
 h2 { color: #729fcf; }
 h3 { color: #729fcf; }
