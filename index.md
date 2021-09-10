@@ -83,7 +83,7 @@ anchors:
 
 We are a commercial company and we develop and sell proprietary
 software products. However, we release the core technology underlying
-these products — the libraries on which these product's power and
+these products — the libraries on which these products' power and
 correctness depend.  GrammaTech recognizes that only by encouraging
 outside use and review of our software can we achieve the
 reproducibility, objectivity, accuracy, quality, and security our
