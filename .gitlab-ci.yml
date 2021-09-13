@@ -3,7 +3,7 @@ default:
   tags: ["kubernetes", "cluster"]
   before_script:
     - npm install @11ty/eleventy -g
-    - npm install markdown-it markdown-it-anchor markdown-it-deflist
+    - npm install markdown-it markdown-it-anchor markdown-it-deflist markdown-it-mermaid-plugin
 
 pages:
   script:
