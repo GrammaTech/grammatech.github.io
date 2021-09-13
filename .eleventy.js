@@ -25,6 +25,7 @@ module.exports = function(eleventyConfig) {
   // Extensions to copy
   // eleventyConfig.setTemplateFormats(["css", "js", "json", "png", "jpg"]);
   eleventyConfig.addPassthroughCopy("img");
+  eleventyConfig.addPassthroughCopy("videos");
 
   eleventyConfig.addLiquidFilter("fixDate", function(value){
     value.setTime(value.getTime() + (5*60*60*1000));
