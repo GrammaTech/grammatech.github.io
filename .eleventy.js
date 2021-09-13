@@ -32,8 +32,12 @@ module.exports = function(eleventyConfig) {
     return value; })
 
   eleventyConfig.addFilter("andList", function(list){
-    return list.slice(0,-1).join(", ")+" and "+list.slice(-1)[0];
-    })
+    if (list.length > 1){
+      return list.slice(0,-1).join(", ")+" and "+list.slice(-1)[0];
+    } else {
+      return list.join("");
+    }
+  })
 
   return config;
 };
