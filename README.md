@@ -19,17 +19,3 @@ https://grammatech.github.io/
     ```shell
     eleventy --serve
     ```
-
-## Contribute
-
-- Use the following templates for different types of projects.
-
-    | Template File                        | Description                                         |
-    |--------------------------------------|-----------------------------------------------------|
-    | `prj/example-proprietary-project.md` | GT projects, tools and efforts                      |
-    | `prj/example-open-source.md`         | GT projects, tools and efforts that are open-source |
-    | `tech/example-technology.md          | Technology used at GT                               |
-    | `prj/example-product.md              | Mature Cyber Security Solutions                     |
-    | `ra/example-research-area.md         | Research Areas                                      |
-
-- Add content on a branch and push through merge review.
