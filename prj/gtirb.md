@@ -3,6 +3,9 @@ layout: oss
 tags: oss
 title: GTIRB
 link: https://github.com/grammatech/gtirb
+supports:
+  - agency: ONR
+    contract: "######-##-####"
 brief: |
     An intermediate representation for binary analysis and rewriting.
     GTIRB seeks to be an LLVM-IR for reverse engineering.

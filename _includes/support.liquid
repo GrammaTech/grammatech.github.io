@@ -1,0 +1,11 @@
+{% if supports %}
+<div class="support">
+  {% for s in supports %}
+  <p>This project is sponsored by the {{ support[s.agency]['name'] }},
+    {{support[s.agency]['address']}} under contract #{{s.contract}}.
+    The content of the information does not necessarily reflect the
+    position or policy of the Government and no official endorsement
+    should be inferred.</p>
+  {% endfor %}
+</div>
+{% endif %}
