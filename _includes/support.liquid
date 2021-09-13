@@ -1,11 +1,11 @@
 {% if supports %}
 <div class="support">
   {% for s in supports %}
-  <p>This material is based upon work supported by the {{ s.agencies|noOxfordComma }}
-  under Contract No. {{ s.contracts|noOxfordComma }}.  Any opinions, findings and
+  <p>This material is based upon work supported by the {{ s.agencies|andList }}
+  under Contract No. {{ s.contracts|andList }}.  Any opinions, findings and
   conclusions or recommendations expressed in this material are those
   of the author(s) and do not necessarily reflect the views of the
-  {{ s.agencies|noOxfordComma }}.</p>
+  {{ s.agencies|andList }}.</p>
   {% endfor %}
 </div>
 {% endif %}

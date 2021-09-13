@@ -31,7 +31,7 @@ module.exports = function(eleventyConfig) {
     value.setTime(value.getTime() + (5*60*60*1000));
     return value; })
 
-  eleventyConfig.addFilter("noOxfordComma", function(list){
+  eleventyConfig.addFilter("andList", function(list){
     return list.slice(0,-1).join(", ")+" and "+list.slice(-1)[0];
     })
 
