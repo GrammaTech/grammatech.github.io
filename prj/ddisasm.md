@@ -2,7 +2,6 @@
 layout: oss
 tags: oss
 title: DDisasm
-link: https://github.com/grammatech/ddisasm
 brief: |
     A fast and accurate disassembler.  DDisasm is able to disassemble
     real-world stripped binaries with accuracy sufficient to enable modification
@@ -23,6 +22,13 @@ representation for binary analysis and reverse engineering.  The
 [GTIRB pretty printer](https://github.com/grammatech/gtirb-pprinter)
 may then be used to pretty print the GTIRB to reassemblable assembly
 code.
+
+View the repository at [github.com/grammatech/ddisasm][] or read the
+USENIX paper "[Datalog Disassembly][]", a distinguished paper award
+winner, for more information.
+
+[github.com/grammatech/ddisasm]: https://github.com/grammatech/ddisasm
+[Datalog Disassembly]: https://www.usenix.org/conference/usenixsecurity20/presentation/flores-montoya
 
 Use the [grammatech/ddisasm](https://hub.docker.com/r/grammatech/ddisasm)
 Docker image to try out `ddisasm` quickly.
