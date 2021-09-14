@@ -11,9 +11,11 @@ support:
   - DARPA
   - Army
   - DIU
+  - Office of Naval Research
   contracts:
   - FA8750-14-C-0110
   - W15QKN-18-9-1013
+  - N68335-17-C-0700
 brief: |
     Automatically _find_ and _fix_ vulnerabilities in software binaries.
     Use _exploitability analysis_ to prioritize software weaknesses for
