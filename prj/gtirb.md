@@ -3,12 +3,11 @@ layout: oss
 tags: oss
 title: GTIRB
 link: https://github.com/grammatech/gtirb
-supports:
-  - agencies:
-    - Office of Naval Research
-    - DARPA
-    contracts:
-    - 123456-12-1234
+support:
+  agencies:
+  - Office of Naval Research
+  contracts:
+  - N68335-17-C-0700
 brief: |
     An intermediate representation for binary analysis and rewriting.
     GTIRB seeks to be an LLVM-IR for reverse engineering.

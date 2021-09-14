@@ -3,6 +3,11 @@ layout: prj
 tags: prj
 title: To Static binary transform
 trl: 4
+support:
+  agencies:
+  - Office of Naval Research
+  contracts:
+  - N68335-17-C-0700
 brief: |
     Rewrite a binary executable and all dynamic libraries into
     a single statically linked executable.

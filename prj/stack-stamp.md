@@ -2,6 +2,11 @@
 layout: prj
 tags: prj
 title: Stack Stamp binary hardening
+support:
+  agencies:
+  - Office of Naval Research
+  contracts:
+  - N68335-17-C-0700
 brief: |
     Binary transform to apply 'stack stamp' protections to a binary.
 ---

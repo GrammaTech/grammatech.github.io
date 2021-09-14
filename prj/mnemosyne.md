@@ -3,6 +3,13 @@ layout: oss
 tags: oss
 title: Mnemosyne
 link: https://grammatech.gitlab.io/Mnemosyne/docs/
+support:
+  projects:
+  - IDAS
+  agencies:
+  - DARPA
+  contracts:
+  - FA8750-20-C-0208
 brief: |
     An extensible software development assistant bringing cutting edge
     program synthesis research to bear against real-world programming

@@ -2,6 +2,16 @@
 layout: prj
 tags: prj
 title: Merge Resolver
+support:
+  projects:
+  - BUGINJECTOR
+  - IDAS
+  agencies:
+  - DARPA
+  contracts:
+  - D16PC00103
+  - D17PC00096
+  - FA8750-20-C-0208
 brief: |
     MergeResolver is a new GitHub app that automates resolving merge conflicts
     — but leaves developers in control.

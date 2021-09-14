@@ -2,6 +2,16 @@
 layout: prj
 tags: prj
 title: Variegate
+support:
+  projects:
+  - Debloat
+  - BUGINJECTOR
+  agencies:
+  - Office of Naval Research
+  - DARPA
+  contracts:
+  - N68335-17-C-0700
+  - D17PC00096
 brief: |
     Variegate applies source-to-source transformations for binary diversification.
 ---

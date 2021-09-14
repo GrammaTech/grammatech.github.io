@@ -2,6 +2,11 @@
 layout: oss
 tags: oss
 title: DDisasm
+support:
+  agencies:
+  - Office of Naval Research
+  contracts:
+  - N68335-17-C-0700
 brief: |
     A fast and accurate disassembler.  DDisasm is able to disassemble
     real-world stripped binaries with accuracy sufficient to enable modification

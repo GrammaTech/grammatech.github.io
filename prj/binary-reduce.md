@@ -3,6 +3,11 @@ layout: prj
 tags: prj
 title: Binary reduction
 trl: 6
+support:
+  agencies:
+  - Office of Naval Research
+  contracts:
+  - N68335-17-C-0700
 brief: |
     Remove unused code from a binary.  Both conservative and aggressive options are provided.
 ---

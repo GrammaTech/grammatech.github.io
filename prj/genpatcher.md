@@ -2,6 +2,15 @@
 layout: prj
 tags: prj
 title: GenPatcher
+support:
+  projects:
+  - MUSE
+  - IDAS
+  agencies:
+  - DARPA
+  contracts:
+  - R18683
+  - FA8750-20-C-0208
 brief: |
     GenPatcher is a tool for automated software repair.
 ---

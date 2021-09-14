@@ -3,6 +3,24 @@ layout: oss
 tags: oss
 title: SEL
 link: https://github.com/grammatech/sel
+support:
+  projects:
+  - MUSE
+  - BUGINJECTOR
+  - BRASS
+  - Debloat
+  - IDAS
+  agencies:
+  - DARPA
+  - Office of Naval Research
+  contracts:
+  - R18683
+  - FA8750-16-C-0007
+  - D16PC00103
+  - D17PC00096
+  - CPVI-2017-105
+  - N68335-17-C-0700
+  - FA8750-20-C-0208
 brief: |
     Software Evolution Library (SEL) provides a programmatic interface
     for the parsing, analysis, and rewriting of software source code in

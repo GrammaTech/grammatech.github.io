@@ -2,6 +2,17 @@
 layout: prj
 tags: prj
 title: SSR
+support:
+  projects:
+  - BRASS
+  - BUGINJECTOR
+  - IDAS
+  agencies:
+  - DARPA
+  contracts:
+  - FA8750-16-C-0007
+  - D16PC00103
+  - FA8750-20-C-0208
 brief: |
     Software Search Replace (SSR) is an AST-aware `sed` that enpowers
     developers to automate repository-wide refactoring using a simple yet
