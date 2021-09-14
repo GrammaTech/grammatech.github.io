@@ -10,7 +10,6 @@ support:
   contracts:
   - D16PC00103
   - D17PC00096
-  - CPVI-2017-105
 brief: |
     Bug-Injector injects flaws into software source code enabling the
     evaluation of cyber security tools.

@@ -10,16 +10,17 @@ support:
   - BRASS
   - Debloat
   - IDAS
+  - OPS-5G
   agencies:
+  - Air Force
   - DARPA
   - Office of Naval Research
   contracts:
-  - R18683
   - FA8750-16-C-0007
   - D16PC00103
   - D17PC00096
-  - CPVI-2017-105
   - N68335-17-C-0700
+  - HR001120C0159
   - FA8750-20-C-0208
 brief: |
     Software Evolution Library (SEL) provides a programmatic interface

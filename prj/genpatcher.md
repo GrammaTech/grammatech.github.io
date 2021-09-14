@@ -7,9 +7,9 @@ support:
   - MUSE
   - IDAS
   agencies:
+  - Air Force
   - DARPA
   contracts:
-  - R18683
   - FA8750-20-C-0208
 brief: |
     GenPatcher is a tool for automated software repair.
