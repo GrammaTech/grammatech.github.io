@@ -2,6 +2,15 @@
 layout: ap
 tags: ap
 title: Bindle
+support:
+  projects:
+  - DIU
+  agencies:
+  - Air Force
+  - Army
+  - DIU
+  contracts:
+  - W15QKN-18-9-1013
 brief: |
     Automatic harness generation and seed-input collection to eliminate the need
     for reverse engineering and domain knowledge in dynamic testing of software

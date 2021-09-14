@@ -2,6 +2,18 @@
 layout: ap
 tags: ap
 title: Proteus
+support:
+  projects:
+  - CGC
+  - DIU
+  agencies:
+  - Air Force
+  - DARPA
+  - Army
+  - DIU
+  contracts:
+  - FA8750-14-C-0110
+  - W15QKN-18-9-1013
 brief: |
     Automatically _find_ and _fix_ vulnerabilities in software binaries.
     Use _exploitability analysis_ to prioritize software weaknesses for
