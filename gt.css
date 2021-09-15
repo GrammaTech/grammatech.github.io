@@ -1,0 +1,219 @@
+/* GrammaTech pallet: */
+.gt-text-red{ color: rgb(216,30,5)!important }
+.gt-text-darkgrey{ color: rgb(98,110,128)!important }
+.gt-text-lightgrey{ color: rgb(110,124,146)!important }
+.gt-text-darkred{ color: rgb(128,0,0)!important }
+.gt-text-orange{ color: rgb(255,128,0)!important }
+.gt-text-blue{ color: rgb(0,68,153)!important }
+/* Tango Dark pallet: */
+.gt-text-butter-1{ color: #fce94f!important }
+.gt-text-butter-2{ color: #edd400!important }
+.gt-text-butter-3{ color: #c4a000!important }
+.gt-text-orange-1{ color: #fcaf3e!important }
+.gt-text-orange-2{ color: #f57900!important }
+.gt-text-orange-3{ color: #ce5c00!important }
+.gt-text-choc-1{ color: #e9b96e!important }
+.gt-text-choc-2{ color: #c17d11!important }
+.gt-text-choc-3{ color: #8f5902!important }
+.gt-text-cham-1{ color: #8ae234!important }
+.gt-text-cham-2{ color: #73d216!important }
+.gt-text-cham-3{ color: #4e9a06!important }
+.gt-text-blue-1{ color: #729fcf!important }
+.gt-text-blue-2{ color: #3465a4!important }
+.gt-text-blue-3{ color: #204a87!important }
+.gt-text-plum-1{ color: #e090d7!important }
+.gt-text-plum-2{ color: #75507b!important }
+.gt-text-plum-3{ color: #5c3566!important }
+.gt-text-red-1{ color: #ef2929!important }
+.gt-text-red-2{ color: #cc0000!important }
+.gt-text-red-3{ color: #a40000!important }
+.gt-text-alum-1{ color: #eeeeec!important }
+.gt-text-alum-2{ color: #d3d7cf!important }
+.gt-text-alum-3{ color: #babdb6!important }
+.gt-text-alum-4{ color: #888a85!important }
+.gt-text-alum-5{ color: #555753!important }
+.gt-text-alum-6{ color: #2e3436!important }
+.gt-text-cham-0{ color: #b4fa70!important }
+.gt-text-blue-0{ color: #8cc4ff!important }
+.gt-text-plum-0{ color: #e9b2e3!important }
+.gt-text-red-0{ color: #ff4b4b!important }
+.gt-text-alum-5.5{ color: #41423f!important }
+.gt-text-alum-7{ color: #212526!important }
+
+.gt-scootch-up {
+    position: relative;
+    top: -1em;
+}
+
+.gt-flex-wrap {
+    display: flex;
+    flex-flow: row wrap;
+    flex: 1 100%
+}
+
+@media (min-width:600px){
+    .gt-large-only-middle-line{
+        background-image: linear-gradient(#f1f1f1, #f1f1f1);
+        background-size: 2px 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .gt-large-only-bottom-line{
+        border-bottom: 1px solid #f1f1f1;
+    }
+    .gt-small-only-bottom-line{}
+
+    /* From: https://css-tricks.com/css-only-carousel/ */
+    .gt-slides{
+        overflow: hidden;
+        display: flex;
+
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+    }
+    .gt-slides::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+    }
+    .gt-slides::-webkit-scrollbar-thumb {
+        background: #729fcf;
+        border-radius: 10px;
+    }
+    .gt-slides::-webkit-scrollbar-track {
+        background: transparent;
+    }
+    .gt-slides > div {
+        background: #2e3436;
+        margin: 1em;
+
+        scroll-snap-align: start;
+        flex-shrink: 0;
+        width: 47.5%;
+        min-width: 460px;
+        max-width: 800px;
+        margin-right: 2.5%;
+        border-radius: 10px;
+        transform-origin: center center;
+        transform: scale(1);
+        transition: transform 0.5s;
+        position: relative;
+    }
+}
+
+@media (max-width:600px){
+    .gt-large-only-middle-line{
+    }
+    .gt-large-only-bottom-line{}
+    .gt-small-only-bottom-line{
+        border-bottom: 1px solid #f1f1f1;
+    }
+}
+
+@media (min-width:600px) and (max-width:1100px){
+    .gt-min-left-margin{
+        margin-left: 60px;
+    }
+}
+
+@media (max-width:400px){
+    .gt-smaller-on-small{
+        transform: scale(0.6);
+        margin-left: -5em;
+        overflow: auto;
+    }
+}
+
+@media (min-width:400px) and (max-width:600px){
+    .gt-smaller-on-small{
+        transform: scale(0.7);
+        margin-left: -3em;
+        overflow: auto;
+    }
+}
+
+.gt-bottom-line{
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.gt-card {
+    background: #2e3436;
+    border-radius: 10px;
+}
+
+blockquote {
+    color: #e9b2e3;
+    padding-left: 1em;
+    border: 1px dotted #f1f1f1;
+}
+
+/* h3 { color: rgb(255,128,0); } */
+
+svg{
+    fill: #f1f1f1;
+    stroke:#f1f1f1;
+}
+
+h1,h2,h3,h4,h5,h6{ font-family: "Helvetica Neue", Helvetica Neue, Helvetica, Arial, sans-serif; font-weight: bold; }
+body,p,blockquote { font-family: "Helvetica Neue", Helvetica Neue, Helvetica, Arial, sans-serif; font-weight: 300 }
+pre { font-family: "Helvetica Monospaced", Helvetica Monospaced; font-weight: 300; }
+
+h2 { color: #729fcf; }
+h3 { color: #729fcf; }
+dt { color: #eeeeec; }
+
+/* Research Areas in Use-case table */
+:root {
+    --mp-color: #729fcf;
+    --rw-color: #c4a000;
+    --re-color: #8ae234;
+    --ps-color: #75507b;
+    --ml-color: #ff4b4b;
+}
+
+.gt-area-cell-mp { background-color: var(--mp-color); filter: brightness(1.5); }
+.gt-area-cell-rw { background-color: var(--rw-color); filter: brightness(1.5); }
+.gt-area-cell-re { background-color: var(--re-color); filter: brightness(1.5); }
+.gt-area-cell-ps { background-color: var(--ps-color); filter: brightness(2); }
+.gt-area-cell-ml { background-color: var(--ml-color); filter: brightness(2); }
+.gt-area-cell-re.gt-area-cell-mp{ background-image: linear-gradient(var(--re-color),
+                                                                    var(--mp-color));
+                                  filter: brightness(1.5); }
+.gt-area-cell-re.gt-area-cell-mp.gt-area-cell-ml{
+    background-image: linear-gradient(var(--mp-color),
+                                      var(--re-color),
+                                      var(--ml-color));
+    filter: brightness(1.5); }
+.gt-area-cell-re.gt-area-cell-rw{ background-image: linear-gradient(var(--re-color),
+                                                                    var(--rw-color));
+                                  filter: brightness(1.5); }
+.gt-area-cell-re.gt-area-cell-rw.gt-area-cell-ml{
+    background-image: linear-gradient(var(--re-color),
+                                      var(--rw-color),
+                                      var(--ml-color));
+    filter: brightness(1.5); }
+.gt-area-cell-rw.gt-area-cell-mp{ background-image: linear-gradient(var(--rw-color),
+                                                                    var(--mp-color));
+                                  filter: brightness(1.5); }
+.gt-area-cell-re.gt-area-cell-rw.gt-area-cell-ml.gt-area-cell-ps{
+    background-image: linear-gradient(var(--re-color),
+                                      var(--rw-color),
+                                      var(--ml-color),
+                                      var(--ps-color));
+    filter: brightness(1.5); }
+
+/* Highlight RA cards on hover (see javascript in index.liquid). */
+.gt-highlight{ filter: brightness(1.75); }
+
+.mermaid > svg {
+    display: block;
+    margin: auto;
+}
+
+.support {
+    padding: 1em;
+    /* border: solid 1px #babdb6; */
+    font-size: small;
+}

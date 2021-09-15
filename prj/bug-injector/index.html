@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bug-Injector</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Bug-Injector injects flaws into software source code enabling the
+evaluation of cyber security tools.
+">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.14.0/css/all.css">
+    <link rel="stylesheet" href="/gt.css">
+    <link rel="icon" href="/favicon.ico">
+  </head>
+  <body style="color: #bdc1c6; background: #202124;">
+    <header>
+      <div class="w3-hide-small">
+  <a href="/" class="w3-top">
+    <img class="w3-image w3-left w3-margin" src="/img/grammatech-g.png" width="60px">
+  </a>
+</div>
+<div class="w3-hide-large w3-hide-medium">
+  <a href="/" class="w3-top">
+    <img class="w3-image w3-padding-small w3-right" src="/img/grammatech-g.png" width="40px">
+  </a>
+</div>
+
+    </header>
+    <div class="w3-content w3-padding-large w3-margin-top gt-min-left-margin">
+      <h1>Bug-Injector</h1>
+      <div class="w3-container">
+        <p>A tool for generating cyber defense evaluation benchmarks through the
+injection of vulnerable code into existing host software.
+Bug-Injector is highly configurable, providing users the transparency
+required of a tool used to compare commercial products and perform
+security audits, and the customizability to enable focused evaluation
+of specific defensive tools, host programs, domains, and vulnerability
+classes.  Bug-Injector is implemented independently of leading cyber
+defensive techniques, thus avoiding the potential circularity in which
+technical shortcomings limit the generated benchmark used to evaluate
+those very same techniques.</p>
+<center>
+    <img src="/img/bi-pipeline.svg" class="w3-padding w3-light-grey w3-round gt-smaller-on-small">
+</center>
+<p>Bug-Injector can support continuous DevSecOps pipeline assurance as
+shown below.  Bugs, flaws, and vulnerabilities are injected into the
+source code of the software project.  This buggy code is then passed
+through the DevSecOps process, including on-commit checks, the build
+process, and all assurance processes including Static Application
+Security Testing (SAST) and Dynamic Application Security Testing
+(DAST).  At the end of this process the complete list of injected bugs
+are compared against the reports from the SAST/DAST processes to
+identify caught bugs, missed bugs, and any systematic blind spots in
+the DevSecOps pipeline.  This process is fully automated allowing it
+to be repeated regularly for <em>continuous</em> assessment of the health of
+the DevSecOps pipeline. This continuous reassessment is vital as the
+proper functioning SAST/DAST tools can be brittle with respect their
+many parameters, ever-changing test suites, and ever-changing software
+source code and environment in which small changes can have
+catastrophic effects on the detection rate of SAST/DAST tools.</p>
+<center>
+    <img src="/img/bi-ci-cd.svg" class="w3-padding w3-light-grey w3-round gt-smaller-on-small">
+</center>
+
+      </div>
+    
+<div class="support">
+  <p>This material is based upon work supported by DARPA and DHS
+  under Contract(s) No. D16PC00103, D17PC00096, HHSP233201600062C and 70RSAT19C00000056.  Any opinions, findings and
+  conclusions or recommendations expressed in this material are those
+  of the author(s) and do not necessarily reflect the views of
+  DARPA or DHS.</p>
+</div>
+
+
+    <div class="w3-margin w3-full w3-border-top w3-border-dark-grey gt-flex-wrap">
+  <span class="w3-hide-small" style="order:1;">
+    <a class="w3-button" href="https://www.grammatech.com/about">About</a>
+    <a class="w3-button" href="mailto:research@grammatech.com">Contact</a>
+    <a class="w3-button" href="https://www.grammatech.com/careers">Careers</a>
+  </span>
+  <span class="w3-hide-medium w3-hide-large w3-center" style="order:1;flex:auto;text-align:center;">
+    <a class="w3-button" href="https://www.grammatech.com/about">About</a>
+    <a class="w3-button" href="mailto:research@grammatech.com">Contact</a>
+    <a class="w3-button" href="https://www.grammatech.com/careers">Careers</a>
+  </span>
+  <span class="w3-right w3-hide-small" style="order:3;text-align:right;">
+    <a class="w3-button" href="https://twitter.com/GrammaTech"><i class="fab fa-twitter"></i></a>
+    <a class="w3-button" href="https://github.com/grammatech"><i class="fab fa-github"></i></a>
+    <a class="w3-button" href="https://www.linkedin.com/company/grammatech"><i class="fab fa-linkedin"></i></a>
+    <a class="w3-button" href="https://news.grammatech.com"><i class="fa fa-rss"></i></a>
+  </span>
+  <span class="w3-right w3-hide-medium w3-hide-large" style="order:3;flex:auto;text-align:center;">
+    <a class="w3-button" href="https://twitter.com/GrammaTech"><i class="fab fa-twitter"></i></a>
+    <a class="w3-button" href="https://github.com/grammatech"><i class="fab fa-github"></i></a>
+    <a class="w3-button" href="https://www.linkedin.com/company/grammatech"><i class="fab fa-linkedin"></i></a>
+    <a class="w3-button" href="https://news.grammatech.com"><i class="fa fa-rss"></i></a>
+  </span>
+  <span class="w3-center" style="order:2;flex:auto;text-align:center;">
+    <a class="w3-button" href="https://www.grammatech.com">
+      <img src="/img/grammatech-white.png" alt="GrammaTech Homepage" height="36px">
+    </a>
+  </span>
+</div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+<script>
+mermaid.initialize({ startOnLoad: true });
+</script>
+
+</html>

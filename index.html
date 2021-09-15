@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GrammaTech Research</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="GrammaTech Research">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.14.0/css/all.css">
+    <link rel="stylesheet" href="/gt.css">
+    <link rel="stylesheet" href="/w3.css">
+    <link rel="icon" href="/favicon.ico">
+  </head>
+<body style="color: #bdc1c6; background: #202124; max-width: 1400px; margin: auto;">
+
+<!-- Header -->
+<header class="w3-center">
+  <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+  <a href="javascript:void(0)" class="w3-top w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="navbar_toggle()">
+    <i class="fa fa-bars w3-right"></i>
+  </a>
+  <!-- <img class="w3-image" src="img/rostyslav-savchyn-9XtjVafxMUg-unsplash.jpg" alt="GT" width="1500" height="600" style="opacity:0.75;"> -->
+  <img class="w3-image" src="img/israel-andrade-YI_9SivVt_s-unsplash-crop.jpg" alt="GT" width="1500" height="400" style="opacity:0.75;">
+  <div class="w3-hide-medium w3-hide-small w3-padding-large w3-border w3-border-dark-grey w3-wide w3-text-light-grey w3-center"
+       style="background-color: rgb(110,124,146, 0.6); position:absolute;left:50%;top:12.5%;transform:translate(-50%,-25%);-ms-transform:translate(-50%,-25%)">
+    <h1 class="w3-jumbo" style="margin-top:0.5em;margin-bottom:0.5em;">GrammaTech</h1>
+    <h3 class="w3-xxlarge" style="color:#f1f1f1;margin-bottom:0.5em;margin-top:0.5em;">Research</h3>
+  </div>
+  <div class="w3-hide-large w3-padding w3-border w3-border-dark-grey w3-wide w3-text-light-grey w3-center"
+       style="background-color: rgb(110,124,146, 0.6);position:absolute;left:50%;top:4.5em;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%)">
+    <h1 style="margin-top:0">GrammaTech</h1>
+    <h3 style="color:#f1f1f1;margin-bottom:0;">Research</h3>
+  </div>
+  
+  <!-- Navbar (placed at the bottom of the header image) -->
+  <div class="w3-bar w3-dark-grey w3-round w3-hide-small gt-scootch-up">
+    
+    <a href="#cyber-security-solutions" class="w3-bar-item w3-button">Cyber Security Solutions</a>
+    
+    <a href="#research-areas" class="w3-bar-item w3-button">Research Areas</a>
+    
+    <a href="#open-source-software" class="w3-bar-item w3-button">Open Source Software</a>
+    
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-dark-grey w3-hide w3-hide-large w3-hide-medium w3-top w3-card">
+    <a href="#" class="w3-bar-item w3-button" onclick="navbar_toggle()">Home</a>
+    
+    <a href="#cyber-security-solutions" class="w3-bar-item w3-button" onclick="navbar_toggle()">Cyber Security Solutions</a>
+    
+    <a href="#research-areas" class="w3-bar-item w3-button" onclick="navbar_toggle()">Research Areas</a>
+    
+    <a href="#open-source-software" class="w3-bar-item w3-button" onclick="navbar_toggle()">Open Source Software</a>
+    
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-margin-top">
+  <div class="w3-container">
+    <div class="gt-bottom-line">
+<h3 id="cyber-security-solutions">Cyber Security Solutions</h3>
+<div class="w3-row-padding">
+<div class="w3-half w3-margin-bottom">
+<div class="w3-container w3-card gt-card">
+<dl>
+<dt><a href="/prj/bindle/">Bindle</a></dt>
+<dd>Automatic harness generation and seed-input collection to eliminate the need
+for reverse engineering and domain knowledge in dynamic testing of software
+binaries.</dd>
+</dl>
+</div>
+</div>
+<div class="w3-half w3-margin-bottom">
+<div class="w3-container w3-card gt-card">
+<dl>
+<dt><a href="/prj/proteus/">Proteus</a></dt>
+<dd>Automatically <em>find</em> and <em>fix</em> vulnerabilities in software binaries.
+Use <em>exploitability analysis</em> to prioritize software weaknesses for
+remediation.</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="w3-row-padding">
+<div class="w3-half w3-margin-bottom">
+<div class="w3-container w3-card gt-card">
+<dl>
+<dt><a href="/prj/reaffirm/">REAFFIRM</a></dt>
+<dd>REAFFIRM (Reverse Engineer, Analyze and Fix Firmware) is a platform
+for firmware analysis, component identification and extraction, and
+testing.</dd>
+</dl>
+</div>
+</div>
+</div>
+</div>
+<div class="gt-bottom-line">
+<h3 id="research-areas">Research Areas</h3>
+<div id="use-case-table" class="w3-table w3-table-all w3-gray w3-margin-bottom">
+<center>Projects by use case, development stage, and research area.</center>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Develop</th>
+<th>Test/Integrate</th>
+<th>Deploy/Execute</th>
+<th>Reuse</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Automate</td>
+<td><a href="/prj/merge-esolver">Merge Resolver</a>, <a href="/prj/mnemosyne">Mnemosyne</a>, <a href="/prj/ssr">Software Search Replace</a></td>
+<td><a href="/prj/bindle">Bindle</a>, <a href="/prj/bug-injector">Bug-Injector</a>, <a href="/prj/mnemosyne">Mnemosyne</a>, <a href="/prj/proteus">Proteus</a>, <a href="/prj/reaffirm">REAFFIRM</a>, <a href="/prj/swap-detector">Swap Detector</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Optimize</td>
+<td></td>
+<td><a href="/prj/binary-reduce">Binary-Reduce</a></td>
+<td></td>
+<td><a href="/prj/binary-reduce">Binary-Reduce</a></td>
+</tr>
+<tr>
+<td>Repair</td>
+<td><a href="/prj/genpatcher">GenPatcher</a></td>
+<td><a href="/prj/proteus">Proteus</a>, <a href="/prj/reaffirm">REAFFIRM</a></td>
+<td><a href="/prj/amber">AMBER</a>, <a href="/prj/artcat">ARTCAT</a>,  <a href="/prj/sysense">SySense</a></td>
+<td><a href="/prj/proteus">Proteus</a>, <a href="/prj/reaffirm">REAFFIRM</a></td>
+</tr>
+<tr>
+<td>Diversify</td>
+<td><a href="/prj/variegate">Variegate</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Harden</td>
+<td><a href="/prj/mnemosyne">Mnemosyne</a></td>
+<td><a href="/prj/binary-reduce">Binary-Reduce</a>, <a href="/prj/proteus">Proteus</a>, <a href="/prj/reaffirm">REAFFIRM</a>, <a href="/prj/stack-stamp">Stack-Stamp</a>, <a href="/prj/to-static">To-Static</a></td>
+<td><a href="/prj/amber">AMBER</a>, <a href="/prj/artcat">ARTCAT</a>, <a href="/prj/confine">ConfINE</a>, <a href="/prj/sysense">SySense</a></td>
+<td><a href="/prj/binary-reduce">Binary-Reduce</a>, <a href="/prj/proteus">Proteus</a>, <a href="/prj/reaffirm">REAFFIRM</a>, <a href="/prj/stack-stamp">Stack-Stamp</a>, <a href="/prj/to-static">To-Static</a></td>
+</tr>
+<tr>
+<td>Assure</td>
+<td></td>
+<td><a href="/prj/acert">A-CERT</a></td>
+<td></td>
+<td><a href="/prj/acert">A-CERT</a></td>
+</tr>
+<tr>
+<td>Assess</td>
+<td></td>
+<td><a href="/prj/acert">A-CERT</a>, <a href="/prj/discover">Discover</a>, <a href="/prj/mnemosyne">Mnemosyne</a>, <a href="/prj/proteus">Proteus</a>, <a href="/prj/reaffirm">REAFFIRM</a></td>
+<td><a href="/prj/amber">AMBER</a>, <a href="/prj/artcat">ARTCAT</a>, <a href="/prj/confine">ConfINE</a>, <a href="/prj/sysense">SySense</a></td>
+<td><a href="/prj/acert">A-CERT</a>, <a href="/prj/bin2math">Bin2Math</a>, <a href="/prj/ddisasm">DDisasm</a>, <a href="/prj/discover">Discover</a>, <a href="/prj/fva">FVA</a>, <a href="/prj/proteus">Proteus</a>, <a href="/prj/reaffirm">REAFFIRM</a>, <a href="/prj/tbdc">TBDC</a>, <a href="/prj/tfpga">TFPGA</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="w3-row-padding">
+<div class="w3-half w3-margin-bottom">
+<div id="re" class="w3-container w3-card gt-card">
+<dl>
+<dt><a href="/ra/application-security-and-reverse-engineering/">Application Security and Reverse Engineering</a></dt>
+<dd>Combine state-of-the-art program-analysis techniques to construct
+an understanding of the functionality, strengths, and weaknesses
+of executable software and firmware (with or without hardware).
+Apply that understanding to improve software security and
+performance, for instance, to find and fix vulnerabilities in
+critical systems.</dd>
+</dl>
+</div>
+</div>
+<div class="w3-half w3-margin-bottom">
+<div id="rw" class="w3-container w3-card gt-card">
+<dl>
+<dt><a href="/ra/binary-rewriting/">Binary Rewriting</a></dt>
+<dd>Using high-fidelity binary ingestion, perform automated
+transformation of binary software executables and libraries to
+improve functionality, security, maintainability, and performance.
+Specific aims include software hardening, optimization,
+diversification, and attack-surface reduction.</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="w3-row-padding">
+<div class="w3-half w3-margin-bottom">
+<div id="ml" class="w3-container w3-card gt-card">
+<dl>
+<dt><a href="/ra/machine-learning-and-big-code/">Machine Learning and Big Code</a></dt>
+<dd>Combine machine-learning techniques with program analysis to
+increase software security, reliability, and maintainability.
+Mine the collective wisdom in massive code repositories to speed
+up, automate, and enhance developer processes.</dd>
+</dl>
+</div>
+</div>
+<div class="w3-half w3-margin-bottom">
+<div id="mp" class="w3-container w3-card gt-card">
+<dl>
+<dt><a href="/ra/machine-programming/">Machine Programming</a></dt>
+<dd>Combine machine-learning and genetic-programming techniques (aka
+evolutionary computation) to automate the software-development
+lifecycle through source-code synthesis, evaluation, and
+transformation.  Create environments and toolchains to augment
+developers with the most advanced developer-assist technology.</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="w3-row-padding">
+<div class="w3-half w3-margin-bottom">
+<div id="ps" class="w3-container w3-card gt-card">
+<dl>
+<dt><a href="/ra/platform-security/">Platform Security</a></dt>
+<dd>Ensure trust in the computing platform, including hardware, from design through deployment. Assess
+risk due to use of untrusted supply chains of FPGA and ASIC
+devices.</dd>
+</dl>
+</div>
+</div>
+</div>
+</div>
+<h3 id="open-source-software">Open Source Software</h3>
+<p>We are a commercial company and we develop and sell proprietary
+software products. However, we release the core technology underlying
+these products — the libraries on which these products' power and
+correctness depend.  GrammaTech recognizes that only by encouraging
+outside use and review of our software can we achieve the
+reproducibility, objectivity, accuracy, quality, and security our
+customers require.</p>
+<dl>
+<dt><a href="/prj/ddisasm/">DDisasm</a></dt>
+<dd>A fast and accurate disassembler.  DDisasm is able to disassemble
+real-world stripped binaries with accuracy sufficient to enable modification
+and reassembly.</dd>
+<dt><a href="/prj/mnemosyne/">Mnemosyne</a></dt>
+<dd>An extensible software development assistant bringing cutting edge
+program synthesis research to bear against real-world programming
+tasks in the modern integrated development environment.</dd>
+<dt><a href="/prj/sel/">SEL</a></dt>
+<dd>Software Evolution Library (SEL) provides a programmatic interface
+for the parsing, analysis, and rewriting of software source code in
+<em>many</em> programming languages through a single generic API.</dd>
+<dt><a href="/prj/swap-detector/">Swap Detector</a></dt>
+<dd>A library to check swapped arguments in function calls, and a Clang
+Static Analyzer plugin used to demonstrate the library.</dd>
+<dt><a href="/prj/gtirb/">GTIRB</a></dt>
+<dd>An intermediate representation for binary analysis and rewriting.
+GTIRB seeks to be an LLVM-IR for reverse engineering.</dd>
+</dl>
+<p>We not only publish but <em>participate</em> in the open-source community,
+through
+<a href="https://github.com/angr/angr/commit/8a13278d5bd54b0ea45d492eb0a56aa745f8b24f">multiple</a>
+<a href="https://github.com/souffle-lang/souffle">contributions</a> to
+<a href="https://github.com/llvm/llvm-project/blob/master/clang/include/clang/AST/JSONNodeDumper.h">significant</a>
+open-source projects, and <a href="https://github.com/GrammaTech/ddisasm/blob/master/README.md#external-contributors">accepting significant
+contributions</a>
+to projects we maintain in return.  Find more of our open-source
+repositories on <a href="https://github.com/GrammaTech">GitHub/GrammaTech</a> and
+<a href="https://gitlab.com/GrammaTech">GitLab/GrammaTech</a>.</p>
+
+  </div>
+  <div class="w3-margin w3-full w3-border-top w3-border-dark-grey gt-flex-wrap">
+  <span class="w3-hide-small" style="order:1;">
+    <a class="w3-button" href="https://www.grammatech.com/about">About</a>
+    <a class="w3-button" href="mailto:research@grammatech.com">Contact</a>
+    <a class="w3-button" href="https://www.grammatech.com/careers">Careers</a>
+  </span>
+  <span class="w3-hide-medium w3-hide-large w3-center" style="order:1;flex:auto;text-align:center;">
+    <a class="w3-button" href="https://www.grammatech.com/about">About</a>
+    <a class="w3-button" href="mailto:research@grammatech.com">Contact</a>
+    <a class="w3-button" href="https://www.grammatech.com/careers">Careers</a>
+  </span>
+  <span class="w3-right w3-hide-small" style="order:3;text-align:right;">
+    <a class="w3-button" href="https://twitter.com/GrammaTech"><i class="fab fa-twitter"></i></a>
+    <a class="w3-button" href="https://github.com/grammatech"><i class="fab fa-github"></i></a>
+    <a class="w3-button" href="https://www.linkedin.com/company/grammatech"><i class="fab fa-linkedin"></i></a>
+    <a class="w3-button" href="https://news.grammatech.com"><i class="fa fa-rss"></i></a>
+  </span>
+  <span class="w3-right w3-hide-medium w3-hide-large" style="order:3;flex:auto;text-align:center;">
+    <a class="w3-button" href="https://twitter.com/GrammaTech"><i class="fab fa-twitter"></i></a>
+    <a class="w3-button" href="https://github.com/grammatech"><i class="fab fa-github"></i></a>
+    <a class="w3-button" href="https://www.linkedin.com/company/grammatech"><i class="fab fa-linkedin"></i></a>
+    <a class="w3-button" href="https://news.grammatech.com"><i class="fa fa-rss"></i></a>
+  </span>
+  <span class="w3-center" style="order:2;flex:auto;text-align:center;">
+    <a class="w3-button" href="https://www.grammatech.com">
+      <img src="/img/grammatech-white.png" alt="GrammaTech Homepage" height="36px">
+    </a>
+  </span>
+</div>
+
+</body>
+<script>
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function navbar_toggle() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+      } else {
+          x.className = x.className.replace(" w3-show", "");
+      }
+  }
+  function navbar_hide() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") != -1) {
+          x.className = x.className.replace(" w3-show", "");
+      }
+  }
+
+  area_projects = {
+    
+    
+    
+    "re": [
+      
+      "AMBER",
+      
+      "ARTCAT",
+      
+      "A-CERT",
+      
+      "Bindle",
+      
+      "Bin2Math",
+      
+      "ConfINE",
+      
+      "Proteus",
+      
+      "REAFFIRM",
+      
+      "SySense",
+      
+      "TBDC",
+      
+    ],
+    
+    
+    
+    
+    
+    "rw": [
+      
+      "DDisasm",
+      
+      "GTIRB",
+      
+      "To Static binary transform",
+      
+      "Stack Stamp binary transform",
+      
+      "Binary-Reduce",
+      
+    ],
+    
+    
+    
+    
+    
+    "ml": [
+      
+      "Bin2Math",
+      
+      "Discover",
+      
+      "Swap Detector",
+      
+    ],
+    
+    
+    
+    
+    
+    "mp": [
+      
+      "Mnemosyne",
+      
+      "Merge Resolver",
+      
+      "Variegate",
+      
+      "Software Search Replace",
+      
+      "GenPatcher",
+      
+      "Bug-Injector",
+      
+    ],
+    
+    
+    
+    
+    
+    "ps": [
+      
+      "FVA",
+      
+      "TFPGA",
+      
+    ],
+    
+    
+    
+  }
+
+  project_areas = {}
+  Object.values(area_projects).reduce((a, b) => a.concat(b)).forEach((prj) => {
+    project_areas[prj] = Object.keys(area_projects).filter((key) => area_projects[key].includes(prj))
+  })
+
+  function cell_highlight(cell, area){
+    cell.addEventListener("mouseover",(event) => {
+      document.getElementById(area).classList.add("gt-highlight");
+    })
+    cell.addEventListener("mouseout",(event) => {
+      document.getElementById(area).classList.remove("gt-highlight");
+    })
+  }
+
+  // RA highlight in use-case table
+  var uc_table = document.getElementById("use-case-table").children[1];
+  for (var i = 0, row; row = uc_table.rows[i]; i++) {
+    for (var j = 0, cell; cell = row.cells[j]; j++) {
+      var contents = cell.innerHTML.toLowerCase();
+      for (var k = 0, prj; prj = Object.keys(project_areas)[k]; k++) {
+        if ( contents.includes(prj.toLowerCase()) ){
+          var area = project_areas[prj];
+          cell.classList.add("gt-area-cell-"+area);
+          cell_highlight(cell, area);
+        }
+      }
+    }
+  }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+<script>
+mermaid.initialize({ startOnLoad: true });
+</script>
+
+</html>

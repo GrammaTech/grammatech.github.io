@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SSR</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Software Search Replace (SSR) is an AST-aware `sed` that enpowers
+developers to automate repository-wide refactoring using a simple yet
+powerful pattern matching syntax tailored to source code.
+">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.14.0/css/all.css">
+    <link rel="stylesheet" href="/gt.css">
+    <link rel="icon" href="/favicon.ico">
+  </head>
+  <body style="color: #bdc1c6; background: #202124;">
+    <header>
+      <div class="w3-hide-small">
+  <a href="/" class="w3-top">
+    <img class="w3-image w3-left w3-margin" src="/img/grammatech-g.png" width="60px">
+  </a>
+</div>
+<div class="w3-hide-large w3-hide-medium">
+  <a href="/" class="w3-top">
+    <img class="w3-image w3-padding-small w3-right" src="/img/grammatech-g.png" width="40px">
+  </a>
+</div>
+
+    </header>
+    <div class="w3-content w3-padding-large w3-margin-top gt-min-left-margin">
+      <h1>SSR</h1>
+      <div class="w3-container">
+        <div class="w3-hide-medium w3-hide-small" style="display:absolute;width:100px;position:fixed;top:12px;right:12px;">
+  <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<p><svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Livello_1"
+   x="0px"
+   y="0px"
+   viewBox="0 0 269.7 263.2"
+   style="enable-background:new 0 0 269.7 263.2;"
+   xml:space="preserve"
+   sodipodi:docname="SSR.svg"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06"><metadata
+     id="metadata80"><a href="rdf:RDF">rdf:RDF</a>&lt;cc:Work
+rdf:about=&quot;&quot;&gt;<a href="dc:format">dc:format</a>image/svg+xml&lt;/dc:format&gt;&lt;dc:type
+rdf:resource=&quot;http://purl.org/dc/dcmitype/StillImage&quot; /&gt;<a href="dc:title">dc:title</a>Risorsa 1&lt;/dc:title&gt;&lt;/cc:Work&gt;&lt;/rdf:RDF&gt;</metadata><defs
+     id="defs78" />&lt;sodipodi:namedview
+pagecolor=&quot;#ffffff&quot;
+bordercolor=&quot;#666666&quot;
+borderopacity=&quot;1&quot;
+objecttolerance=&quot;10&quot;
+gridtolerance=&quot;10&quot;
+guidetolerance=&quot;10&quot;
+inkscape:pageopacity=&quot;0&quot;
+inkscape:pageshadow=&quot;2&quot;
+inkscape:window-width=&quot;1191&quot;
+inkscape:window-height=&quot;1007&quot;
+id=&quot;namedview76&quot;
+showgrid=&quot;false&quot;
+inkscape:zoom=&quot;2.5759877&quot;
+inkscape:cx=&quot;149.57415&quot;
+inkscape:cy=&quot;152.20517&quot;
+inkscape:window-x=&quot;411&quot;
+inkscape:window-y=&quot;0&quot;
+inkscape:window-maximized=&quot;0&quot;
+inkscape:current-layer=&quot;Livello_2&quot; /&gt;<style
+     type="text/css"
+     id="style65">
+.st0{fill:#6E7C92;}
+</style><title
+     id="title67">Risorsa 1</title><g
+     id="Livello_2"><g
+       id="Livello_1-2"><path
+         class="st0"
+         d="M49.9,13.4c275.7-41.9,216.7,313.5,15.2,185.1c2.5-3.4,0.9-1.6,3.5-5.1l-11.3-10.9c-1.7,0.9-3.4,1.9-5,3    c-2.3-2.4-6.2-5.4-8.4-8.2l-13.3,11c1.6,2.2,6.2,6.8,7.9,8.8c-9,7.5-31.5,27.1-34.7,31.8c-13.9,17.3,12.2,39.6,25.1,25.4    c5.1-4,18.8-25.4,27.8-38.6c23.2,24.4,54.7,41.4,97.2,40.6c9.5-0.2,65.1-2.4,100.7-62.1c26-43.7,18.5-109.3-28.1-154.5    C176.2-9.8,100.4-6,49.9,13.4z"
+         id="path69" /><path
+         class="st0"
+         d="m 142.83864,120.45605 -18.3354,15.80619 C 172.40324,186.06224 233,253 240.3,261.2 247.6,269.4 269.8,250 262.4,241.5 255,233 173.60944,151.58525 142.83864,120.45605 Z"
+         id="path71"
+         inkscape:connector-curvature="0"
+         style="fill:#6e7c92"
+         sodipodi:nodetypes="ccssc" /></g><path
+       style="fill:#6e7c92;fill-opacity:1;stroke-width:1.28053355"
+       clip-path="none"
+       d="M 98.020415,39.597128 A 55.706842,54.153975 0 0 0 42.314123,93.750098 55.706842,54.153975 0 0 0 98.020415,147.90526 55.706842,54.153975 0 0 0 153.72672,93.750098 55.706842,54.153975 0 0 0 98.020415,39.597128 Z m -0.733689,15.732701 a 40.220769,38.494991 0 0 1 40.220904,38.494675 40.220769,38.494991 0 0 1 -40.220904,38.494686 40.220769,38.494991 0 0 1 -40.2209,-38.494686 40.220769,38.494991 0 0 1 40.2209,-38.494675 z"
+       id="path3771"
+       inkscape:connector-curvature="0" /></g></svg></p>
+</div>
+<div class="w3-hide-large" style="display:absolute;width:100px;position:fixed;top:12px;right:45%;width:10%;">
+  <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<p><svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Livello_1"
+   x="0px"
+   y="0px"
+   viewBox="0 0 269.7 263.2"
+   style="enable-background:new 0 0 269.7 263.2;"
+   xml:space="preserve"
+   sodipodi:docname="SSR.svg"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06"><metadata
+     id="metadata80"><a href="rdf:RDF">rdf:RDF</a>&lt;cc:Work
+rdf:about=&quot;&quot;&gt;<a href="dc:format">dc:format</a>image/svg+xml&lt;/dc:format&gt;&lt;dc:type
+rdf:resource=&quot;http://purl.org/dc/dcmitype/StillImage&quot; /&gt;<a href="dc:title">dc:title</a>Risorsa 1&lt;/dc:title&gt;&lt;/cc:Work&gt;&lt;/rdf:RDF&gt;</metadata><defs
+     id="defs78" />&lt;sodipodi:namedview
+pagecolor=&quot;#ffffff&quot;
+bordercolor=&quot;#666666&quot;
+borderopacity=&quot;1&quot;
+objecttolerance=&quot;10&quot;
+gridtolerance=&quot;10&quot;
+guidetolerance=&quot;10&quot;
+inkscape:pageopacity=&quot;0&quot;
+inkscape:pageshadow=&quot;2&quot;
+inkscape:window-width=&quot;1191&quot;
+inkscape:window-height=&quot;1007&quot;
+id=&quot;namedview76&quot;
+showgrid=&quot;false&quot;
+inkscape:zoom=&quot;2.5759877&quot;
+inkscape:cx=&quot;149.57415&quot;
+inkscape:cy=&quot;152.20517&quot;
+inkscape:window-x=&quot;411&quot;
+inkscape:window-y=&quot;0&quot;
+inkscape:window-maximized=&quot;0&quot;
+inkscape:current-layer=&quot;Livello_2&quot; /&gt;<style
+     type="text/css"
+     id="style65">
+.st0{fill:#6E7C92;}
+</style><title
+     id="title67">Risorsa 1</title><g
+     id="Livello_2"><g
+       id="Livello_1-2"><path
+         class="st0"
+         d="M49.9,13.4c275.7-41.9,216.7,313.5,15.2,185.1c2.5-3.4,0.9-1.6,3.5-5.1l-11.3-10.9c-1.7,0.9-3.4,1.9-5,3    c-2.3-2.4-6.2-5.4-8.4-8.2l-13.3,11c1.6,2.2,6.2,6.8,7.9,8.8c-9,7.5-31.5,27.1-34.7,31.8c-13.9,17.3,12.2,39.6,25.1,25.4    c5.1-4,18.8-25.4,27.8-38.6c23.2,24.4,54.7,41.4,97.2,40.6c9.5-0.2,65.1-2.4,100.7-62.1c26-43.7,18.5-109.3-28.1-154.5    C176.2-9.8,100.4-6,49.9,13.4z"
+         id="path69" /><path
+         class="st0"
+         d="m 142.83864,120.45605 -18.3354,15.80619 C 172.40324,186.06224 233,253 240.3,261.2 247.6,269.4 269.8,250 262.4,241.5 255,233 173.60944,151.58525 142.83864,120.45605 Z"
+         id="path71"
+         inkscape:connector-curvature="0"
+         style="fill:#6e7c92"
+         sodipodi:nodetypes="ccssc" /></g><path
+       style="fill:#6e7c92;fill-opacity:1;stroke-width:1.28053355"
+       clip-path="none"
+       d="M 98.020415,39.597128 A 55.706842,54.153975 0 0 0 42.314123,93.750098 55.706842,54.153975 0 0 0 98.020415,147.90526 55.706842,54.153975 0 0 0 153.72672,93.750098 55.706842,54.153975 0 0 0 98.020415,39.597128 Z m -0.733689,15.732701 a 40.220769,38.494991 0 0 1 40.220904,38.494675 40.220769,38.494991 0 0 1 -40.220904,38.494686 40.220769,38.494991 0 0 1 -40.2209,-38.494686 40.220769,38.494991 0 0 1 40.2209,-38.494675 z"
+       id="path3771"
+       inkscape:connector-curvature="0" /></g></svg></p>
+</div>
+<p>Software Search and Replace (SSR) is a software transformation and
+exploration tool that operates on abstract syntax trees (ASTs), such
+as those produced by parsers for C, C++, Javascript, and other
+languages. Rules specify which ASTs to match and what actions to take
+against matches: for example, users can specify code rewriting actions
+to implement sophisticated refactorings. Rule application order,
+including simultaneous application, is fully under user control;
+multiple SSR passes can be used to iterate to a stable,
+fully-rewritten result.</p>
+<p>SSR is based on the Software Evolution Library (<a href="/prj/sel">SEL</a>), a modular
+toolkit for representating and manipulating software objects. This
+foundation allows SSR to support all languages supported by SEL,
+including C, C++, JavaScript, Java, and Common-Lisp.</p>
+
+      </div>
+    
+<div class="support">
+  <p>This material is based upon work supported by the Air Force and DARPA
+  under Contract(s) No. FA8750-16-C-0007, D16PC00103 and FA8750-20-C-0208.  Any opinions, findings and
+  conclusions or recommendations expressed in this material are those
+  of the author(s) and do not necessarily reflect the views of
+  the Air Force or DARPA.</p>
+</div>
+
+
+    <div class="w3-margin w3-full w3-border-top w3-border-dark-grey gt-flex-wrap">
+  <span class="w3-hide-small" style="order:1;">
+    <a class="w3-button" href="https://www.grammatech.com/about">About</a>
+    <a class="w3-button" href="mailto:research@grammatech.com">Contact</a>
+    <a class="w3-button" href="https://www.grammatech.com/careers">Careers</a>
+  </span>
+  <span class="w3-hide-medium w3-hide-large w3-center" style="order:1;flex:auto;text-align:center;">
+    <a class="w3-button" href="https://www.grammatech.com/about">About</a>
+    <a class="w3-button" href="mailto:research@grammatech.com">Contact</a>
+    <a class="w3-button" href="https://www.grammatech.com/careers">Careers</a>
+  </span>
+  <span class="w3-right w3-hide-small" style="order:3;text-align:right;">
+    <a class="w3-button" href="https://twitter.com/GrammaTech"><i class="fab fa-twitter"></i></a>
+    <a class="w3-button" href="https://github.com/grammatech"><i class="fab fa-github"></i></a>
+    <a class="w3-button" href="https://www.linkedin.com/company/grammatech"><i class="fab fa-linkedin"></i></a>
+    <a class="w3-button" href="https://news.grammatech.com"><i class="fa fa-rss"></i></a>
+  </span>
+  <span class="w3-right w3-hide-medium w3-hide-large" style="order:3;flex:auto;text-align:center;">
+    <a class="w3-button" href="https://twitter.com/GrammaTech"><i class="fab fa-twitter"></i></a>
+    <a class="w3-button" href="https://github.com/grammatech"><i class="fab fa-github"></i></a>
+    <a class="w3-button" href="https://www.linkedin.com/company/grammatech"><i class="fab fa-linkedin"></i></a>
+    <a class="w3-button" href="https://news.grammatech.com"><i class="fa fa-rss"></i></a>
+  </span>
+  <span class="w3-center" style="order:2;flex:auto;text-align:center;">
+    <a class="w3-button" href="https://www.grammatech.com">
+      <img src="/img/grammatech-white.png" alt="GrammaTech Homepage" height="36px">
+    </a>
+  </span>
+</div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+<script>
+mermaid.initialize({ startOnLoad: true });
+</script>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FVA</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="FVA (FPGA Vulnerability Analysis) is a tool that reverse-engineers and detects vulnerabilities in FPGA designs.
+">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.14.0/css/all.css">
+    <link rel="stylesheet" href="/gt.css">
+    <link rel="icon" href="/favicon.ico">
+  </head>
+  <body style="color: #bdc1c6; background: #202124;">
+    <header>
+      <div class="w3-hide-small">
+  <a href="/" class="w3-top">
+    <img class="w3-image w3-left w3-margin" src="/img/grammatech-g.png" width="60px">
+  </a>
+</div>
+<div class="w3-hide-large w3-hide-medium">
+  <a href="/" class="w3-top">
+    <img class="w3-image w3-padding-small w3-right" src="/img/grammatech-g.png" width="40px">
+  </a>
+</div>
+
+    </header>
+    <div class="w3-content w3-padding-large w3-margin-top gt-min-left-margin">
+      <h1>FVA</h1>
+      <div class="w3-container">
+        <p>FVA (FPGA Vulnerability Analysis) is a tool that detects vulnerabilities in FPGA designs. It can be used to provide security vetting of digital designs prior to deployment, as well as enable trust in FPGA leveraging of third-party IP.</p>
+<p>FVA's vulnerability detection workflow proceeds as follows:</p>
+<ul>
+<li>First, it reverse-engineers functional FPGA designs (netlists) by inspecting the configuration bits and/or through in-situ monitoring.</li>
+<li>Next, given a reverse-engineered netlist, it lifts the netlist to an intermediate representation (IR) that captures higher-level, human- and machine-readable information about the design.</li>
+<li>Finally, it runs multiple analyses over the IR to detect vulnerabilities in the hardware design and in particular identify hardware Trojans. These analyses produce metric indicators of Trojan location and probability.</li>
+</ul>
+
+      </div>
+    
+<div class="support">
+  <p>This material is based upon work supported by the Navy and the Office of Naval Research
+  under Contract(s) No. N68335-19-C-0307 and N68335-20-C-0569.  Any opinions, findings and
+  conclusions or recommendations expressed in this material are those
+  of the author(s) and do not necessarily reflect the views of
+  the Navy or the Office of Naval Research.</p>
+</div>
+
+
+    <div class="w3-margin w3-full w3-border-top w3-border-dark-grey gt-flex-wrap">
+  <span class="w3-hide-small" style="order:1;">
+    <a class="w3-button" href="https://www.grammatech.com/about">About</a>
+    <a class="w3-button" href="mailto:research@grammatech.com">Contact</a>
+    <a class="w3-button" href="https://www.grammatech.com/careers">Careers</a>
+  </span>
+  <span class="w3-hide-medium w3-hide-large w3-center" style="order:1;flex:auto;text-align:center;">
+    <a class="w3-button" href="https://www.grammatech.com/about">About</a>
+    <a class="w3-button" href="mailto:research@grammatech.com">Contact</a>
+    <a class="w3-button" href="https://www.grammatech.com/careers">Careers</a>
+  </span>
+  <span class="w3-right w3-hide-small" style="order:3;text-align:right;">
+    <a class="w3-button" href="https://twitter.com/GrammaTech"><i class="fab fa-twitter"></i></a>
+    <a class="w3-button" href="https://github.com/grammatech"><i class="fab fa-github"></i></a>
+    <a class="w3-button" href="https://www.linkedin.com/company/grammatech"><i class="fab fa-linkedin"></i></a>
+    <a class="w3-button" href="https://news.grammatech.com"><i class="fa fa-rss"></i></a>
+  </span>
+  <span class="w3-right w3-hide-medium w3-hide-large" style="order:3;flex:auto;text-align:center;">
+    <a class="w3-button" href="https://twitter.com/GrammaTech"><i class="fab fa-twitter"></i></a>
+    <a class="w3-button" href="https://github.com/grammatech"><i class="fab fa-github"></i></a>
+    <a class="w3-button" href="https://www.linkedin.com/company/grammatech"><i class="fab fa-linkedin"></i></a>
+    <a class="w3-button" href="https://news.grammatech.com"><i class="fa fa-rss"></i></a>
+  </span>
+  <span class="w3-center" style="order:2;flex:auto;text-align:center;">
+    <a class="w3-button" href="https://www.grammatech.com">
+      <img src="/img/grammatech-white.png" alt="GrammaTech Homepage" height="36px">
+    </a>
+  </span>
+</div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+<script>
+mermaid.initialize({ startOnLoad: true });
+</script>
+
+</html>

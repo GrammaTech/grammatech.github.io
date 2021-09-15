@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mnemosyne</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="An extensible software development assistant bringing cutting edge
+program synthesis research to bear against real-world programming
+tasks in the modern integrated development environment.
+">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.14.0/css/all.css">
+    <link rel="stylesheet" href="/gt.css">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.7/plyr.css" />
+    <link rel="icon" href="/favicon.ico">
+  </head>
+  <body style="color: #bdc1c6; background: #202124;">
+    <header>
+      <div class="w3-hide-small">
+  <a href="/" class="w3-top">
+    <img class="w3-image w3-left w3-margin" src="/img/grammatech-g.png" width="60px">
+  </a>
+</div>
+<div class="w3-hide-large w3-hide-medium">
+  <a href="/" class="w3-top">
+    <img class="w3-image w3-padding-small w3-right" src="/img/grammatech-g.png" width="40px">
+  </a>
+</div>
+
+    </header>
+    <div class="w3-content w3-padding-large w3-margin-top gt-min-left-margin">
+      <h1>Mnemosyne</h1>
+      <div class="w3-container">
+        
+        <p>Visit <a href="https://grammatech.gitlab.io/Mnemosyne/docs/">Mnemosyne's main page</a> for more information on GrammaTech's
+automated software development assistant.  Mnemosyne leverages
+GrammaTech's <a href="/prj/sel">SEL</a> to parse and modify source code across dozens of
+programming languages.</p>
+<p>The following video demonstrates the use of Mnemosyne from VSCode.
+Mnemosyne coordinates multiple automated programming aids to perform
+tasks from automatically running tests and dynamically identifying
+invariants; to synthesizing tests, repairs, and stability
+improvements.</p>
+<div class="w3-container w3-margin-bottom w3-padding-top">
+<center>
+<div style="max-width: 1000px;">
+<video id="player" playsinline controls muted>
+    <source src="https://grammatech.gitlab.io/Mnemosyne/docs/video/integrated-demo-june.mp4#t=0.01" type="video/mp4">
+</video>
+</div>
+</center>
+</div>
+<p>Mnemosyne is open-source with development taking place on
+<a href="https://gitlab.com/GrammaTech/Mnemosyne">GitLab/GrammaTech/Mnemosyne</a>.</p>
+<script src="https://cdn.plyr.io/3.6.7/plyr.js"></script>
+<script>
+  // Video player
+  const player = new Plyr('#player', {
+    title: 'Mnemosyne Integrated Demo',
+    muted: true,
+    autoplay: false,
+    captions: { active:true, language: 'auto', update: false},
+    controls: ['play-large', 'play', 'progress', 'current-time', 'mute', 'volume', 'captions', 'settings', 'pip', 'airplay', 'fullscreen'],
+  });
+</script>
+
+      </div>
+    
+<div class="support">
+  <p>This material is based upon work supported by the Air Force and DARPA
+  under Contract(s) No. FA8750-20-C-0208.  Any opinions, findings and
+  conclusions or recommendations expressed in this material are those
+  of the author(s) and do not necessarily reflect the views of
+  the Air Force or DARPA.</p>
+</div>
+
+
+    <div class="w3-margin w3-full w3-border-top w3-border-dark-grey gt-flex-wrap">
+  <span class="w3-hide-small" style="order:1;">
+    <a class="w3-button" href="https://www.grammatech.com/about">About</a>
+    <a class="w3-button" href="mailto:research@grammatech.com">Contact</a>
+    <a class="w3-button" href="https://www.grammatech.com/careers">Careers</a>
+  </span>
+  <span class="w3-hide-medium w3-hide-large w3-center" style="order:1;flex:auto;text-align:center;">
+    <a class="w3-button" href="https://www.grammatech.com/about">About</a>
+    <a class="w3-button" href="mailto:research@grammatech.com">Contact</a>
+    <a class="w3-button" href="https://www.grammatech.com/careers">Careers</a>
+  </span>
+  <span class="w3-right w3-hide-small" style="order:3;text-align:right;">
+    <a class="w3-button" href="https://twitter.com/GrammaTech"><i class="fab fa-twitter"></i></a>
+    <a class="w3-button" href="https://github.com/grammatech"><i class="fab fa-github"></i></a>
+    <a class="w3-button" href="https://www.linkedin.com/company/grammatech"><i class="fab fa-linkedin"></i></a>
+    <a class="w3-button" href="https://news.grammatech.com"><i class="fa fa-rss"></i></a>
+  </span>
+  <span class="w3-right w3-hide-medium w3-hide-large" style="order:3;flex:auto;text-align:center;">
+    <a class="w3-button" href="https://twitter.com/GrammaTech"><i class="fab fa-twitter"></i></a>
+    <a class="w3-button" href="https://github.com/grammatech"><i class="fab fa-github"></i></a>
+    <a class="w3-button" href="https://www.linkedin.com/company/grammatech"><i class="fab fa-linkedin"></i></a>
+    <a class="w3-button" href="https://news.grammatech.com"><i class="fa fa-rss"></i></a>
+  </span>
+  <span class="w3-center" style="order:2;flex:auto;text-align:center;">
+    <a class="w3-button" href="https://www.grammatech.com">
+      <img src="/img/grammatech-white.png" alt="GrammaTech Homepage" height="36px">
+    </a>
+  </span>
+</div>
+
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+<script>
+mermaid.initialize({ startOnLoad: true });
+</script>
+
+</html>
