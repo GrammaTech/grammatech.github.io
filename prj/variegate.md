@@ -7,6 +7,7 @@ support:
   - Debloat
   - BUGINJECTOR
   agencies:
+  - Navy
   - Office of Naval Research
   - DARPA
   contracts:

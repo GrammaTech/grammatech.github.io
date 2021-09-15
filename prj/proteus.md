@@ -11,6 +11,7 @@ support:
   - DARPA
   - Army
   - DIU
+  - Navy
   - Office of Naval Research
   contracts:
   - FA8750-14-C-0110

@@ -14,6 +14,7 @@ support:
   agencies:
   - Air Force
   - DARPA
+  - Navy
   - Office of Naval Research
   contracts:
   - FA8750-16-C-0007
