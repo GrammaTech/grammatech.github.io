@@ -6,6 +6,9 @@ support:
   projects:
   - CGC
   - DIU
+  - AER
+  - CFAR
+  - HACCS
   agencies:
   - the Air Force
   - DARPA
@@ -16,6 +19,9 @@ support:
   contracts:
   - FA8750-14-C-0110
   - W15QKN-18-9-1013
+  - W56KGU-17-C-0028
+  - FA8750-15-C-0113
+  - HR0011-18-C-0061
   - N68335-17-C-0700
 brief: |
     Automatically _find_ and _fix_ vulnerabilities in software binaries.
