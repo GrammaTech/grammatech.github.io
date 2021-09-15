@@ -2,6 +2,14 @@
 layout: prj
 tags: prj
 title: ConfINE
+support:
+  projects:
+  - ConSec
+  agencies:
+  - Air Force
+  - DARPA
+  contracts:
+  - FA8750-18-C-0141
 brief: |
     ConfINE is an end-to-end toolchain for configuring and securing complex network-composed systems.
 ---

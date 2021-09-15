@@ -2,6 +2,16 @@
 layout: prj
 tags: prj
 title: Discover
+support:
+  projects:
+  agencies:
+  - DARPA
+  - OSD
+  - DoD CIO
+  contracts:
+  - D16PC00186
+  - D17PC00296
+  - HC102819P0048
 brief: |
     Discover scans binaries for n-day vulnerabilities, using a combination of lightweight binary analysis and machine learning (ML).
 ---

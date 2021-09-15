@@ -2,6 +2,13 @@
 layout: prj
 tags: prj
 title: Bin2Math
+support:
+  projects:
+  - ReMath
+  agencies:
+  - DARPA
+  contracts:
+  - HR00112190018
 brief: |
     Bin2Math uses program analysis and machine learning to extract the mathematical algorithms implemented in binary programs.
 ---

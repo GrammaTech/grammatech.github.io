@@ -2,6 +2,12 @@
 layout: prj
 tags: prj
 title: TFPGA
+support:
+  agencies:
+  - Air Force
+  contracts:
+  - FA9453-17-P-0441
+  - FA9453-18-C-0267
 brief: |
     TFPGA is a novel measurement, testing, and anomaly detection approach to detect vulnerabilities and defects in FPGA components.
 ---

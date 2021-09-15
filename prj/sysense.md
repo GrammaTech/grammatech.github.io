@@ -2,6 +2,14 @@
 layout: prj
 tags: prj
 title: SySense
+support:
+  projects:
+  - AVAMP
+  agencies:
+  - Air Force
+  contracts:
+  - FA8750-16-C-0138
+  - FA8650-17-F-1056
 brief: |
     SySense is a cyber security solution to monitor and mitigate attacks on UEFI firmware.
 ---

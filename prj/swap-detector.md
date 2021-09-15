@@ -3,6 +3,15 @@ layout: oss
 tags: oss
 title: Swap Detector
 link: https://github.com/GrammaTech/swap-detector
+support:
+  projects:
+  - STAMP
+  agencies:
+  - HHS
+  - DHS
+  contracts:
+  - HHSP233201600062C
+  - 70RSAT19C00000056
 brief: |
     A library to check swapped arguments in function calls, and a Clang
     Static Analyzer plugin used to demonstrate the library.

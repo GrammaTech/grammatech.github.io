@@ -2,6 +2,11 @@
 layout: prj
 tags: prj
 title: TBDC
+support:
+  agencies:
+  - Air Force
+  contracts:
+  - FA8650-20-C-1106
 brief: |
     TBDC is a dynamic disassembler and decompiler that lifts obfuscated binary software to assembly and source code.
 ---

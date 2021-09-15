@@ -2,6 +2,20 @@
 layout: prj
 tags: prj
 title: A-CERT
+support:
+  projects:
+  - ARCOS
+  - Panorama Ph 1
+  - Panorama Ph 2
+  - ConSec
+  agencies:
+  - Air Force
+  - DARPA
+  contracts:
+  - FA8750-20-C-1005
+  - FA8650-16-M-1724
+  - FA8650-18-C-1663
+  - FA8750-18-C-0141
 brief: |
     A-CERT is a solution to automate evidence generation when certifying software for use in high-assurance systems.
 ---

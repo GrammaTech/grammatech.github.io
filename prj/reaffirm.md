@@ -2,6 +2,26 @@
 layout: ap
 tags: ap
 title: REAFFIRM
+support:
+  projects:
+  - ARCOS
+  - Panorama Ph 1
+  - Panorama Ph 2
+  - ConSec
+  - Scalpel Ph 1
+  - Scalpel Ph 2
+  agencies:
+  - Air Force
+  - DARPA
+  - Navy
+  - Office of Naval Research
+  contracts:
+  - FA8750-20-C-1005
+  - FA8650-16-M-1724
+  - FA8650-18-C-1663
+  - FA8750-18-C-0141
+  - N00014-16-P-2041
+  - N68335-17-C-0454
 brief: |
     REAFFIRM (Reverse Engineer, Analyze and Fix Firmware) is a platform
     for firmware analysis, component identification and extraction, and
