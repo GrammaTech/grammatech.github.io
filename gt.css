@@ -178,30 +178,52 @@ dt { color: #eeeeec; }
 .gt-area-cell-re { background-color: var(--re-color); filter: brightness(1.5); }
 .gt-area-cell-ps { background-color: var(--ps-color); filter: brightness(2); }
 .gt-area-cell-ml { background-color: var(--ml-color); filter: brightness(2); }
-.gt-area-cell-re.gt-area-cell-mp{ background-image: linear-gradient(var(--re-color),
-                                                                    var(--mp-color));
+.gt-area-cell-re.gt-area-cell-mp{ background-image: linear-gradient(45deg,
+                                                                    var(--re-color),
+                                                                    var(--re-color) 50%,
+                                                                    var(--mp-color) 50%,
+                                                                    var(--mp-color) 100%);
                                   filter: brightness(1.5); }
 .gt-area-cell-re.gt-area-cell-mp.gt-area-cell-ml{
-    background-image: linear-gradient(var(--mp-color),
-                                      var(--re-color),
-                                      var(--ml-color));
+    background-image: linear-gradient(45deg,
+                                      var(--mp-color) 0,
+                                      var(--mp-color) 33.33%,
+                                      var(--re-color) 33.33%,
+                                      var(--re-color) 66.66%,
+                                      var(--ml-color) 66.66%,
+                                      var(--ml-color) 100%);
     filter: brightness(1.5); }
-.gt-area-cell-re.gt-area-cell-rw{ background-image: linear-gradient(var(--re-color),
-                                                                    var(--rw-color));
+.gt-area-cell-re.gt-area-cell-rw{ background-image: linear-gradient(45deg,
+                                                                    var(--re-color),
+                                                                    var(--re-color) 50%,
+                                                                    var(--rw-color) 50%,
+                                                                    var(--rw-color) 100%);
                                   filter: brightness(1.5); }
 .gt-area-cell-re.gt-area-cell-rw.gt-area-cell-ml{
-    background-image: linear-gradient(var(--re-color),
-                                      var(--rw-color),
-                                      var(--ml-color));
+    background-image: linear-gradient(45deg,
+                                      var(--re-color) 0,
+                                      var(--re-color) 33.33%,
+                                      var(--rw-color) 33.33%,
+                                      var(--rw-color) 66.66%,
+                                      var(--ml-color) 66.66%,
+                                      var(--ml-color) 100%);
     filter: brightness(1.5); }
-.gt-area-cell-rw.gt-area-cell-mp{ background-image: linear-gradient(var(--rw-color),
-                                                                    var(--mp-color));
+.gt-area-cell-rw.gt-area-cell-mp{ background-image: linear-gradient(45deg,
+                                                                    var(--rw-color),
+                                                                    var(--rw-color) 50%,
+                                                                    var(--mp-color) 50%,
+                                                                    var(--mp-color) 100%);
                                   filter: brightness(1.5); }
 .gt-area-cell-re.gt-area-cell-rw.gt-area-cell-ml.gt-area-cell-ps{
-    background-image: linear-gradient(var(--re-color),
-                                      var(--rw-color),
-                                      var(--ml-color),
-                                      var(--ps-color));
+    background-image: linear-gradient(45deg,
+                                      var(--re-color) ,
+                                      var(--re-color) 25%,
+                                      var(--rw-color) 25%,
+                                      var(--rw-color) 50%,
+                                      var(--ml-color) 50%,
+                                      var(--ml-color) 75%,
+                                      var(--ps-color) 75%,
+                                      var(--ps-color) 100%);
     filter: brightness(1.5); }
 
 div#mp > dl > dt { color: var(--mp-color); filter: brightness(1.00); }
