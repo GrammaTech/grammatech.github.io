@@ -204,6 +204,12 @@ dt { color: #eeeeec; }
                                       var(--ps-color));
     filter: brightness(1.5); }
 
+div#mp > dl > dt { color: var(--mp-color); filter: brightness(1.00); }
+div#rw > dl > dt { color: var(--rw-color); filter: brightness(1.00); }
+div#re > dl > dt { color: var(--re-color); filter: brightness(0.75); }
+div#ps > dl > dt { color: var(--ps-color); filter: brightness(1.5); }
+div#ml > dl > dt { color: var(--ml-color); filter: brightness(0.85); }
+
 /* Highlight RA cards on hover (see javascript in index.liquid). */
 .gt-highlight{ filter: brightness(1.75); }
 
