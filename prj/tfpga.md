@@ -4,7 +4,7 @@ tags: prj
 title: TFPGA
 support:
   agencies:
-  - Air Force
+  - the Air Force
   contracts:
   - FA9453-17-P-0441
   - FA9453-18-C-0267

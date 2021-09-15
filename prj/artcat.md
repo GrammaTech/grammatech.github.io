@@ -6,8 +6,8 @@ support:
   projects:
   - ARTCAT
   agencies: 
-  - Navy
-  - Office of Naval Research
+  - the Navy
+  - the Office of Naval Research
   contracts:
   - N68335-19-C-0200
   - N00014-15-C-0126

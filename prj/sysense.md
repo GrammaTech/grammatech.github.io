@@ -6,7 +6,7 @@ support:
   projects:
   - AVAMP
   agencies:
-  - Air Force
+  - the Air Force
   contracts:
   - FA8750-16-C-0138
   - FA8650-17-F-1056

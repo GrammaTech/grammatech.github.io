@@ -11,10 +11,10 @@ support:
   - Scalpel Ph 1
   - Scalpel Ph 2
   agencies:
-  - Air Force
+  - the Air Force
   - DARPA
-  - Navy
-  - Office of Naval Research
+  - the Navy
+  - the Office of Naval Research
   contracts:
   - FA8750-20-C-1005
   - FA8650-16-M-1724

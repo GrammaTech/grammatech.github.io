@@ -9,7 +9,7 @@ support:
   - WARP Ph 2
   agencies:
   - DLA
-  - Air Force
+  - the Air Force
   contracts:
   - SP4701-21-P-0010
   - FA9453-16-M-0464

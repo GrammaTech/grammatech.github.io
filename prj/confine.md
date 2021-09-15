@@ -6,7 +6,7 @@ support:
   projects:
   - ConSec
   agencies:
-  - Air Force
+  - the Air Force
   - DARPA
   contracts:
   - FA8750-18-C-0141

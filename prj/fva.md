@@ -4,8 +4,8 @@ tags: prj
 title: FVA
 support:
   agencies:
-  - Navy
-  - Office of Naval Research
+  - the Navy
+  - the Office of Naval Research
   contracts:
   - N68335-19-C-0307
   - N68335-20-C-0569

@@ -9,7 +9,7 @@ support:
   - Panorama Ph 2
   - ConSec
   agencies:
-  - Air Force
+  - the Air Force
   - DARPA
   contracts:
   - FA8750-20-C-1005
