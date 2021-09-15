@@ -39,5 +39,13 @@ module.exports = function(eleventyConfig) {
     }
   })
 
+  eleventyConfig.addFilter("orList", function(list){
+    if (list.length > 1){
+      return list.slice(0,-1).join(", ")+" or "+list.slice(-1)[0];
+    } else {
+      return list.join("");
+    }
+  })
+
   return config;
 };
