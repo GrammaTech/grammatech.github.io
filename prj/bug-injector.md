@@ -5,11 +5,15 @@ title: Bug-Injector
 support:
   projects:
   - BUGINJECTOR
+  - STAMP
   agencies:
   - DARPA
+  - DHS
   contracts:
   - D16PC00103
   - D17PC00096
+  - HHSP233201600062C
+  - 70RSAT19C00000056
 brief: |
     Bug-Injector injects flaws into software source code enabling the
     evaluation of cyber security tools.
