@@ -4,8 +4,8 @@ tags: oss
 title: DDisasm
 support:
   agencies:
-  - Navy
-  - Office of Naval Research
+  - the Navy
+  - the Office of Naval Research
   contracts:
   - N68335-17-C-0700
 brief: |

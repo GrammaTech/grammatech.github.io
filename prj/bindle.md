@@ -6,7 +6,7 @@ support:
   projects:
   - DIU
   agencies:
-  - Air Force
+  - the Air Force
   - Army
   - DIU
   contracts:

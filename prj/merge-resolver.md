@@ -7,7 +7,7 @@ support:
   - BUGINJECTOR
   - IDAS
   agencies:
-  - Air Force
+  - the Air Force
   - DARPA
   contracts:
   - D16PC00103

@@ -12,10 +12,10 @@ support:
   - IDAS
   - OPS-5G
   agencies:
-  - Air Force
+  - the Air Force
   - DARPA
-  - Navy
-  - Office of Naval Research
+  - the Navy
+  - the Office of Naval Research
   contracts:
   - FA8750-16-C-0007
   - D16PC00103

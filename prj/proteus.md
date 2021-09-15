@@ -7,12 +7,12 @@ support:
   - CGC
   - DIU
   agencies:
-  - Air Force
+  - the Air Force
   - DARPA
   - Army
   - DIU
-  - Navy
-  - Office of Naval Research
+  - the Navy
+  - the Office of Naval Research
   contracts:
   - FA8750-14-C-0110
   - W15QKN-18-9-1013

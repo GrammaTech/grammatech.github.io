@@ -7,7 +7,7 @@ support:
   - MUSE
   - IDAS
   agencies:
-  - Air Force
+  - the Air Force
   - DARPA
   contracts:
   - FA8750-15-2-0270
