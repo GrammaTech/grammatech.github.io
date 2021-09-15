@@ -8,6 +8,16 @@ techs:                                            # List of technologies used (f
     slug: example-technology                      # File name of technology under techs/
   - name: Another Technology
     slug: another-technology
+support:                                          # See internal Wiki for more info
+  projects:                                       # List of contract names
+  - PRJ
+  - ...
+  agencies:                                       # List of (contracting/funding) agencies
+  - ACME
+  - ...
+  contracts:                                      # List of contract numbers
+  - CONTRACT-NUMBER
+  - ...
 brief: |                                          # Brief description, 1 sentence
     An example open source project.
 ---
