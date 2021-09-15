@@ -123,7 +123,7 @@ repositories on [GitHub/GrammaTech](https://github.com/GrammaTech) and
 [Mnemosyne]: {{ "/prj/mnemosyne"|url }}
 [Variegate]: {{ "/prj/variegate"|url }}
 [Bug-Injector]: {{ "/prj/bug-injector"|url }}
-[Merge Resolver]: {{ "/prj/merge-esolver"|url }}
+[Merge Resolver]: {{ "/prj/merge-resolver"|url }}
 [Software Search Replace]: {{ "/prj/ssr"|url }}
 [DDisasm]: {{ "/prj/ddisasm"|url }}
 [To-Static]: {{ "/prj/to-static"|url }}
