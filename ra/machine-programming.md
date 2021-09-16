@@ -18,11 +18,11 @@ prjs:
   - name: Bug-Injector
     slug: bug-injector
 brief: |
-    Combine machine-learning and genetic-programming techniques (aka
-    evolutionary computation) to automate the software-development
-    lifecycle through source-code synthesis, evaluation, and
-    transformation.  Create environments and toolchains to augment
-    developers with the most advanced developer-assist technology.
+    Leverage machine-learning, formal methods, and evolutionary
+    computation to automate the software-development lifecycle through
+    source-code synthesis, evaluation, and transformation.  Build
+    automated tools that integrate into the modern software development
+    environment.
 ---
 
 ## About the area
