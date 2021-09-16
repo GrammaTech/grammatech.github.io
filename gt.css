@@ -166,11 +166,11 @@ dt { color: #eeeeec; }
 
 /* Research Areas in Use-case table */
 :root {
-    --mp-color: #729fcf;
-    --rw-color: #c4a000;
-    --re-color: #8ae234;
-    --ps-color: #75507b;
-    --ml-color: #ff4b4b;
+    --mp-color: #204a87;
+    --rw-color: #8f5902;
+    --re-color: #295202;
+    --ps-color: #5c3566;
+    --ml-color: #a40000;
 }
 
 .gt-area-cell-mp { background-color: var(--mp-color); filter: brightness(1.5); }
@@ -226,11 +226,12 @@ dt { color: #eeeeec; }
                                       var(--ps-color) 100%);
     filter: brightness(1.5); }
 
-div#mp > dl > dt { color: var(--mp-color); filter: brightness(1.00); }
-div#rw > dl > dt { color: var(--rw-color); filter: brightness(1.00); }
-div#re > dl > dt { color: var(--re-color); filter: brightness(0.75); }
-div#ps > dl > dt { color: var(--ps-color); filter: brightness(1.5); }
-div#ml > dl > dt { color: var(--ml-color); filter: brightness(0.85); }
+div#mp,div#rw,div#re,div#ps,div#ml > dl > dt { font-weight: bold; }
+div#mp > dl > dt { color: #729fcf; }
+div#rw > dl > dt { color: #c4a000; }
+div#re > dl > dt { color: #8ae234; }
+div#ps > dl > dt { color: #e9b2e3; }
+div#ml > dl > dt { color: #ff4b4b; }
 
 /* Highlight RA cards on hover (see javascript in index.liquid). */
 .gt-highlight{ filter: brightness(1.75); }
@@ -244,4 +245,12 @@ div#ml > dl > dt { color: var(--ml-color); filter: brightness(0.85); }
     padding: 1em;
     /* border: solid 1px #babdb6; */
     font-size: small;
+}
+
+th, td {
+    background-color: #2e3436
+}
+
+table {
+    font-weight: 400;
 }

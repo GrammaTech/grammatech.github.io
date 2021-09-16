@@ -41,7 +41,7 @@ anchors:
 
 ### Research Areas
 
-<div id="use-case-table" class="w3-table w3-table-all w3-gray w3-margin-bottom">
+<div id="use-case-table" class="w3-table w3-margin-bottom">
 <center>Projects by use case, development stage, and research area.</center>
 
 |           | Develop                                                        | Test/Integrate                                                                            | Deploy/Execute                                  | Reuse                                                                                    |
