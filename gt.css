@@ -167,9 +167,9 @@ dt { color: #eeeeec; }
 /* Research Areas in Use-case table */
 :root {
     --mp-color: #204a87;
-    --rw-color: #8f5902;
+    --rw-color: #5c3566;
     --re-color: #295202;
-    --ps-color: #5c3566;
+    --ps-color: #8f5902;
     --ml-color: #a40000;
 }
 
@@ -228,9 +228,9 @@ dt { color: #eeeeec; }
 
 div#mp,div#rw,div#re,div#ps,div#ml > dl > dt { font-weight: bold; }
 div#mp > dl > dt { color: #729fcf; }
-div#rw > dl > dt { color: #c4a000; }
+div#rw > dl > dt { color: #e9b2e3; }
 div#re > dl > dt { color: #8ae234; }
-div#ps > dl > dt { color: #e9b2e3; }
+div#ps > dl > dt { color: #c4a000; }
 div#ml > dl > dt { color: #ff4b4b; }
 
 /* Highlight RA cards on hover (see javascript in index.liquid). */
