@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="description" content="GrammaTech Research">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.14.0/css/all.css">
     <link rel="stylesheet" href="/gt.css">
     <link rel="stylesheet" href="/w3.css">
     <link rel="icon" href="/favicon.ico">
@@ -18,7 +17,7 @@
   <a href="javascript:void(0)" class="w3-top w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="navbar_toggle()">
     <i class="fa fa-bars w3-right"></i>
   </a>
-  <img class="w3-image" src="img/GT-hexes-crop.jpg" alt="GT" max-height="300">
+  <img class="w3-image" src="img/GT-hexes-crop.webp" alt="GT" max-height="300">
   
   <!-- Navbar (placed at the bottom of the header image) -->
   <div class="w3-bar w3-dark-grey w3-round w3-hide-small gt-scootch-up">
@@ -191,6 +190,18 @@ up, automate, and enhance developer processes.</dd>
 </div>
 </div>
 <div class="w3-half w3-margin-bottom">
+<div id="ps" class="w3-container w3-card gt-card">
+<dl>
+<dt><a href="/ra/platform-security/">Platform Security</a></dt>
+<dd>Ensure trust in the computing platform, including hardware, from design through deployment. Assess
+risk due to use of untrusted supply chains of FPGA and ASIC
+devices.</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="w3-row-padding">
+<div class="w3-half w3-margin-bottom">
 <div id="mp" class="w3-container w3-card gt-card">
 <dl>
 <dt><a href="/ra/machine-programming/">Machine Programming</a></dt>
@@ -199,18 +210,6 @@ computation to automate the software-development lifecycle through
 source-code synthesis, evaluation, and transformation.  Build
 automated tools that integrate into the modern software development
 environment.</dd>
-</dl>
-</div>
-</div>
-</div>
-<div class="w3-row-padding">
-<div class="w3-half w3-margin-bottom">
-<div id="ps" class="w3-container w3-card gt-card">
-<dl>
-<dt><a href="/ra/platform-security/">Platform Security</a></dt>
-<dd>Ensure trust in the computing platform, including hardware, from design through deployment. Assess
-risk due to use of untrusted supply chains of FPGA and ASIC
-devices.</dd>
 </dl>
 </div>
 </div>
@@ -229,9 +228,6 @@ customers require.</p>
 <dd>A fast and accurate disassembler.  DDisasm is able to disassemble
 real-world stripped binaries with accuracy sufficient to enable modification
 and reassembly.</dd>
-<dt><a href="/prj/gtirb/">GTIRB</a></dt>
-<dd>An intermediate representation for binary analysis and rewriting.
-GTIRB seeks to be an LLVM-IR for reverse engineering.</dd>
 <dt><a href="/prj/mnemosyne/">Mnemosyne</a></dt>
 <dd>An extensible software development assistant bringing cutting edge
 program synthesis research to bear against real-world programming
@@ -243,6 +239,9 @@ for the parsing, analysis, and rewriting of software source code in
 <dt><a href="/prj/swap-detector/">Swap Detector</a></dt>
 <dd>A library to check swapped arguments in function calls, and a Clang
 Static Analyzer plugin used to demonstrate the library.</dd>
+<dt><a href="/prj/gtirb/">GTIRB</a></dt>
+<dd>An intermediate representation for binary analysis and rewriting.
+GTIRB seeks to be an LLVM-IR for reverse engineering.</dd>
 </dl>
 <p>We not only publish but <em>participate</em> in the open-source community,
 through
@@ -256,7 +255,8 @@ repositories on <a href="https://github.com/GrammaTech">GitHub/GrammaTech</a> an
 <a href="https://gitlab.com/GrammaTech">GitLab/GrammaTech</a>.</p>
 
   </div>
-  <div class="w3-margin w3-full w3-border-top w3-border-dark-grey gt-flex-wrap">
+  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.14.0/css/all.css">
+<div class="w3-margin w3-full w3-border-top w3-border-dark-grey gt-flex-wrap">
   <span class="w3-hide-small" style="order:1;">
     <a class="w3-button" href="https://www.grammatech.com/about">About</a>
     <a class="w3-button" href="mailto:research@grammatech.com">Contact</a>
@@ -368,6 +368,18 @@ repositories on <a href="https://github.com/GrammaTech">GitHub/GrammaTech</a> an
     
     
     
+    "ps": [
+      
+      "FVA",
+      
+      "TFPGA",
+      
+    ],
+    
+    
+    
+    
+    
     "mp": [
       
       "Mnemosyne",
@@ -381,18 +393,6 @@ repositories on <a href="https://github.com/GrammaTech">GitHub/GrammaTech</a> an
       "GenPatcher",
       
       "Bug-Injector",
-      
-    ],
-    
-    
-    
-    
-    
-    "ps": [
-      
-      "FVA",
-      
-      "TFPGA",
       
     ],
     
@@ -429,9 +429,4 @@ repositories on <a href="https://github.com/GrammaTech">GitHub/GrammaTech</a> an
     }
   }
 </script>
-<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
-<script>
-mermaid.initialize({ startOnLoad: true });
-</script>
-
 </html>
