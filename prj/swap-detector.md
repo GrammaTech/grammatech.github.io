@@ -1,5 +1,5 @@
 ---
-layout: oss
+layout: prj
 tags: oss
 title: Swap Detector
 link: https://github.com/GrammaTech/swap-detector

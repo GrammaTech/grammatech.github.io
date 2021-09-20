@@ -1,5 +1,5 @@
 ---
-layout: oss
+layout: prj
 tags: oss
 title: GTIRB
 link: https://github.com/grammatech/gtirb

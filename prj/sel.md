@@ -1,5 +1,5 @@
 ---
-layout: oss
+layout: prj
 tags: oss
 title: SEL
 link: https://github.com/grammatech/sel

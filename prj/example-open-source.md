@@ -1,5 +1,5 @@
 ---
-layout: oss                                       # Use the layout in _includes/oss.liquid
+layout: prj                                       # Use the layout in _includes/oss.liqprj
 tags: oss-example                                 # Include in collections.oss (oss to go live)
 title: Example Open-Source Project                # Name of project to print
 link: https://github.com/grammatech/example       # URL of public project repository

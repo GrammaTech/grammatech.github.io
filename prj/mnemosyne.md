@@ -1,5 +1,5 @@
 ---
-layout: oss
+layout: prj
 tags: oss
 title: Mnemosyne
 link: https://grammatech.gitlab.io/Mnemosyne/docs/
