@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="/gt.css">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.7/plyr.css" />
     <link rel="icon" href="/favicon.ico">
   </head>
   <body style="color: #bdc1c6; background: #202124;">
@@ -28,6 +29,7 @@
     <div class="w3-content w3-padding-large w3-margin-top gt-min-left-margin">
       <h1>SySense</h1>
       <div class="w3-container">
+        
         <p>SySense is a cyber security solution to monitor the execution of, detect anomalies in, and mitigate potential attacks on, UEFI firmware. On modern COTS PC systems, the UEFI BIOS initializes hardware before the operating system loads. It is composed of hundreds of components, which may come from multiple third-parties with no available source code. Due to the nature of UEFI, the firmware is monolithic, allowing each component to access the entire system. Any malware in UEFI has the potential to subvert any operating system, VM, or container running above it.</p>
 <p>SySense begins by inspecting the normal operation of the firmware and inferring a policy that specifies normal behavior for each component. Next, it performs runtime monitoring and detects deviations from the policy. This allows detection of malicious software embedded in the firmware through insider attack or supply chain vulnerabilities. When a program violates a policy, SySense mitigates the problem with an automatic response such as blocking the offending operation. It can also log forensic information for offline investigation by a human analyst or automated Reasoning Engine. Because SySense specifies and allows only correct behavior, it protects against both <em>known</em> and <em>unknown</em> attacks. SySense monitors execution using a custom hypervisor; therefore, the firmware does not need to be modified to enable monitoring, nor is source code required.</p>
 
