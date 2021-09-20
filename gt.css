@@ -166,24 +166,23 @@ dt { color: #eeeeec; }
 
 /* Research Areas in Use-case table */
 :root {
-    --mp-color: #204a87;
-    --rw-color: #5c3566;
-    --re-color: #295202;
-    --ps-color: #8f5902;
-    --ml-color: #a40000;
+    --mp-color: #183E71;
+    --rw-color: #8F1A1C;
+    --re-color: #555753;
+    --ps-color: #75507b;
+    --ml-color: #131A1D;
 }
 
-.gt-area-cell-mp { background-color: var(--mp-color); filter: brightness(1.5); }
-.gt-area-cell-rw { background-color: var(--rw-color); filter: brightness(1.5); }
-.gt-area-cell-re { background-color: var(--re-color); filter: brightness(1.5); }
-.gt-area-cell-ps { background-color: var(--ps-color); filter: brightness(2); }
-.gt-area-cell-ml { background-color: var(--ml-color); filter: brightness(2); }
+.gt-area-cell-mp { background-color: var(--mp-color); }
+.gt-area-cell-rw { background-color: var(--rw-color); }
+.gt-area-cell-re { background-color: var(--re-color); }
+.gt-area-cell-ps { background-color: var(--ps-color); }
+.gt-area-cell-ml { background-color: var(--ml-color); }
 .gt-area-cell-re.gt-area-cell-mp{ background-image: linear-gradient(45deg,
                                                                     var(--re-color),
                                                                     var(--re-color) 50%,
                                                                     var(--mp-color) 50%,
-                                                                    var(--mp-color) 100%);
-                                  filter: brightness(1.5); }
+                                                                    var(--mp-color) 100%);}
 .gt-area-cell-re.gt-area-cell-mp.gt-area-cell-ml{
     background-image: linear-gradient(45deg,
                                       var(--mp-color) 0,
@@ -191,14 +190,12 @@ dt { color: #eeeeec; }
                                       var(--re-color) 33.33%,
                                       var(--re-color) 66.66%,
                                       var(--ml-color) 66.66%,
-                                      var(--ml-color) 100%);
-    filter: brightness(1.5); }
+                                      var(--ml-color) 100%);}
 .gt-area-cell-re.gt-area-cell-rw{ background-image: linear-gradient(45deg,
                                                                     var(--re-color),
                                                                     var(--re-color) 50%,
                                                                     var(--rw-color) 50%,
-                                                                    var(--rw-color) 100%);
-                                  filter: brightness(1.5); }
+                                                                    var(--rw-color) 100%);}
 .gt-area-cell-re.gt-area-cell-rw.gt-area-cell-ml{
     background-image: linear-gradient(45deg,
                                       var(--re-color) 0,
@@ -206,14 +203,12 @@ dt { color: #eeeeec; }
                                       var(--rw-color) 33.33%,
                                       var(--rw-color) 66.66%,
                                       var(--ml-color) 66.66%,
-                                      var(--ml-color) 100%);
-    filter: brightness(1.5); }
+                                      var(--ml-color) 100%);}
 .gt-area-cell-rw.gt-area-cell-mp{ background-image: linear-gradient(45deg,
                                                                     var(--rw-color),
                                                                     var(--rw-color) 50%,
                                                                     var(--mp-color) 50%,
-                                                                    var(--mp-color) 100%);
-                                  filter: brightness(1.5); }
+                                                                    var(--mp-color) 100%);}
 .gt-area-cell-re.gt-area-cell-rw.gt-area-cell-ml.gt-area-cell-ps{
     background-image: linear-gradient(45deg,
                                       var(--re-color) ,
@@ -223,15 +218,14 @@ dt { color: #eeeeec; }
                                       var(--ml-color) 50%,
                                       var(--ml-color) 75%,
                                       var(--ps-color) 75%,
-                                      var(--ps-color) 100%);
-    filter: brightness(1.5); }
+                                      var(--ps-color) 100%);}
 
 div#mp,div#rw,div#re,div#ps,div#ml > dl > dt { font-weight: bold; }
-div#mp > dl > dt { color: #729fcf; }
-div#rw > dl > dt { color: #e9b2e3; }
-div#re > dl > dt { color: #8ae234; }
-div#ps > dl > dt { color: #c4a000; }
-div#ml > dl > dt { color: #ff4b4b; }
+div#mp > dl > dt { color: #183E71; filter: brightness(2); }
+div#rw > dl > dt { color: #8F1A1C; filter: brightness(2); }
+div#re > dl > dt { color: #555753; filter: brightness(2); }
+div#ps > dl > dt { color: #75507b; }
+div#ml > dl > dt { text-shadow: 4px 4px #131A1D; }
 
 /* Highlight RA cards on hover (see javascript in index.liquid). */
 .gt-highlight{ filter: brightness(1.75); }
