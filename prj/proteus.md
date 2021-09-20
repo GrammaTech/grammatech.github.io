@@ -1,5 +1,5 @@
 ---
-layout: ap
+layout: prj
 tags: ap
 title: Proteus
 support:

@@ -1,5 +1,5 @@
 ---
-layout: ap                                        # Use the layout in _includes/ap.liquid
+layout: prj                                       # Use the layout in _includes/ap.liquid
 tags: ap-example                                  # Include in collections.ap (ap to go live)
 title: Example Product                            # Name or product to print
 support:                                          # See internal Wiki for more info
