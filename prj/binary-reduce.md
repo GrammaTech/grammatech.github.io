@@ -1,7 +1,7 @@
 ---
 layout: prj
 tags: [prj, gtirb-proprietary]
-title: Binary reduction
+title: Binary Reduction
 trl: 6
 support:
   agencies:

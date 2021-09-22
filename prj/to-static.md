@@ -1,7 +1,7 @@
 ---
 layout: prj
 tags: [prj, gtirb-proprietary]
-title: To Static binary transform
+title: To Static Binary Consolidation
 trl: 4
 support:
   agencies:

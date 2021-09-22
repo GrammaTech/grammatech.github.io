@@ -1,7 +1,7 @@
 ---
 layout: prj
-tags: prj
-title: Stack Stamp binary hardening
+tags: [prj, gtirb-proprietary]
+title: Stack Stamp Binary Hardening
 support:
   agencies:
   - the Navy
@@ -27,3 +27,10 @@ desired address.
 <center>
   <img src="{{ "/img/stack-stamp.svg"|url }}" class="w3-light-grey w3-padding w3-round gt-smaller-on-small">
 </center>
+
+An open-source version of this transform is available on GitHub at
+[grammatech/gtirb-stack-stamp][], however the proprietary version is
+much more robust to the many types of exotic returns, tail-calls, and
+non-contiguous functions found in many real-world binaries.
+
+[grammatech/gtirb-stack-stamp]: https://github.com/grammatech/gtirb-stack-stamp
