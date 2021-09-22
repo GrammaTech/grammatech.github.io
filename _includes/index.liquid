@@ -17,8 +17,22 @@
   <a href="javascript:void(0)" class="w3-top w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="navbar_toggle()">
     <i class="fa fa-bars w3-right"></i>
   </a>
-  <img class="w3-image" src="{{ "img/banner.webp"|url }}" alt="GT" max-height="300">
-  
+  <img class="w3-image" src="{{ "img/banner.webp"|url }}" alt="GT" max-height="300px">
+  <div class="w3-hide-medium w3-hide-small"
+       style="position:absolute;left:calc(50% - 354px);top:1em;">
+    <h1 class="w3-jumbo" style="margin:0;">GrammaTech Research</h1>
+  </div>
+  <div class="w3-hide-large w3-hide-small"
+       style="position:absolute;left:calc(50% - 204px);top:1em;">
+    <h1 class="w3-xxlarge" style="margin:0;">GrammaTech Research</h1>
+  </div>
+  <div class="w3-hide-large w3-hide-medium"
+       style="position:absolute;left:calc(50% - 75px);top:1em;">
+    <h1 class="w3-xlarge" style="margin:0;">GrammaTech</h1>
+    <h1 class="w3-xlarge" style="margin:0;">Research</h1>
+  </div>
+  </div>
+
   <!-- Navbar (placed at the bottom of the header image) -->
   <div class="w3-bar w3-dark-grey w3-round w3-hide-small gt-scootch-up">
     {% for anchor in anchors %}
