@@ -1,6 +1,6 @@
 ---
 layout: prj
-tags: prj
+tags: [prj, gtirb-proprietary]
 title: To Static binary transform
 trl: 4
 support:

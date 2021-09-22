@@ -1,6 +1,6 @@
 ---
 layout: prj
-tags: prj
+tags: [prj, gtirb-proprietary]
 title: Binary reduction
 trl: 6
 support:
