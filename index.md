@@ -9,6 +9,8 @@ anchors:
     slug: research-areas
   - text: Open Source Software
     slug: open-source-software
+  - text: Publications
+    slug: publications
 ---
 
 <div class="gt-bottom-line">
@@ -108,6 +110,10 @@ to projects we maintain in return.  Find more of our open-source
 repositories on [GitHub/GrammaTech](https://github.com/GrammaTech) and
 [GitLab/GrammaTech](https://gitlab.com/GrammaTech).
 
+### Publications
+
+[Publications][] related to our work.
+
 [REAFFIRM]: {{ "/prj/reaffirm"|url }}
 [AMBER]: {{ "/prj/amber"|url }}
 [ARTCAT]: {{ "/prj/artcat"|url }}
@@ -132,3 +138,4 @@ repositories on [GitHub/GrammaTech](https://github.com/GrammaTech) and
 [Binary-Reduce]: {{ "/prj/binary-reduce"|url }}
 [FVA]: {{ "/prj/fva"|url }}
 [TFPGA]: {{ "/prj/tfpga"|url }}
+[Publications]: {{ "/pubs"|url }}

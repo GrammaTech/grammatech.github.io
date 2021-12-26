@@ -47,5 +47,11 @@ module.exports = function(eleventyConfig) {
     }
   })
 
+  // Bibtex export.
+  let bibtexParse = require("bibtex-parse");
+  eleventyConfig.addDataExtension("bib",
+                                  contents => Object.assign({ layout: 'bib', tags: 'bib' },
+                                                            bibtexParse.entries(contents)[0]))
+
   return config;
 };
