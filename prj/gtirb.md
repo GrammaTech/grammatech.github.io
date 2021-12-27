@@ -40,15 +40,16 @@ emit and consume GTIRB:
 
 <center>
 
-| Tool                    | Description                                            |
-|-------------------------|--------------------------------------------------------|
-| [DDisasm][]             | Fast and accurate disassembler which produces GTIRB    |
-| [GTIRB-PPrinter][]      | Pretty print GTIRB to assembler or a binary executable |
-| [gtirb-rewriting][]     | Python API for rewriting GTIRB files                   |
-| [gtirb-functions][]     | APIs for working with functions in GTIRB files         |
-| [gtirb-ghidra-plugin][] | Import/Export GTIRB files to/from Ghidra               |
-| [gtirb-capstone][]      | Integration with the [Capstone][] decoder              |
-| [gtirb-stack-stamp][]   | Example hardening transform over GTIRB                 |
+| Tool                    | Description                                                   |
+|-------------------------|---------------------------------------------------------------|
+| [DDisasm][]             | Fast and accurate disassembler which produces GTIRB           |
+| [GTIRB-PPrinter][]      | Pretty print GTIRB to assembler or a binary executable        |
+| [GTIRB-VSCode][]        | VSCode extension to read, navigate, and (re)write GTIRB files |
+| [gtirb-rewriting][]     | Python API for rewriting GTIRB files                          |
+| [gtirb-functions][]     | APIs for working with functions in GTIRB files                |
+| [gtirb-ghidra-plugin][] | Import/Export GTIRB files to/from Ghidra                      |
+| [gtirb-capstone][]      | Integration with the [Capstone][] decoder                     |
+| [gtirb-stack-stamp][]   | Example hardening transform over GTIRB                        |
 
 </center>
 
@@ -77,6 +78,7 @@ to easily slot into existing CI/CD or Dev-Sec-Ops pipelines.
 [gtirb-ghidra-plugin]: https://github.com/grammatech/gtirb-ghidra-plugin
 [gtirb-stack-stamp]: https://github.com/grammatech/gtirb-stack-stamp
 [gtirb-capstone]: https://github.com/GrammaTech/gtirb-capstone
+[GTIRB-VSCode]: {{ "/prj/gtirb-vscode"|url }}
 [Capstone]: https://www.capstone-engine.org
 
 

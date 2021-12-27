@@ -8,6 +8,8 @@ prjs:
     slug: ddisasm
   - name: GTIRB
     slug: gtirb
+  - name: GTIRB VSCode
+    slug: gtirb-vscode
   - name: To Static binary transform
     slug: to-static
   - name: Stack Stamp binary transform
