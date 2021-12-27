@@ -22,6 +22,9 @@
         <!-- {% if YEAR %} -->
         <!-- ({{ YEAR }}) -->
         <!-- {% endif %} -->
+        {% if NOTES %}
+        (<b><i>{{ NOTES }}</i></b>)
+        {% endif %}
         {% if URL %}
           <a href="{{ URL }}">link</a>
         {% endif %}
