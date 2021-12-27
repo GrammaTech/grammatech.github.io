@@ -7,6 +7,8 @@ slug: mp
 prjs:
   - name: Mnemosyne
     slug: mnemosyne
+  - name: CRAM
+    slug: cram
   - name: Merge Resolver
     slug: merge-resolver
   - name: Variegate
