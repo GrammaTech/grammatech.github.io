@@ -55,7 +55,7 @@ anchors:
 | Diversify | [Variegate][]                                                  |                                                                                           |                                                 |                                                                                                                                |
 | Harden    | [Mnemosyne][], [Cram][]                                        | [Binary-Reduce][], [Proteus][], [REAFFIRM][], [Stack-Stamp][], [To-Static][]              | [AMBER][], [ARTCAT][], [ConfINE][], [SySense][] | [Binary-Reduce][], [Proteus][], [REAFFIRM][], [Stack-Stamp][], [To-Static][]                                                   |
 | Assure    |                                                                | [A-CERT][]                                                                                |                                                 | [A-CERT][]                                                                                                                     |
-| Assess    |                                                                | [A-CERT][], [Discover][], [Mnemosyne][], [Proteus][], [REAFFIRM][]                        | [AMBER][], [ARTCAT][], [ConfINE][], [SySense][] | [A-CERT][], [Bin2Math][], [DDisasm][], [Discover][], [FVA][], [Proteus][], [REAFFIRM][], [TBDC][], [TFPGA][], [GTIRB-VSCode][] |
+| Assess    | [Spec-Map][]                                                   | [A-CERT][], [Discover][], [Mnemosyne][], [Proteus][], [REAFFIRM][]                        | [AMBER][], [ARTCAT][], [ConfINE][], [SySense][] | [A-CERT][], [Bin2Math][], [DDisasm][], [Discover][], [FVA][], [Proteus][], [REAFFIRM][], [TBDC][], [TFPGA][], [GTIRB-VSCode][] |
 
 </div>
 
@@ -125,6 +125,7 @@ repositories on [GitHub/GrammaTech](https://github.com/GrammaTech) and
 [GenPatcher]: {{ "/prj/genpatcher"|url }}
 [Mnemosyne]: {{ "/prj/mnemosyne"|url }}
 [Cram]: {{ "/prj/cram"|url }}
+[Spec-Map]: {{ "/prj/spec-map"|url }}
 [Variegate]: {{ "/prj/variegate"|url }}
 [Bug-Injector]: {{ "/prj/bug-injector"|url }}
 [Merge Resolver]: {{ "/prj/merge-resolver"|url }}

@@ -9,6 +9,8 @@ prjs:
     slug: mnemosyne
   - name: CRAM
     slug: cram
+  - name: Spec-Map
+    slug: spec-map
   - name: Merge Resolver
     slug: merge-resolver
   - name: Variegate
