@@ -11,27 +11,23 @@
     <div class="w3-content w3-padding-large w3-margin-top gt-min-left-margin">
       <h1>{{ TITLE }}</h1>
       <div class="w3-container">
-      {{ AUTHOR }}
-      <dl>
-      {% if JOURNAL %}
-        <dt>Journal</dt><dd>{{ JOURNAL }}</dd>
-      {% endif %}
-      {% if BOOKTITLE %}
-        <dt>Booktitle</dt><dd>{{ BOOKTITLE }}</dd>
-      {% endif %}
-      {% if VOLUME %}
-        <dt>Volume</dt><dd>{{ VOLUME }}</dd>
-      {% endif %}
-      {% if YEAR %}
-        <dt>Year</dt><dd>{{ YEAR }}</dd>
-      {% endif %}
-      {% if URL %}
-        <dt><a href="{{ URL }}">link</a></dt>
-      {% endif %}
-      {% if BIBURL %}
-        <dt><a href="{{ BIBURL }}">bibtex</a></dt>
-      {% endif %}
-      </dl>
+        {{ AUTHOR | clean }}
+        {% if BOOKTITLE %}
+        <i>{{ BOOKTITLE }}</i>
+        {% endif %}
+        {{ VOLUME }}
+        {% if PAGES %}
+        p.{{ PAGES }}
+        {% endif %}
+        {% if YEAR %}
+        ({{ YEAR }})
+        {% endif %}
+        {% if URL %}
+          <a href="{{ URL }}">link</a>
+        {% endif %}
+        {% if BIBURL %}
+          <a href="{{ BIBURL }}">bibtex</a>
+        {% endif %}
       </div>
     {% include support %}
     {% include bottom %}

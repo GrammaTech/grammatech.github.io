@@ -53,5 +53,40 @@ module.exports = function(eleventyConfig) {
                                   contents => Object.assign({ layout: 'bib', tags: 'bib' },
                                                             bibtexParse.entries(contents)[0]))
 
+  eleventyConfig.addCollection("bibSort", function(collectionApi) {
+    return collectionApi.getFilteredByTag("bib").sort(function(a,b) {
+      if (a.data.YEAR == b.data.YEAR) {
+        if (a.data.AUTHOR < b.data.AUTHOR) {
+          return 1
+        } else {
+          return -1
+        }
+      } else {
+        return parseInt(a.data.YEAR) - parseInt(b.data.YEAR)
+      }
+    }).reverse()
+  })
+
+  // Strip newlines
+  eleventyConfig.addFilter("clean", function(value) {
+    if(value) {
+      return value
+        .replace(/\s+/g, " ")          // Drop newlines.
+        .replace(/n'([^\ss])/g, "ń$1") // Accent characters
+        .replace(/r'([^\ss])/g, "ŕ$1")
+        .replace(/\\cc/g, "ç")
+    } else {
+      return ""
+    }
+  });
+
+  eleventyConfig.addFilter("xspace", function(value) {
+    if(value) {
+      return value + " ";
+    } else {
+      return ""
+    }
+  });
+
   return config;
 };
