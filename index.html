@@ -200,29 +200,6 @@ critical systems.</dd>
 </div>
 </div>
 <div class="w3-half w3-margin-bottom">
-<div id="ml" class="w3-container w3-card gt-card">
-<dl>
-<dt><a href="/ra/machine-learning-and-big-code/">Machine Learning and Big Code</a></dt>
-<dd>Combine machine-learning techniques with program analysis to
-increase software security, reliability, and maintainability.
-Mine the collective wisdom in massive code repositories to speed
-up, automate, and enhance developer processes.</dd>
-</dl>
-</div>
-</div>
-</div>
-<div class="w3-row-padding">
-<div class="w3-half w3-margin-bottom">
-<div id="ps" class="w3-container w3-card gt-card">
-<dl>
-<dt><a href="/ra/platform-security/">Platform Security</a></dt>
-<dd>Ensure trust in the computing platform, including hardware, from design through deployment. Assess
-risk due to use of untrusted supply chains of FPGA and ASIC
-devices.</dd>
-</dl>
-</div>
-</div>
-<div class="w3-half w3-margin-bottom">
 <div id="rw" class="w3-container w3-card gt-card">
 <dl>
 <dt><a href="/ra/binary-rewriting/">Binary Rewriting</a></dt>
@@ -237,6 +214,17 @@ diversification, and attack-surface reduction.</dd>
 </div>
 <div class="w3-row-padding">
 <div class="w3-half w3-margin-bottom">
+<div id="ml" class="w3-container w3-card gt-card">
+<dl>
+<dt><a href="/ra/machine-learning-and-big-code/">Machine Learning and Big Code</a></dt>
+<dd>Combine machine-learning techniques with program analysis to
+increase software security, reliability, and maintainability.
+Mine the collective wisdom in massive code repositories to speed
+up, automate, and enhance developer processes.</dd>
+</dl>
+</div>
+</div>
+<div class="w3-half w3-margin-bottom">
 <div id="mp" class="w3-container w3-card gt-card">
 <dl>
 <dt><a href="/ra/machine-programming/">Machine Programming</a></dt>
@@ -245,6 +233,18 @@ computation to automate the software-development lifecycle through
 source-code synthesis, evaluation, and transformation.  Build
 automated tools that integrate into the modern software development
 environment.</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="w3-row-padding">
+<div class="w3-half w3-margin-bottom">
+<div id="ps" class="w3-container w3-card gt-card">
+<dl>
+<dt><a href="/ra/platform-security/">Platform Security</a></dt>
+<dd>Ensure trust in the computing platform, including hardware, from design through deployment. Assess
+risk due to use of untrusted supply chains of FPGA and ASIC
+devices.</dd>
 </dl>
 </div>
 </div>
@@ -263,6 +263,9 @@ customers require.</p>
 <dd>A fast and accurate disassembler.  DDisasm is able to disassemble
 real-world stripped binaries with accuracy sufficient to enable modification
 and reassembly.</dd>
+<dt><a href="/prj/gtirb/">GTIRB</a></dt>
+<dd>An intermediate representation for binary analysis and rewriting.
+GTIRB seeks to be an LLVM-IR for reverse engineering.</dd>
 <dt><a href="/prj/mnemosyne/">Mnemosyne</a></dt>
 <dd>An extensible software development assistant bringing cutting edge
 program synthesis research to bear against real-world programming
@@ -274,9 +277,6 @@ for the parsing, analysis, and rewriting of software source code in
 <dt><a href="/prj/swap-detector/">Swap Detector</a></dt>
 <dd>A library to check swapped arguments in function calls, and a Clang
 Static Analyzer plugin used to demonstrate the library.</dd>
-<dt><a href="/prj/gtirb/">GTIRB</a></dt>
-<dd>An intermediate representation for binary analysis and rewriting.
-GTIRB seeks to be an LLVM-IR for reverse engineering.</dd>
 </dl>
 <p>We not only publish but <em>participate</em> in the open-source community,
 through
@@ -371,32 +371,6 @@ repositories on <a href="https://github.com/GrammaTech">GitHub/GrammaTech</a> an
     
     
     
-    "ml": [
-      
-      "Bin2Math",
-      
-      "Discover",
-      
-      "Swap Detector",
-      
-    ],
-    
-    
-    
-    
-    
-    "ps": [
-      
-      "FVA",
-      
-      "TFPGA",
-      
-    ],
-    
-    
-    
-    
-    
     "rw": [
       
       "DDisasm",
@@ -408,6 +382,20 @@ repositories on <a href="https://github.com/GrammaTech">GitHub/GrammaTech</a> an
       "Stack Stamp binary transform",
       
       "Binary-Reduce",
+      
+    ],
+    
+    
+    
+    
+    
+    "ml": [
+      
+      "Bin2Math",
+      
+      "Discover",
+      
+      "Swap Detector",
       
     ],
     
@@ -428,6 +416,18 @@ repositories on <a href="https://github.com/GrammaTech">GitHub/GrammaTech</a> an
       "GenPatcher",
       
       "Bug-Injector",
+      
+    ],
+    
+    
+    
+    
+    
+    "ps": [
+      
+      "FVA",
+      
+      "TFPGA",
       
     ],
     
