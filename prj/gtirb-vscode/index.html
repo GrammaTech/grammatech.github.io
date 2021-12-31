@@ -1,13 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Binary Rewriting</title>
+    <title>GTIRB VSCode Extension</title>
 <meta charset="UTF-8">
-<meta name="description" content="Using high-fidelity binary ingestion, perform automated
-transformation of binary software executables and libraries to
-improve functionality, security, maintainability, and performance.
-Specific aims include software hardening, optimization,
-diversification, and attack-surface reduction.
+<meta name="description" content="Read, navigate, and (re)write GTIRB files through VSCode.
 ">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="/gt.css">
@@ -22,6 +18,7 @@ diversification, and attack-surface reduction.
   gtag('config', 'G-80VX9JYW6P');
 </script>
 
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.7/plyr.css" />
   </head>
   <body style="color: #bdc1c6; background: #202124;">
     <header>
@@ -38,59 +35,59 @@ diversification, and attack-surface reduction.
 
     </header>
     <div class="w3-content w3-padding-large w3-margin-top gt-min-left-margin">
-      <h1>Binary Rewriting</h1>
+      <h1>GTIRB VSCode Extension</h1>
       <div class="w3-container">
         
-        <div class="w3-right w3-third w3-border w3-padding w3-round">
-          <h3>Projects</h3>
-          <ul>
-            
-            <li><a href="/prj/ddisasm">DDisasm</a></li>
-            
-            <li><a href="/prj/gtirb">GTIRB</a></li>
-            
-            <li><a href="/prj/gtirb-vscode">GTIRB VSCode</a></li>
-            
-            <li><a href="/prj/to-static">To Static binary transform</a></li>
-            
-            <li><a href="/prj/stack-stamp">Stack Stamp binary transform</a></li>
-            
-            <li><a href="/prj/binary-reduce">Binary-Reduce</a></li>
-            
-          </ul>
-        </div>
-        
-        <h2 id="about-the-area">About the area</h2>
-<p>Automatic transformation of binary software executables and libraries
-to improve functionality, security, and efficiency.</p>
-<h2 id="benefits">Benefits</h2>
+        <p>The GTIRB VSCode extension allows VSCode to open a GTIRB file
+displaying an assembly file listing of the GTIRB file contents.</p>
 <ul>
-<li>Industry leading binary analysis and transformation built on our
-revolutionary datalog-driven reassembleable disassembler and our
-open-source binary intermediate representation.</li>
-<li>Binary security through hardening, diversification, and attack
-surface minimization.</li>
-<li>Binary efficiency through aggressive optimization.</li>
-<li>Binary robustness and portability through static repackaging of
-dynamic binaries.</li>
-</ul>
-<h2 id="technologies">Technologies</h2>
-<ul>
-<li>Datalog is used for compact and efficient expression of disassembly
-heuristics in our <a href="https://github.com/GrammaTech/ddisasm">Datalog Disassembler</a>.</li>
-<li>GrammaTech Intermediate Representation for Binaries
-(<a href="https://github.com/GrammaTech/gtirb">GTIRB</a>) allows uniform
-representation and transformation of binaries.</li>
-<li>Satisfiability Modulo Theory (SMT) solvers including Quantifier Free
-Bit Vector (QFBV) logics enable efficient formal reasoning about the
-behavior of binary software.</li>
-<li>Dynamic programming and heuristic search techniques enable efficient
-exploration of large spaces of candidate replacement binaries.</li>
-<li>Low-level software instrumentation and emulation enable dynamic
-analysis of binary behavior.</li>
+<li>
+<p><strong>Hovering</strong> over a line in the file will bring up any AuxData
+associated with the current line.</p>
+</li>
+<li>
+<p><strong>Navigation</strong> to definitions and references is supported by
+leveraging symbol information from the GTIRB file.  Finally,
+binary rewriting is also supported.</p>
+</li>
+<li>
+<p><strong>Binary Rewriting</strong> is supported by directly editing the assembly
+code through the VSCode UI, and then saving the file in VSCode.
+When the edits are made, the GTIRB VSCode extension records the
+code blocks that were modified and saves their references to
+portions of the modified assembly file.  Then when the file is
+saved, the GTIRB VSCode extension loops through every modified
+basic block and updates it in the backing GTIRB file using the
+<a href="https://github.com/grammatech/gtirb-rewriting">gtirb-rewriting</a> API.  After updating the GTIRB file, the
+<a href="https://github.com/grammatech/gtirb-pprinter">GTIRB-PPrinter</a> is used to assemble and link a new modified
+binary reflecting the user's interactive edits.  The following
+short video demonstrates a simple interactive binary rewrite.</p>
+  <center>
+  <div class="w3-hide-medium w3-hide-large">
+  <video width=300px height=187px playsinline controls muted>
+  <source src="https://download.grammatech.com/research/simple-binary-rewrite-vscode-gtirb-smaller.mp4#t=0.01" type="video/mp4">
+  </video>
+  </div>
+  <div class="w3-hide-small">
+  <video width=800px height=500px playsinline controls muted>
+  <source src="https://download.grammatech.com/research/simple-binary-rewrite-vscode-gtirb-smaller.mp4#t=0.01" type="video/mp4">
+  </video>
+  </div>
+  </center>
+</li>
 </ul>
 
       </div>
+    
+<div class="support">
+  <p>This material is based upon work supported by the Navy and the Office of Naval Research
+  under Contract(s) No. N68335-17-C-0700.  Any opinions, findings and
+  conclusions or recommendations expressed in this material are those
+  of the author(s) and do not necessarily reflect the views of
+  the Navy or the Office of Naval Research.</p>
+</div>
+
+
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.14.0/css/all.css">
 <div class="w3-margin w3-full w3-border-top w3-border-dark-grey gt-flex-wrap">
   <span class="w3-hide-small" style="order:1;">
@@ -122,7 +119,6 @@ analysis of binary behavior.</li>
   </span>
 </div>
 
-    </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
 <script>

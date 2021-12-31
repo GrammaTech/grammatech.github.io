@@ -152,7 +152,7 @@ testing.</dd>
 <td><a href="/prj/genpatcher">GenPatcher</a></td>
 <td><a href="/prj/proteus">Proteus</a>, <a href="/prj/reaffirm">REAFFIRM</a></td>
 <td><a href="/prj/amber">AMBER</a>, <a href="/prj/artcat">ARTCAT</a>,  <a href="/prj/sysense">SySense</a></td>
-<td><a href="/prj/proteus">Proteus</a>, <a href="/prj/reaffirm">REAFFIRM</a></td>
+<td><a href="/prj/proteus">Proteus</a>, <a href="/prj/reaffirm">REAFFIRM</a>, <a href="/prj/gtirb-vscode">GTIRB-VSCode</a></td>
 </tr>
 <tr>
 <td>Diversify</td>
@@ -180,7 +180,7 @@ testing.</dd>
 <td></td>
 <td><a href="/prj/acert">A-CERT</a>, <a href="/prj/discover">Discover</a>, <a href="/prj/mnemosyne">Mnemosyne</a>, <a href="/prj/proteus">Proteus</a>, <a href="/prj/reaffirm">REAFFIRM</a></td>
 <td><a href="/prj/amber">AMBER</a>, <a href="/prj/artcat">ARTCAT</a>, <a href="/prj/confine">ConfINE</a>, <a href="/prj/sysense">SySense</a></td>
-<td><a href="/prj/acert">A-CERT</a>, <a href="/prj/bin2math">Bin2Math</a>, <a href="/prj/ddisasm">DDisasm</a>, <a href="/prj/discover">Discover</a>, <a href="/prj/fva">FVA</a>, <a href="/prj/proteus">Proteus</a>, <a href="/prj/reaffirm">REAFFIRM</a>, <a href="/prj/tbdc">TBDC</a>, <a href="/prj/tfpga">TFPGA</a></td>
+<td><a href="/prj/acert">A-CERT</a>, <a href="/prj/bin2math">Bin2Math</a>, <a href="/prj/ddisasm">DDisasm</a>, <a href="/prj/discover">Discover</a>, <a href="/prj/fva">FVA</a>, <a href="/prj/proteus">Proteus</a>, <a href="/prj/reaffirm">REAFFIRM</a>, <a href="/prj/tbdc">TBDC</a>, <a href="/prj/tfpga">TFPGA</a>, <a href="/prj/gtirb-vscode">GTIRB-VSCode</a></td>
 </tr>
 </tbody>
 </table>
@@ -200,20 +200,6 @@ critical systems.</dd>
 </div>
 </div>
 <div class="w3-half w3-margin-bottom">
-<div id="rw" class="w3-container w3-card gt-card">
-<dl>
-<dt><a href="/ra/binary-rewriting/">Binary Rewriting</a></dt>
-<dd>Using high-fidelity binary ingestion, perform automated
-transformation of binary software executables and libraries to
-improve functionality, security, maintainability, and performance.
-Specific aims include software hardening, optimization,
-diversification, and attack-surface reduction.</dd>
-</dl>
-</div>
-</div>
-</div>
-<div class="w3-row-padding">
-<div class="w3-half w3-margin-bottom">
 <div id="ml" class="w3-container w3-card gt-card">
 <dl>
 <dt><a href="/ra/machine-learning-and-big-code/">Machine Learning and Big Code</a></dt>
@@ -224,6 +210,8 @@ up, automate, and enhance developer processes.</dd>
 </dl>
 </div>
 </div>
+</div>
+<div class="w3-row-padding">
 <div class="w3-half w3-margin-bottom">
 <div id="mp" class="w3-container w3-card gt-card">
 <dl>
@@ -236,8 +224,6 @@ environment.</dd>
 </dl>
 </div>
 </div>
-</div>
-<div class="w3-row-padding">
 <div class="w3-half w3-margin-bottom">
 <div id="ps" class="w3-container w3-card gt-card">
 <dl>
@@ -245,6 +231,20 @@ environment.</dd>
 <dd>Ensure trust in the computing platform, including hardware, from design through deployment. Assess
 risk due to use of untrusted supply chains of FPGA and ASIC
 devices.</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="w3-row-padding">
+<div class="w3-half w3-margin-bottom">
+<div id="rw" class="w3-container w3-card gt-card">
+<dl>
+<dt><a href="/ra/binary-rewriting/">Binary Rewriting</a></dt>
+<dd>Using high-fidelity binary ingestion, perform automated
+transformation of binary software executables and libraries to
+improve functionality, security, maintainability, and performance.
+Specific aims include software hardening, optimization,
+diversification, and attack-surface reduction.</dd>
 </dl>
 </div>
 </div>
@@ -263,9 +263,6 @@ customers require.</p>
 <dd>A fast and accurate disassembler.  DDisasm is able to disassemble
 real-world stripped binaries with accuracy sufficient to enable modification
 and reassembly.</dd>
-<dt><a href="/prj/gtirb/">GTIRB</a></dt>
-<dd>An intermediate representation for binary analysis and rewriting.
-GTIRB seeks to be an LLVM-IR for reverse engineering.</dd>
 <dt><a href="/prj/mnemosyne/">Mnemosyne</a></dt>
 <dd>An extensible software development assistant bringing cutting edge
 program synthesis research to bear against real-world programming
@@ -277,6 +274,9 @@ for the parsing, analysis, and rewriting of software source code in
 <dt><a href="/prj/swap-detector/">Swap Detector</a></dt>
 <dd>A library to check swapped arguments in function calls, and a Clang
 Static Analyzer plugin used to demonstrate the library.</dd>
+<dt><a href="/prj/gtirb/">GTIRB</a></dt>
+<dd>An intermediate representation for binary analysis and rewriting.
+GTIRB seeks to be an LLVM-IR for reverse engineering.</dd>
 </dl>
 <p>We not only publish but <em>participate</em> in the open-source community,
 through
@@ -371,24 +371,6 @@ repositories on <a href="https://github.com/GrammaTech">GitHub/GrammaTech</a> an
     
     
     
-    "rw": [
-      
-      "DDisasm",
-      
-      "GTIRB",
-      
-      "To Static binary transform",
-      
-      "Stack Stamp binary transform",
-      
-      "Binary-Reduce",
-      
-    ],
-    
-    
-    
-    
-    
     "ml": [
       
       "Bin2Math",
@@ -428,6 +410,26 @@ repositories on <a href="https://github.com/GrammaTech">GitHub/GrammaTech</a> an
       "FVA",
       
       "TFPGA",
+      
+    ],
+    
+    
+    
+    
+    
+    "rw": [
+      
+      "DDisasm",
+      
+      "GTIRB",
+      
+      "GTIRB VSCode",
+      
+      "To Static binary transform",
+      
+      "Stack Stamp binary transform",
+      
+      "Binary-Reduce",
       
     ],
     
