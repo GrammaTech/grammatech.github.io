@@ -18,16 +18,16 @@ displaying an assembly file listing of the GTIRB file contents.
 - **Hovering** over a line in the file will bring up any AuxData
     associated with the current line.
 
-- **Navigation** to definitions and references is supported leveraging
-    symbol information from the GTIRB file.  Finally, binary rewriting
-    is also supported.
+- **Navigation** to definitions and references is supported by
+    leveraging symbol information from the GTIRB file.  Finally,
+    binary rewriting is also supported.
 
 - **Binary Rewriting** is supported by directly editing the assembly
     code through the VSCode UI, and then saving the file in VSCode.
-    When the edits are made the GTIRB VSCode extension records the
+    When the edits are made, the GTIRB VSCode extension records the
     code blocks that were modified and saves their references to
     portions of the modified assembly file.  Then when the file is
-    saved the GTIRB VSCode extension loops through every modified
+    saved, the GTIRB VSCode extension loops through every modified
     basic block and updates it in the backing GTIRB file using the
     [gtirb-rewriting][] API.  After updating the GTIRB file, the
     [GTIRB-PPrinter][] is used to assemble and link a new modified
