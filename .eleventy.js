@@ -88,5 +88,13 @@ module.exports = function(eleventyConfig) {
     }
   });
 
+  eleventyConfig.addFilter("listAnd", function(value) {
+    if(value) {
+      return value.split("and").map(function(it){ return it.trim(); })
+    } else {
+      return []
+    }
+  });
+
   return config;
 };
