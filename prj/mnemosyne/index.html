@@ -58,12 +58,47 @@ improvements.</p>
 </div>
 </center>
 </div>
+<h2 id="mnemosyne-and-openai's-codex-code-generating-model">Mnemosyne and OpenAI's Codex Code Generating Model</h2>
+<p>The following demo shows the integration of the <a href="https://openai.com/blog/openai-codex/">OpenAI Codex model</a>
+into Mnemosyne where it works synergistically with Mnemosyne's
+existing automated testing support to automate the development of
+<em>reliable</em> software.  In this video:</p>
+<ol>
+<li>Codex generates a method body from a documentation string.
+Unfortunately as is true of many ML-generated functions this
+implementation has a bug.</li>
+<li>After the generated code is inserted, Mnemosyne's Hypothesis muse
+engages to test the new code.</li>
+<li>Hypothesis finds an example illustrating an error in the generated
+code.</li>
+<li>The developer updates the documentation to describe newly
+identified edge case.</li>
+<li>Codex then generates a more correct function body in response to
+the enhanced documentation string.</li>
+</ol>
+<div class="w3-container w3-margin-bottom w3-padding-top">
+<center>
+<div style="max-width: 1000px;">
+<video id="player2" playsinline controls>
+    <source src="https://grammatech.gitlab.io/Mnemosyne/docs/video/function-generator-hypothesis-demo-1.mp4#t=0.01" type="video/mp4">
+</video>
+</div>
+</center>
+</div>
+<h2 id="open-source">Open Source</h2>
 <p>Mnemosyne is open-source with development taking place on
 <a href="https://gitlab.com/GrammaTech/Mnemosyne">GitLab/GrammaTech/Mnemosyne</a>.</p>
 <script src="https://cdn.plyr.io/3.6.7/plyr.js"></script>
 <script>
   // Video player
   const player = new Plyr('#player', {
+    title: 'Mnemosyne Integrated Demo',
+    muted: true,
+    autoplay: false,
+    captions: { active:true, language: 'auto', update: false},
+    controls: ['play-large', 'play', 'progress', 'current-time', 'mute', 'volume', 'captions', 'settings', 'pip', 'airplay', 'fullscreen'],
+  });
+  const player2 = new Plyr('#player2', {
     title: 'Mnemosyne Integrated Demo',
     muted: true,
     autoplay: false,
