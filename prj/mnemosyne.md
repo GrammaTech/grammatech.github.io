@@ -43,7 +43,7 @@ improvements.
 The following demo shows the integration of the [OpenAI Codex model][]
 into Mnemosyne where it works synergistically with Mnemosyne's
 existing automated testing support to automate the development of
-*reliable* software.
+*reliable* software.  In this video:
 
 1. Codex generates a method body from a documentation string.
    Unfortunately as is true of many ML-generated functions this
