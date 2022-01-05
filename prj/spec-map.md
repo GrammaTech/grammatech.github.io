@@ -19,3 +19,7 @@ many potential benefits, ranging from accelerating the onboarding
 of developers to complex software projects, enabling construction
 of semantically meaningful tests of modules and subsystems, and
 targeting program synthesis for update of "brownfield" software.
+
+<center class="w3-text-light-grey gt-smaller-on-small">
+  {% include ../img/spec-map.svg %}
+</center>
