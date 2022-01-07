@@ -34,10 +34,8 @@ identifying computational patterns in the C++ program and translating them
 into Rust code templates, supported by a library for code pattern
 translation.
 
-<center class="w3-text-dark-grey gt-smaller-on-small">
-  <div class="w3-light-grey w3-round" style="width:400pt;padding:0.5em;">
-    {% include ../img/cram.svg %}
-  </div>
+<center class="gt-smaller-on-small">
+  {% include ../img/cram.svg %}
 </center>
 
 
