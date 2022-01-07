@@ -8,17 +8,18 @@ support:
   contracts:
   - 
 brief: |
-    Spec-map automatically aligns large specifications documents and code bases.
+    Spec-map automatically aligns large specification documents and code bases.
 ---
 
-SPEC-MAP discovers mappings between software specifications and source
+SPEC-MAP discovers mappings between software specification and source
 code.  Using an iterative approach, correspondences are discovered
 between elements of a specification document and components of
-programs that implement the specification.  SPEC-MAP has
-many potential benefits, ranging from accelerating the onboarding
-of developers to complex software projects, enabling construction
-of semantically meaningful tests of modules and subsystems, and
-targeting program synthesis for update of "brownfield" software.
+programs that implement the specification.  SPEC-MAP has many
+potential uses, including as an onboarding tool and reference for
+developers of complex software projects, enabling the construction of
+tests of modules and subsystems driven by specified requirements, and
+mapping changes in a specification to the affected program components
+for the maintenance of legacy software.
 
 <center class="w3-text-light-grey gt-smaller-on-small">
   {% include ../img/spec-map.svg %}
