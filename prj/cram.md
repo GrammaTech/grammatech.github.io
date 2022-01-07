@@ -30,9 +30,9 @@ refactors the given C++ program to a new C++ program, attempting to
 enforce many of the Rust programming abstractions at the C++
 level. This prepares and facilitates, possibly even enables, the
 actual translation into Rust. Our migration then continues by
-identifying computational patterns in the C++ program and migrating them
+identifying computational patterns in the C++ program and translating them
 into Rust code templates, supported by a library for code pattern
-migration.
+translation.
 
 <center class="w3-text-dark-grey gt-smaller-on-small">
   <div class="w3-light-grey w3-round" style="width:400pt;padding:0.5em;">
