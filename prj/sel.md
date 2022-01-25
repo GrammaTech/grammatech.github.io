@@ -50,6 +50,22 @@ SEL APIs are available in:
   {% include ../img/sel-asts.svg %}
 </center>
 
+## Presentation and demo
+
+<center>
+<p>The following video introduces SEL's tree-sitter-based ASTs
+and ends with a demo of the Python API.</p>
+<div class="w3-hide-medium w3-hide-large">
+<video width=300px height=187px playsinline controls muted>
+<source src="https://download.grammatech.com/research/sel-asts-tree-sitter.mp4#t=0.01" type="video/mp4">
+</video>
+</div>
+<div class="w3-hide-small">
+<video width=800px height=500px playsinline controls muted>
+<source src="https://download.grammatech.com/research/sel-asts-tree-sitter.mp4#t=0.01" type="video/mp4">
+</video>
+</div>
+</center>
 
 [tree-sitter]: https://tree-sitter.github.io/tree-sitter/
 [functional-trees]: https://github.com/grammatech/functional-trees
