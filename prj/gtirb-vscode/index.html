@@ -38,30 +38,52 @@
       <h1>GTIRB VSCode Extension</h1>
       <div class="w3-container">
         
-        <p>The GTIRB VSCode extension allows VSCode to open a GTIRB file
-displaying an assembly file listing of the GTIRB file contents.</p>
+        <p>The GTIRB VSCode extension allows VSCode to open a <a href="/prj/gtirb">GTIRB</a> file
+displaying an assembly file listing of the file's contents.  When used
+in combination with GrammaTech's <a href="/prj/ddisasm">DDisasm</a> disassembler, the GTIRB
+VSCode extension provides a reverse engineering UI with unparalleled
+accuracy.  The VSCode UI provides the following features (all
+demonstrated in the video below):</p>
 <ul>
 <li>
-<p><strong>Hovering</strong> over a line in the file will bring up any AuxData
-associated with the current line.</p>
+<p><strong>Navigation:</strong></p>
+<ul>
+<li>
+<p><strong>Address.</strong> Jump to the listing line corresponding to a
+specified address</p>
 </li>
 <li>
-<p><strong>Navigation</strong> to definitions and references is supported by
-leveraging symbol information from the GTIRB file.  Finally,
-binary rewriting is also supported.</p>
+<p><strong>Definition.</strong> Jump to a definition from any symbolic reference</p>
 </li>
 <li>
-<p><strong>Binary Rewriting</strong> is supported by directly editing the assembly
-code through the VSCode UI, and then saving the file in VSCode.
-When the edits are made, the GTIRB VSCode extension records the
-code blocks that were modified and saves their references to
-portions of the modified assembly file.  Then when the file is
-saved, the GTIRB VSCode extension loops through every modified
-basic block and updates it in the backing GTIRB file using the
-<a href="https://github.com/grammatech/gtirb-rewriting">gtirb-rewriting</a> API.  After updating the GTIRB file, the
-<a href="https://github.com/grammatech/gtirb-pprinter">GTIRB-PPrinter</a> is used to assemble and link a new modified
-binary reflecting the user's interactive edits.  The following
-short video demonstrates a simple interactive binary rewrite.</p>
+<p><strong>Reference.</strong> List, preview, and jump to the references of any
+symbol</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Static Analysis.</strong> Hovering over a line in the listing will bring
+up any AuxData associated that address in the binary.  This can
+contain arbitrary static analysis information, and will at least
+contain local data-flow information for GTIRB files produced by
+DDisasm.</p>
+</li>
+<li>
+<p><strong>Decompilation.</strong> Display the decompilation of a function by
+hovering over the function name.  Only available when the backing
+GTIRB file has embedded decompilation information.</p>
+</li>
+<li>
+<p><strong>Binary Rewriting.</strong> Directly edit the assembly code listing
+through the VSCode UI, and then save the file in VSCode.  When the
+edits are made, the GTIRB VSCode extension records the code blocks
+that were modified and saves their references to portions of the
+modified assembly file.  Then when the file is saved, the GTIRB
+VSCode extension loops through every modified basic block and
+updates it in the backing GTIRB file using the <a href="https://github.com/grammatech/gtirb-rewriting">gtirb-rewriting</a>
+API.  After updating the GTIRB file, the <a href="https://github.com/grammatech/gtirb-pprinter">GTIRB-PPrinter</a> is
+used to assemble and link a new modified binary reflecting the
+user's interactive edits.</p>
   <center>
   <div class="w3-hide-medium w3-hide-large">
   <video width=300px height=187px playsinline controls muted>
