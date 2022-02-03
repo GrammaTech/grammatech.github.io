@@ -37,12 +37,12 @@ displaying an assembly file listing of the GTIRB file contents.
     <center>
     <div class="w3-hide-medium w3-hide-large">
     <video width=300px height=187px playsinline controls muted>
-    <source src="https://download.grammatech.com/research/simple-binary-rewrite-vscode-gtirb-smaller.mp4#t=0.01" type="video/mp4">
+    <source src="https://download.grammatech.com/research/vscode-demo-short.mp4#t=0.01" type="video/mp4">
     </video>
     </div>
     <div class="w3-hide-small">
     <video width=800px height=500px playsinline controls muted>
-    <source src="https://download.grammatech.com/research/simple-binary-rewrite-vscode-gtirb-smaller.mp4#t=0.01" type="video/mp4">
+    <source src="https://download.grammatech.com/research/vscode-demo-short.mp4#t=0.01" type="video/mp4">
     </video>
     </div>
     </center>
