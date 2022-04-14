@@ -1,0 +1,60 @@
+<center style="background-color:black">
+
+\begin{tikzpicture}%%Caption: Software Architecture Diagram.
+  [
+    sibling distance=2em,
+    level distance=1.25em,
+    node distance=8em,
+    color=white,
+    ast/.style={circle,draw=alum-6,fill=gray},
+    module/.style={draw, text width=8em, text centered},
+    c/.style={},
+    rust/.style={},
+    both/.style={},
+    label/.style={auto,sloped,text width=5em}
+  ]
+
+  \node [ast] (asts) {}
+  child { node [ast] (asts-left) {}}
+  child { node [ast] {} {
+      child { node [ast] {}{
+          child { node [ast] {}}
+          child { node [ast] {} {
+              child { node [ast] (asts-bottom) {}}}}}}
+      child { node [ast] (asts-right) {}}}};
+  \node[circle, draw, fit=(asts) (asts-bottom) (asts-right) (asts-left)] (cram) {};
+  \node[text width=6em, text centered,fill=background,fill opacity=0.85] at (cram.center) {CRAM IDE\\(Mnemosyne)};
+
+  \node[module, both, above left=of cram] (assurance) {Automated\\ assurance\\ generator};
+  \node[module, c, above=of cram] (refactor) {C++\\ static analyzer\\ \& refactoring\\ engine};
+  \node[module, both, right=of cram] (pattern) {C++ code pat- \\ tern translator};
+  \node[module, rust, below=of cram] (synthesizer) {Rust\\ code-segment\\ synthesizer};
+  \node[module, rust, below left=of cram] (generator) {Rust code generator};
+  \node[bob, ,minimum width=3.5em, left=of cram] (user) {};
+
+  \draw[->, very thick] ($(cram.center) + (0,5em)$) arc (90 : -135 : 5em );
+
+  \draw[->,bend left=2] (assurance) to node[label,above] {$\!\!\!$\mbox{tests, proofs, cex}} (cram);
+  \draw[<-,bend right=2] (assurance) to node[label,below] {\mbox{current code}} (cram);
+  \draw[->,bend left=2] (refactor) to node[label,above] {safer C++} (cram);
+  \draw[<-,bend right=2] (refactor) to node[label,above] {syntax~tree} (cram);
+  \draw[->,bend left=2] (pattern) to node[label,above] {\vspace*{2pt}safer C++} (cram);
+  \draw[<-,bend right=2] (pattern) to node[label,below] {\vspace*{-2pt}\mbox{Rust w/ holes}} (cram);
+  \draw[->,bend left=2] (synthesizer) to node[label,above] {\mbox{Rust w/ holes}} (cram);
+  \draw[<-,bend right=2] (synthesizer) to node[label,above] {$\!\!\!\!\!\!\!$\mbox{Rust segments}} (cram);
+  \draw[->,bend left=2] (generator) to node[label,above] {$\!\!\!$\mbox{complete Rust}} (cram);
+  \draw[<-,bend right=2] (generator) to node[label,below] {$\!\!\!$\mbox{Rust segments}} (cram);
+  \draw[->,bend  left=2] (user) to node[label,above] {\mbox{well-d.~C++}}  (cram);
+  \draw[<-,bend right=2] (user) to node[label,below] {\mbox{well-d.~Rust}} (cram);
+
+  %% Key:
+  %% \node[module, c,    above=8em of pattern] (c) {\mbox{operating on C++}};
+  %% \node[module, rust, above=1em of c]       (rust) {operating on Rust};
+  %% \node[module, both, below=1em of c]       (both) {operating on both};
+
+  %% Local Variables:
+  %% mode: latex
+  %% End:
+\end{tikzpicture}
+
+</center>

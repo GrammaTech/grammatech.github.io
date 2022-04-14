@@ -1,0 +1,132 @@
+\begin{tikzpicture}%% Caption: Re-link dynamic executable and shared libraries into a single static binary.
+  %% #fig:to-static
+  [
+    node distance=0,
+    piece/.style = {draw, text=black},
+    elf/.style = {draw, fill=black!10, text width=4em, text centered, text=black},
+    Elf/.style = {elf, text width=8em},
+    ELF/.style = {elf, text width=12em, font=\tt},
+    lib/.style = {elf, text width=12em, fill=gt@blue!30},
+    lib2/.style = {elf, text width=12em, fill=gt@plum!30},
+    move/.style = {->,very thick, color=gt@dkgray},
+    follow/.style = {move,very thick, dotted},
+    label/.style = {text=black,font=\tt},
+  ]
+
+  \node[ELF] (magic)   {\tt{?ELF}};
+  \node[ELF,below=of magic] (header) {ELF Header};
+  \node[ELF,below=of header] (program-table) {Program Table};
+  \node[ELF,below=0.75em of program-table] (etc1) {\ldots{}};
+  \node[ELF,below=0.75em of etc1] (init) {\tt{.init}};
+  \node[ELF,below=of init] (text) {\tt{.text}\\~\\~\\~};
+  %% \node[used,font=\scriptsize,below=4ex of init] (used1) {};
+  %% \node[used,font=\scriptsize,below=of used1] (used2) {};
+  %% \node[unused,font=\scriptsize,below=of used2] (more) {\ldots{}};
+  %% \node[used,font=\scriptsize,below=of more] (used3) {};
+  \node[ELF,below=of text] (fini) {\tt{.fini}};
+  \node[ELF,below=0.75em of fini] (etc3) {\ldots{}};
+  \node[ELF,below=0.75em of etc3] (dynamic) {.dynamic};
+  \node[ELF,below=of dynamic] (got) {.got};
+  \node[ELF,below=0.75em of got] (etc4) {\ldots{}};
+  \node[ELF,below=0.75em of etc4] (section-table) {Section Table};
+
+  \node[draw, very thick, inner sep=0.5em,
+    fit=(section-table) (got) (dynamic) (etc3) (init) (text) (etc1) (program-table) (magic)] (ELF) {};
+  \node[label, above=0.125cm of ELF] {\large{curl}};
+
+  %% Program and Section Offsets
+  %% \draw[follow,bend left=120,looseness=3]
+  %%      (phoff.east) to (program-table.east);
+  %% \draw[follow,bend right=90,looseness=1]
+  %%      (shoff.west) to (section-table.west);
+
+  %% Dynamic Linking (curves on the left)
+  % header -> program-table
+  %% \draw[follow,bend right] (header.west) to (program-table.west);
+  %% % program-table -> dynamic
+  %% \draw[follow,bend right] (program-table.west) to (dynamic.west);
+  %% % dynamic -> dynsym
+  %% \draw[follow,bend left] (dynamic.west) to (dynsym.west);
+  %% % dynamic -> dynstr
+  %% \draw[follow,bend left] (dynamic.west) to (dynstr.west);
+  %% % dynamic -> init
+  %% \draw[follow,bend left] (dynamic.west) to (init.west);
+  %% % text -> init
+  %% \draw[follow,bend left] (text.west) to (init.west);
+
+  %% LD
+  \node[piece,fill=blue!20,right=2em of dynamic] (ld) {ld.so};
+  \draw[follow,<->] (dynamic) to (ld);
+
+  %% Shared Library (libC)
+  \node[lib,right=8em of magic] (libc-head) {\verb|^?ELF|};
+  \node[lib,below=0.75em of libc-head] (libc-etc1) {\ldots{}};
+  \node[lib,below=0.75em of libc-etc1] (libc-init) {\tt{.init}};
+  \node[lib,below=of libc-init] (libc-text) {\tt{.text}\\~\\~};
+  \node[lib,below=of libc-text] (libc-fini) {\tt{.fini}};
+  \node[lib,below=0.75em of libc-fini] (libc-etc2) {\ldots{}};
+  \node[lib,below=0.75em of libc-etc2] (libc-section) {Section Table};
+  \node[draw, very thick, inner sep=0.5em,fit=(libc-head) (libc-etc1) (libc-init) (libc-text) (libc-fini) (libc-section)] (libc) {};
+  \node[label, above=0 of libc] {\large{libc}};
+  \draw[follow,<->] (ld) to (libc-section.west);
+
+  %% Shared Library (libcrypt)
+  \node[lib2,below=4em of libc-section] (libcrypt-head) {\verb|^?ELF|};
+  \node[lib2,below=0.75em of libcrypt-head] (libcrypt-etc1) {\ldots{}};
+  \node[lib2,below=0.75em of libcrypt-etc1] (libcrypt-init) {\tt{.init}};
+  \node[lib2,below=of libcrypt-init] (libcrypt-text) {\tt{.text}\\~};
+  \node[lib2,below=of libcrypt-text] (libcrypt-fini) {\tt{.fini}};
+  \node[lib2,below=0.75em of libcrypt-fini] (libcrypt-etc2) {\ldots{}};
+  \node[lib2,below=0.75em of libcrypt-etc2] (libcrypt-section) {Section Table};
+  \node[draw, very thick, inner sep=0.5em,fit=(libcrypt-head) (libcrypt-etc1) (libcrypt-init) (libcrypt-text) (libcrypt-fini) (libcrypt-section)] (libcrypt) {};
+  \node[text=black, above=0 of libcrypt] {\large{libcrypt}};
+  \draw[follow,<->] (ld) to (libcrypt-section.west);
+
+  \node[draw, very thick, dotted, inner sep=1.75em, fit=(ELF) (libc) (libcrypt)] (before) {};
+  \node[below=1em of before] {Before: curl executable};
+  \node[below=2.25em of before] {dynamically linked with};
+  \node[below=3.5em of before] {libc and libcrypt};
+
+  %% to-static
+  \node[ELF,right=12em of libc-head] (magic-tostatic) {\verb|^?ELF|};
+  \node[ELF,below=of magic-tostatic] (header-tostatic) {ELF Header};
+  \node[ELF,below=of header-tostatic] (program-table-tostatic) {Program Table};
+  \node[ELF,below=0.75em of program-table-tostatic] (etc1-tostatic) {\ldots{}};
+  \node[ELF,below=0.75em of etc1-tostatic] (init-tostatic) {\tt{.init}};
+  \node[lib,below=of init-tostatic] (libc-init-tostatic) {\tt{.init}};
+  \node[lib2,below=of libc-init-tostatic] (libcrypt-init-tostatic) {\tt{.init}};
+  \node[ELF,below=of libcrypt-init-tostatic] (text-tostatic) {\tt{.text}\\~\\~\\~};
+  \node[lib,below=of text-tostatic] (libc-text-tostatic) {\tt{.text}\\~\\~};
+  \node[lib2,below=of libc-text-tostatic] (libcrypt-text-tostatic) {\tt{.text}\\~};
+  \node[ELF,below=of libcrypt-text-tostatic] (fini-tostatic) {\tt{.fini}};
+  \node[lib,below=of fini-tostatic] (libc-fini-tostatic) {\tt{.fini}};
+  \node[lib2,below=of libc-fini-tostatic] (libcrypt-fini-tostatic) {\tt{.fini}};
+  \node[ELF,below=0.75em of libcrypt-fini-tostatic] (etc3-tostatic) {\ldots{}};
+  \node[ELF,below=0.75em of etc3-tostatic] (dynamic-tostatic) {.dynamic};
+  \node[ELF,below=of dynamic-tostatic] (got-tostatic) {.got};
+  \node[ELF,below=0.75em of got-tostatic] (etc4-tostatic) {\ldots{}};
+  \node[lib,below=of etc4-tostatic] (libc-etc2-tostatic) {\ldots{}};
+  \node[lib2,below=of libc-etc2-tostatic] (libcrypt-etc2-tostatic) {\ldots{}};
+
+  \node[ELF,below=0.75em of libcrypt-etc2-tostatic] (section-table-tostatic) {Section Table};
+
+  \node[draw, very thick, inner sep=0.5em,
+    fit=(section-table-tostatic) (got-tostatic) (dynamic-tostatic) (etc3-tostatic) (init-tostatic) (text-tostatic) (etc1-tostatic) (program-table-tostatic) (magic-tostatic)] (ELF-tostatic) {};
+  \node[text=black, above=0 of ELF-tostatic] {\large{static-curl}};
+
+  \node[draw, very thick, dotted, inner sep=1.75em, fit=(ELF-tostatic)] (after) {};
+  \node[below=1em of after] {After: curl executable};
+  \node[below=2.25em of after] {statically linked with};
+  \node[below=3.5em of after] (lowest) {libc and libcrypt};
+
+  \draw[move, very thick, ->] ($(ELF-tostatic.west) - (10.5em,-2em)$) to node[text=black, auto, yshift=0.25em] {\huge{to-static}} ($(ELF-tostatic.west) - (0.5em,-2em)$);
+
+  %% Caption.
+  %% \node[draw, very very thick, inner sep=1cm, fit=(before) (after) (lowest)] (whole) {};
+  %% \node[below=1em of whole] {\huge{Standard Linux curl executable with dynamically linked libc and libcrypt libraries}};
+  %% \node[below=3em of whole] {\huge{transformed into a statically single linked executable including curl and both libraries.}};
+
+%% Local Variables:
+%% mode: latex
+%% end:
+\end{tikzpicture}

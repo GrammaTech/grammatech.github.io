@@ -1,0 +1,74 @@
+\begin{tikzpicture}%% Caption: Remove used code blocks from the control flow graph (CFG) and patch up fall through edges.
+  %% #fig:gtirb-reduce
+  [
+    block/.style = {draw, minimum height=2em, minimum width=2em, rounded corners},
+    datablock/.style = {block, fill=gt@gray!20},
+    codeblock/.style = {block, fill=gt@red!20},
+    crossed/.style = {red, very thick, dotted},
+    cross/.style={cross out, draw=black, minimum size=2*(#1-\pgflinewidth), inner sep=0pt, outer sep=0pt, very thick}
+  ]
+  \node[] (module) {};
+  \node[below left=0em and 7em of module] (code) {Code};
+  \node[below right=0em and 7em of module] (data) {Data};
+
+  \node[codeblock, below=of code] (c1) {A};
+  \node[codeblock, below=of c1] (c2) {B};
+  \node[crossed, codeblock, below left=of c2] (c3) {C};
+  \node[crossed, codeblock, below right=of c2] (c4) {D};
+  \node[crossed, codeblock, below=of c4] (c5) {E};
+  \node[crossed, codeblock, right=of c4] (c6) {G};
+  \node[codeblock, below=of c3] (c7) {F};
+  \node[codeblock, below right=of c7] (c8) {H};
+  \node[codeblock, below=of c8] (c9) {I};
+
+  \node[datablock, below=of data] (d1) {1};
+  \node[datablock, below=0em of d1] (d2) {2};
+  \node[crossed, datablock, below=0em of d2] (d3) {3};
+  \node[datablock, below=0em of d3] (d4) {4};
+  \node[datablock, below=0em of d4] (d5) {5};
+  \node[datablock, below=0em of d5] (d6) {6};
+  \node[datablock, below=0em of d6] (d7) {7};
+  \node[datablock, below=0em of d7] (d8) {8};
+
+  %% Control Flow
+  \draw[->, very thick] (c1) to (c2);
+  \draw[->, crossed, bend right] (c2) to (c3);
+  \draw[->, crossed, bend left] (c2) to (c4);
+  \draw[->, crossed, bend left] (c4) to (c6);
+  \draw[->, crossed, bend left] (c6) to (c4);
+  \draw[->, crossed] (c4) to (c5);
+  \draw[->, crossed] (c3) to (c7);
+  \draw[->, crossed, bend left] (c5) to (c8);
+  \draw[->, very thick, bend right] (c7) to (c8);
+  \draw[->, very thick] (c8) to (c9);
+
+  %% Removed
+  \draw (c3) node[cross, red] {};
+  \draw (c4) node[cross, red] {};
+  \draw (c5) node[cross, red] {};
+  \draw (c6) node[cross, red] {};
+  \draw (d3) node[cross, red] {};
+  \draw[->, very thick, dotted, bend left] (c2) to node[] (reroute) {} (c7);
+
+  %% Caption.
+  %% \node[draw, very very thick, inner sep=1cm, fit=(code) (data) (c3) (c9)] (whole) {};
+  %% \node[below=1em of whole] {\huge{First code blocks C, D, E, G, and data block 3}};
+  %% \node[below=3em of whole] {\huge{are identified as only used by unwanted features.}};
+  %% \node[below=5em of whole] {\huge{These blocks are removed, then the remaining}};
+  %% \node[below=7em of whole] {\huge{blocks are re-laid-out and control flow is redirected.}};
+
+  \node[below right=1em and 2em of code] (label1) {1. Code and data blocks};
+  \node[below=0em of label1] (label2) {of unwanted feature};
+  \node[below=0em of label2] (label3) {are removed};
+  \draw[->, gray, very thick] (label3) to (c6);
+  \draw[->, gray, very thick] (label3) to (d3);
+
+  \node[below=10em of label1] (label4) {2. Control flow is};
+  \node[below=0em of label4] (label5) {re-routed around};
+  \node[below=0em of label5] (label6) {removed code blocks};
+  \draw[->, gray, very thick] (label6.north west) to (reroute);
+
+%% Local Variables:
+%% mode: latex
+%% end:
+\end{tikzpicture}
