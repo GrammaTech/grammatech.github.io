@@ -53,3 +53,20 @@ from the tester simply running the software, as follows:
       between the fuzzer and the software
     - _Demultiplex_ inputs - separate the fuzzer's mutated input into component
       inputs on the software's input channels; supply data on demand.
+
+## Demo
+The following video demonstrates the usage of Bindle to harness an
+application for fuzz testing.
+
+<center>
+<div class="w3-hide-medium w3-hide-large">
+<video width=300px height=187px playsinline controls muted>
+<source src="https://download.grammatech.com/research/bindle-demo.mp4#t=0.01" type="video/mp4">
+</video>
+</div>
+<div class="w3-hide-small">
+<video width=800px height=500px playsinline controls muted>
+<source src="https://download.grammatech.com/research/bindle-demo.mp4#t=0.01" type="video/mp4">
+</video>
+</div>
+</center>
