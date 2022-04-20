@@ -35,3 +35,20 @@ To help analysts achieve a deep understanding of firmware, REAFFIRM's analyses i
 Cyber security testers can use REAFFIRM to extract key components for testing. Because our system identifies, isolates, and virtualizes the hardware-coupled portions of firmware components, testing can proceed in a virtualized environment, without the expense and risk of damage associated with using real hardware.
  
 Through its use of data science tools such as Jupyter notebooks, REAFFIRM supports reproducibility and gradual automation of reverse-engineering and testing workflows.
+
+## Demo
+The following video demonstrates the usage of REAFFIRM to analyze,
+extract, then debug and fuzz extracted components of a firmware image.
+
+<center>
+<div class="w3-hide-medium w3-hide-large">
+<video width=300px height=187px playsinline controls muted>
+<source src="https://download.grammatech.com/research/reaffirm-demo.mp4#t=0.01" type="video/mp4">
+</video>
+</div>
+<div class="w3-hide-small">
+<video width=800px height=500px playsinline controls muted>
+<source src="https://download.grammatech.com/research/reaffirm-demo.mp4#t=0.01" type="video/mp4">
+</video>
+</div>
+</center>
