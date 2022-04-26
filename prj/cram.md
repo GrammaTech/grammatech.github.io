@@ -39,26 +39,5 @@ translation.
 </center>
 
 
-## Demo
-
-The following video demonstrates the usage of CRAM to refactor a C++
-code base towards a Rust implementation of the same program, and then
-ultimately translate the refactored C++ to an idiomatic Rust
-implementation.  Note this is a rough demo video of tooling that is
-still very much a work in progress.
-
-<center>
-<div class="w3-hide-medium w3-hide-large">
-<video width=300px height=187px playsinline controls muted>
-<source src="https://download.grammatech.com/research/lilac-rough-demo.mp4#t=0.01" type="video/mp4">
-</video>
-</div>
-<div class="w3-hide-small">
-<video width=800px height=500px playsinline controls muted>
-<source src="https://download.grammatech.com/research/lilac-rough-demo.mp4#t=0.01" type="video/mp4">
-</video>
-</div>
-</center>
-
 [Mnemosyne]: {{ "/prj/mnemosyne"|url }}
 [machine programming]: {{ "/ra/machine-programming"|url }}
