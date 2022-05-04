@@ -16,8 +16,15 @@ The GTIRB VSCode extension allows VSCode to open a [GTIRB][] file
 displaying an assembly file listing of the file's contents.  When used
 in combination with GrammaTech's [DDisasm][] disassembler, the GTIRB
 VSCode extension provides a reverse engineering UI with unparalleled
-accuracy.  The VSCode UI provides the following features (all
-demonstrated in the video below):
+accuracy.
+
+The VSCode UI is available as open-source software.  View the
+repository at [github.com/grammatech/gtirb-vscode].
+
+[github.com/grammatech/gtirb-vscode]: https://github.com/grammatech/gtirb-vscode
+
+The VSCode UI provides the following features (all demonstrated in the
+video below):
 
 - **Navigation:**
 
