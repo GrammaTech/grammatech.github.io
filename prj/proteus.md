@@ -60,3 +60,22 @@ workflow or independently:
 - Exploitability Analysis – assessment of the exploitability of the discovered weaknesses
 - Binary Patching – automated recommendation and application of patches for exploitable weaknesses
 - Binary Hardening – additional protections for weaknesses that may have remained undiscovered during analysis.
+
+## Demo
+
+The following video introduces Proteus and demonstrates its usage
+spinning up multiple VMs in a unified fuzzing campaign to identify,
+triage, and report multiple vulnerabilities in an example program.
+
+<center>
+<div class="w3-hide-medium w3-hide-large">
+<video width=300px height=187px playsinline controls muted>
+<source src="https://static.grammatech.com/research/proteus-demo.mp4#t=0.01" type="video/mp4">
+</video>
+</div>
+<div class="w3-hide-small">
+<video width=800px height=500px playsinline controls muted>
+<source src="https://static.grammatech.com/research/proteus-demo.mp4#t=0.01" type="video/mp4">
+</video>
+</div>
+</center>
