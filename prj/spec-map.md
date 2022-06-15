@@ -22,5 +22,5 @@ mapping changes in a specification to the affected program components
 for the maintenance of legacy software.
 
 <center class="w3-text-light-grey gt-smaller-on-small">
-  {% include ../img/spec-map.svg %}
+  {% include '../img/spec-map.svg' %}
 </center>

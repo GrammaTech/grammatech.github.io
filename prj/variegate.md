@@ -33,7 +33,7 @@ population of functionally equivalent variants with significant
 differences from the original binary and from one another
 
 <center class="w3-text-light-grey gt-smaller-on-small">
-  {% include ../img/variegate.svg %}
+  {% include '../img/variegate.svg' %}
 </center>
 
 ## Usage

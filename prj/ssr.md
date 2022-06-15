@@ -21,10 +21,10 @@ brief: |
 ---
 
 <div class="w3-hide-medium w3-hide-small" style="display:absolute;width:100px;position:fixed;top:12px;right:12px;">
-  {% include ../img/ssr.svg %}
+  {% include '../img/ssr.svg' %}
 </div>
 <div class="w3-hide-large" style="display:absolute;width:100px;position:fixed;top:12px;right:45%;width:10%;">
-  {% include ../img/ssr.svg %}
+  {% include '../img/ssr.svg' %}
 </div>
 
 Software Search and Replace (SSR) is a software transformation and

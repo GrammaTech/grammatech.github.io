@@ -28,7 +28,7 @@ particularly useful when reducing library code as libraries often include much
 more functionality than what is needed for any particular application.
 
 <center class="w3-text-dark-grey gt-smaller-on-small">
-  {% include ../img/cfg-reduce.svg %}
+  {% include '../img/cfg-reduce.svg' %}
 </center>
 
 ## Aggressive Test-base Reduction
@@ -46,7 +46,7 @@ program size but will likely break untested program behavior.
 
 <center class="w3-text-dark-grey gt-smaller-on-small">
   <div class="w3-light-grey w3-round" style="width:228.70804pt">
-    {% include ../img/test-reduce.svg %}
+    {% include '../img/test-reduce.svg' %}
   </div>
 </center>
 

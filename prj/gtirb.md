@@ -23,7 +23,7 @@ data structure (shown below).
 
 <center class="gt-smaller-on-small">
   <!-- <img class="w3-round" src="{{ "/img/gtirb.svg"|url }}" width="80%"> -->
-  {% include ../img/gtirb.svg %}
+  {% include '../img/gtirb.svg' %}
 </center>
 
 The GTIRB data structure tries to structurally require the minimal

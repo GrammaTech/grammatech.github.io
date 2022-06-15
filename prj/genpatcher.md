@@ -27,7 +27,7 @@ a wide range of real-world bugs, and is currently used in production
 by large software companies.
 
 <center class="w3-text-light-grey gt-smaller-on-small">
-  {% include ../img/genpatcher.svg %}
+  {% include '../img/genpatcher.svg' %}
 </center>
 
 ## Use Cases

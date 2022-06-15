@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    {% include head %}
+    {% include 'head' %}
     <link rel="stylesheet" href="https://cdn.plyr.io/3.6.7/plyr.css" />
   </head>
   <body style="color: #bdc1c6; background: #202124;">
     <header>
-      {% include g-link %}
+      {% include 'g-link' %}
     </header>
     <div class="w3-content w3-padding-large w3-margin-top gt-min-left-margin">
       <h1>{{ title }}</h1>
       <div class="w3-container">
-        {{ content | safe }}
+        {{ content }}
       </div>
-    {% include support %}
-    {% include bottom %}
+    {% include 'support' %}
+    {% include 'bottom' %}
 </body>
-{% include bottom-js %}
+{% include 'bottom-js' %}
 </html>

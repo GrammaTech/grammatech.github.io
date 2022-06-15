@@ -47,7 +47,7 @@ SEL APIs are available in:
 - **Python** available in the `asts` package at [pypi.org/asts][]
 
 <center class="gt-smaller-on-small">
-  {% include ../img/sel-asts.svg %}
+  {% include '../img/sel-asts.svg' %}
 </center>
 
 ## Presentation and demo

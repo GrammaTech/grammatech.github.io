@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    {% include head %}
+    {% include 'head' %}
   </head>
 <body style="color: #bdc1c6; background: #202124; max-width: 1400px; margin: auto;">
 
@@ -50,9 +50,9 @@
 <!-- Page content -->
 <div class="w3-margin-top">
   <div class="w3-container">
-    {{ content | safe }}
+    {{ content }}
   </div>
-  {% include bottom %}
+  {% include 'bottom' %}
 </body>
 <script>
   // Used to toggle the menu on small screens when clicking on the menu button
