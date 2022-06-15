@@ -39,6 +39,12 @@ A growing number of open-source tools and libraries are emerging that
 emit and consume GTIRB:
 
 <center>
+<span style="margin:auto;">GTIRB Ecosystem</span>
+  <img src="{{ "/img/gtirb-ecosystem.svg"|url }}" class="gt-smaller-on-small">
+  <!-- {% include '../img/gtirb-ecosystem.svg' %} -->
+</center>
+
+<center>
 
 | Tool                    | Description                                                   |
 |-------------------------|---------------------------------------------------------------|

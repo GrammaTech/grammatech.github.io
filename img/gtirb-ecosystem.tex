@@ -1,0 +1,100 @@
+\begin{tikzpicture}
+  [
+%%     sibling distance=2em,
+%%     level distance=1.25em,
+%%     node distance=8em,
+    color=white,
+    use/.style={rounded corners,draw=alum-6,very thick,text width=12em,text centered},
+    repo/.style={rounded corners,draw=alum-6,fill=gray},
+    ext/.style={repo,fill=gt@dkred},
+    label/.style={auto,sloped,text width=5em},
+    move/.style = {->,very thick, color=gt@dkgray}
+  ]
+
+  \node[font=\Huge] (repos) {\underline{Repositories}};
+  \node[font=\Huge,right=32em of repos] (uses) {\underline{Use Cases}};
+
+  %% Repos
+  \node[repo, below=of repos] (ddisasm) {DDisasm};
+  \node[repo, left=of ddisasm] (gtirb) {GTIRB};
+  \node[repo, right=of ddisasm] (pprinter) {PPrinter};
+
+  \node[repo, below left=8em and 0 of gtirb] (expr) {Expr};
+  \node[repo, below=1em of expr] (live-reg) {Live Reg};
+  \node[repo, below=1em of live-reg] (stack-var) {StackVar};
+  \node[repo, below=1em of stack-var] (reg-param) {RegParam};
+
+  \node[repo, below=16em of repos] (gtrw) {GTIRB Rewriting};
+  \node[repo, below=1em of gtrw] (functions) {gtirb-functions};
+  \node[repo, below=1em of functions] (capstone) {gtirb-capstone};
+  \node[repo, below=1em of capstone] (types) {gtirb-types};
+
+  \node[repo, right=8em of gtrw] (to-static) {to-static};
+  \node[repo, above=1em of to-static] (merge) {gtirb-merge};
+  \node[repo, above=1em of merge] (glibc-to-musl) {GLibC to MUSL};
+  \node[repo, above=1em of glibc-to-musl] (libfilter) {Libfilter};
+  \node[repo, above=1em of libfilter] (sysfilter) {Sysfilter};
+  \node[repo, below=1em of to-static] (stack-stamp) {stack-stamp};
+  \node[repo, below=1em of stack-stamp] (devirt) {Devirt};
+  \node[repo, below=1em of devirt] (pgo) {PGO};
+  \node[repo, below=1em of pgo] (peephole) {Peephole};
+  \node[repo, below=1em of peephole] (lep) {LEP};
+  \node[repo, below=1em of lep] (twit) {Twitcher};
+  \node[repo, below=1em of twit] (asan) {binary-asan};
+  \node[repo, below=1em of asan] (viz) {prof-viz};
+  \node[repo, above=1em of libfilter] (delta) {delta-debug};
+
+  \node[repo, right=8em of to-static] (tpcp-server) {TPCP-server};
+
+  \node[repo, below=16em of tpcp-server] (vscode) {GTIRB VSCode};
+  \node[repo, below=of vscode] (bed) {BED};
+  \node[repo, above=of vscode] (ff) {Fuzzer Framework};
+  \node[repo, below=of bed] (halr) {Hallucinator};
+
+  \node[repo, below=16em of gtrw] (retypd) {Retypd};
+  \node[repo, below=2em of retypd] (prototypes) {function-prototypes};
+  \node[repo, below=1em of prototypes] (function-names) {function-names};
+  \node[repo, below=1em of function-names] (dynamic-function-names) {dynamic-function-names};
+  \node[repo, left=6em of function-names] (libsweep) {libsweep};
+  \node[repo, below=1em of libsweep] (libmatch) {libmatch};
+
+  \node[ext,below=24em of to-static] (ghidra) {Ghidra};
+  \node[ext,below=1em of ghidra] (retdec) {RetDec};
+
+  %% Use Cases
+  \node[use, below=16em of uses] (defense) {Defense};
+  \node[use, below=16em of defense] (listing) {Interactive\\Analysis/Rewriting};
+  %% \node[use, below=16em of listing] (malware) {Malware ID};
+
+  %% Connections
+  \foreach \repo in {to-static, libfilter, sysfilter, stack-stamp, devirt, pgo, peephole, lep, twit, asan, viz, delta}{
+    \draw[move] (gtrw.east) to (\repo.west);
+  }
+  \foreach \repo in {to-static, libfilter, sysfilter, stack-stamp, devirt}{
+    \draw[move] (\repo.east) to (tpcp-server.west);
+  }
+  \foreach \repo in {lep, twit, asan, viz}{
+    \draw[move] (\repo.east) to (ff.west);
+  }
+  \draw[move, bend left=90] (function-names.west) to (prototypes.west);
+  \draw[move, bend right=90] (dynamic-function-names.east) to (prototypes.east);
+  \draw[move] (prototypes) to (retypd);
+
+  \draw[move, bend right] (retypd.east) to (vscode);
+  \draw[move, bend right] (retypd.east) to (bed);
+  \draw[move] (retypd.east) to (ghidra.west);
+  \draw[move] (ghidra.east) to (bed);
+  \draw[move] (retdec.east) to (bed);
+
+  \draw[move] (tpcp-server) to (ff);
+  \draw[move] (vscode) to (ff);
+  \draw[move] (vscode) to (bed);
+
+  \draw[move,bend left] (vscode.south east) to (halr.north east);
+
+  \draw[move,bend right] (libmatch.south east) to (halr.south west);
+
+  %% Local Variables:
+  %% mode: latex
+  %% End:
+\end{tikzpicture}
