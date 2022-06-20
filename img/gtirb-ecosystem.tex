@@ -32,8 +32,8 @@
   \node[repo, right=8em of gtrw] (to-static) {to-static};
   \node[repo, above=1em of to-static] (merge) {gtirb-merge};
   \node[repo, above=1em of merge] (glibc-to-musl) {GLibC to MUSL};
-  \node[repo, above=1em of glibc-to-musl] (libfilter) {Libfilter};
-  \node[repo, above=1em of libfilter] (sysfilter) {Sysfilter};
+%%   \node[repo, above=1em of glibc-to-musl] (libfilter) {Libfilter};
+%%   \node[repo, above=1em of libfilter] (sysfilter) {Sysfilter};
   \node[repo, below=1em of to-static] (stack-stamp) {stack-stamp};
   \node[repo, below=1em of stack-stamp] (devirt) {Devirt};
   \node[repo, below=1em of devirt] (pgo) {PGO};
@@ -45,12 +45,12 @@
   \node[repo, below=1em of twit] (asan) {binary-asan};
   \node[repo, below=1em of asan] (viz) {prof-viz};
 
-  \node[repo, right=8em of to-static] (tpcp-server) {TPCP-server};
+  \node[repo, right=8em of to-static] (gtirb-server) {GTIRB-server};
 
-  \node[repo, below=20em of tpcp-server] (vscode) {GTIRB VSCode};
+  \node[repo, below=20em of gtirb-server] (vscode) {GTIRB VSCode};
   \node[repo, below=of vscode] (bed) {BED};
   \node[repo, above=of vscode] (ff) {Fuzzer Framework};
-  \node[repo, below=of bed] (halr) {Hallucinator};
+%%   \node[repo, below=of bed] (halr) {Hallucinator};
 
   \node[repo, below=24em of gtrw] (retypd) {Retypd};
   \node[repo, above=1em of retypd] (gtirb-ddisasm-retypd) {ddisasm-retypd};
@@ -58,7 +58,7 @@
   \node[repo, below=1em of prototypes] (function-names) {function-names};
   \node[repo, below=1em of function-names] (dynamic-function-names) {dynamic-function-names};
   \node[repo, left=6em of function-names] (libsweep) {libsweep};
-  \node[repo, below=1em of libsweep] (libmatch) {libmatch};
+%%   \node[repo, below=1em of libsweep] (libmatch) {libmatch};
 
   \node[ext,below=30em of to-static] (ghidra) {Ghidra};
   \node[ext,below=1em of ghidra] (retdec) {RetDec};
@@ -69,11 +69,13 @@
   %% \node[use, below=16em of listing] (malware) {Malware ID};
 
   %% Connections
-  \foreach \repo in {to-static, libfilter, sysfilter, stack-stamp, devirt, pgo, peephole, lep, twit, asan, viz, delta, shuffle}{
+  %% libfilter, sysfilter
+  \foreach \repo in {to-static, stack-stamp, devirt, pgo, peephole, lep, twit, asan, viz, delta, shuffle}{
     \draw[move] (gtrw.east) to (\repo.west);
   }
-  \foreach \repo in {to-static, libfilter, sysfilter, stack-stamp, devirt, shuffle}{
-    \draw[move] (\repo.east) to (tpcp-server.west);
+  %% libfilter, sysfilter
+  \foreach \repo in {to-static, stack-stamp, devirt, shuffle}{
+    \draw[move] (\repo.east) to (gtirb-server.west);
   }
   \foreach \repo in {lep, twit, asan, viz}{
     \draw[move] (\repo.east) to (ff.west);
@@ -89,13 +91,12 @@
   \draw[move] (ghidra.east) to (bed);
   \draw[move] (retdec.east) to (bed);
 
-  \draw[move] (tpcp-server) to (ff);
+  \draw[move] (gtirb-server) to (ff);
   \draw[move] (vscode) to (ff);
   \draw[move] (vscode) to (bed);
 
-  \draw[move,bend left] (vscode.south east) to (halr.north east);
-
-  \draw[move,bend right] (libmatch.south east) to (halr.south west);
+%%   \draw[move,bend left] (vscode.south east) to (halr.north east);
+%%   \draw[move,bend right] (libmatch.south east) to (halr.south west);
 
   %% Local Variables:
   %% mode: latex
