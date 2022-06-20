@@ -23,6 +23,7 @@
   \node[repo, below=1em of expr] (live-reg) {Live Reg};
   \node[repo, below=1em of live-reg] (stack-var) {StackVar};
   \node[repo, below=1em of stack-var] (reg-param) {RegParam};
+  \node[repo, below=1em of reg-param] (ibranch) {iBranch};
 
   \node[repo, below=16em of repos] (gtrw) {GTIRB Rewriting};
   \node[repo, below=1em of gtrw] (functions) {gtirb-functions};
@@ -34,6 +35,8 @@
   \node[repo, above=1em of merge] (glibc-to-musl) {GLibC to MUSL};
 %%   \node[repo, above=1em of glibc-to-musl] (libfilter) {Libfilter};
 %%   \node[repo, above=1em of libfilter] (sysfilter) {Sysfilter};
+%%   \node[repo, above=1em of sysfilter] (redact) {Redact};
+%%   \node[repo, above=1em of redact] (sys-enforce) {SysEnforce};
   \node[repo, below=1em of to-static] (stack-stamp) {stack-stamp};
   \node[repo, below=1em of stack-stamp] (devirt) {Devirt};
   \node[repo, below=1em of devirt] (pgo) {PGO};
@@ -70,7 +73,7 @@
 
   %% Connections
   %% libfilter, sysfilter
-  \foreach \repo in {to-static, stack-stamp, devirt, pgo, peephole, lep, twit, asan, viz, delta, shuffle}{
+  \foreach \repo in {to-static, stack-stamp, redact, devirt, pgo, peephole, lep, twit, asan, viz, delta, shuffle}{
     \draw[move] (gtrw.east) to (\repo.west);
   }
   %% libfilter, sysfilter
@@ -84,6 +87,7 @@
   \draw[move, bend right=90] (dynamic-function-names.east) to (prototypes.east);
   \draw[move] (prototypes) to (retypd);
   \draw[move, bend right=90] (gtirb-ddisasm-retypd.west) to (retypd.west);
+  \draw[move, bend right] (libsweep.south east) to (function-names.south west);
 
   \draw[move, bend right] (retypd.east) to (vscode);
   \draw[move, bend right] (retypd.east) to (bed);
