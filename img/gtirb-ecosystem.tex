@@ -4,20 +4,28 @@
 %%     level distance=1.25em,
 %%     node distance=8em,
     color=white,
-    use/.style={rounded corners,draw=alum-6,very thick,text width=12em,text centered},
-    repo/.style={rounded corners,draw=alum-6,fill=gray},
+    use/.style={rounded corners,draw=alum-1,thick,text width=12em,text centered},
+    repo/.style={rounded corners,draw=alum-6,fill=gt@dkgray},
     ext/.style={repo,fill=gt@dkred},
+    open/.style={draw=gt@cyan,thick},
     label/.style={auto,sloped,text width=5em},
-    move/.style = {->,very thick, color=gt@dkgray}
+    move/.style = {->,very thick, color=gt@dkgray},
+    supports/.style = {move,dashed}
   ]
 
   \node[font=\Huge] (repos) {\underline{Repositories}};
   \node[font=\Huge,right=32em of repos] (uses) {\underline{Use Cases}};
+  \node[font=\Large, below left=2em and 8em of repos, text width=12em] (key) {\underline{Key}\\
+    \begin{itemize}
+    \item {\color{gt@cyan}Open Source}
+    \item \colorbox{gt@dkred}{\color{white}{External}}
+    \end{itemize}
+};
 
   %% Repos
-  \node[repo, below=of repos] (ddisasm) {DDisasm};
-  \node[repo, left=of ddisasm] (gtirb) {GTIRB};
-  \node[repo, right=of ddisasm] (pprinter) {PPrinter};
+  \node[repo, open, below=of repos] (ddisasm) {DDisasm};
+  \node[repo, open, left=of ddisasm] (gtirb) {GTIRB};
+  \node[repo, open, right=of ddisasm] (pprinter) {PPrinter};
 
   \node[repo, below left=8em and 0 of gtirb] (expr) {Expr};
   \node[repo, below=1em of expr] (live-reg) {Live Reg};
@@ -25,19 +33,19 @@
   \node[repo, below=1em of stack-var] (reg-param) {RegParam};
   \node[repo, below=1em of reg-param] (ibranch) {iBranch};
 
-  \node[repo, below=16em of repos] (gtrw) {GTIRB Rewriting};
-  \node[repo, below=1em of gtrw] (functions) {gtirb-functions};
-  \node[repo, below=1em of functions] (capstone) {gtirb-capstone};
-  \node[repo, below=1em of capstone] (types) {gtirb-types};
+  \node[repo, open, below=16em of repos] (gtrw) {GTIRB Rewriting};
+  \node[repo, open, below=1em of gtrw] (functions) {gtirb-functions};
+  \node[repo, open, below=1em of functions] (capstone) {gtirb-capstone};
+  \node[repo, open, below=1em of capstone] (types) {gtirb-types};
 
   \node[repo, right=8em of gtrw] (to-static) {to-static};
   \node[repo, above=1em of to-static] (merge) {gtirb-merge};
   \node[repo, above=1em of merge] (glibc-to-musl) {GLibC to MUSL};
-%%   \node[repo, above=1em of glibc-to-musl] (libfilter) {Libfilter};
-%%   \node[repo, above=1em of libfilter] (sysfilter) {Sysfilter};
+%%   \node[repo, open, above=1em of glibc-to-musl] (libfilter) {Libfilter};
+%%   \node[repo, open, above=1em of libfilter] (sysfilter) {Sysfilter};
 %%   \node[repo, above=1em of sysfilter] (redact) {Redact};
 %%   \node[repo, above=1em of redact] (sys-enforce) {SysEnforce};
-  \node[repo, below=1em of to-static] (stack-stamp) {stack-stamp};
+  \node[repo, open, below=1em of to-static] (stack-stamp) {stack-stamp};
   \node[repo, below=1em of stack-stamp] (devirt) {Devirt};
   \node[repo, below=1em of devirt] (pgo) {PGO};
   \node[repo, below=1em of pgo] (peephole) {Peephole};
@@ -50,16 +58,16 @@
 
   \node[repo, right=8em of to-static] (gtirb-server) {GTIRB-server};
 
-  \node[repo, below=20em of gtirb-server] (vscode) {GTIRB VSCode};
+  \node[repo, open, below=20em of gtirb-server] (vscode) {GTIRB VSCode};
   \node[repo, below=of vscode] (bed) {BED};
   \node[repo, above=of vscode] (ff) {Fuzzer Framework};
 %%   \node[repo, below=of bed] (halr) {Hallucinator};
 
-  \node[repo, below=24em of gtrw] (retypd) {Retypd};
-  \node[repo, above=1em of retypd] (gtirb-ddisasm-retypd) {ddisasm-retypd};
-  \node[repo, below=2em of retypd] (prototypes) {function-prototypes};
+  \node[repo, open, below=24em of gtrw] (retypd) {Retypd};
+  \node[repo, open, above=1em of retypd] (gtirb-ddisasm-retypd) {ddisasm-retypd};
+  \node[repo, open, below=2em of retypd] (prototypes) {function-prototypes};
   \node[repo, below=1em of prototypes] (function-names) {function-names};
-  \node[repo, below=1em of function-names] (dynamic-function-names) {dynamic-function-names};
+  \node[repo, open, below=1em of function-names] (dynamic-function-names) {dynamic-function-names};
   \node[repo, left=6em of function-names] (libsweep) {libsweep};
 %%   \node[repo, below=1em of libsweep] (libmatch) {libmatch};
 
@@ -67,8 +75,9 @@
   \node[ext,below=1em of ghidra] (retdec) {RetDec};
 
   %% Use Cases
-  \node[use, below=16em of uses] (defense) {Defense\\DevSecOps};
-  \node[use, below=18em of defense] (listing) {Interactive\\Analysis/Rewriting};
+  \node[use, below=16em of uses] (devsecops) {DevSecOps};
+  \node[use, below=12em of devsecops] (fuzz) {Automated Analysis};
+  \node[use, below=6em of fuzz] (listing) {Interactive\\Analysis/Rewriting};
   %% \node[use, below=16em of listing] (malware) {Malware ID};
 
   %% Connections
@@ -98,6 +107,11 @@
   \draw[move] (gtirb-server) to (ff);
   \draw[move] (vscode) to (ff);
   \draw[move] (vscode) to (bed);
+
+  \draw[supports] (gtirb-server) to (devsecops.west);
+  \draw[supports] (ff.north east) to (fuzz.west);
+  \draw[supports] (ff.south east) to (listing.west);
+  \draw[supports] (vscode) to (listing.west);
 
 %%   \draw[move,bend left] (vscode.south east) to (halr.north east);
 %%   \draw[move,bend right] (libmatch.south east) to (halr.south west);
