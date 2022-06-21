@@ -96,7 +96,7 @@ to easily slot into existing CI/CD or Dev-Sec-Ops pipelines.
 | binary-asan      | Address Sanitizer for GTIRB                                                            |
 | prof-viz         | Profile visualization over GTIRB                                                       |
 | GTIRB-server     | REST server for GTIRB analyses and transforms                                          |
-| BED              | Byte-Equivalent Decompilation for re-compilable decompilation                          |
+| BED              | [Byte-Equivalent Decompilation][] for re-compilable decompilation                      |
 | Fuzzer Framework | Fuzz testing framework                                                                 |
 | function-names   | ML-driven identification of known functions in GTIRB                                   |
 | libsweep         | Pattern-driven identification of known functions in GTIRB                              |
@@ -123,6 +123,7 @@ to easily slot into existing CI/CD or Dev-Sec-Ops pipelines.
 [GTIRB-function-prototypes]: https://github.com/grammatech/gtirb-function-prototypes
 [GTIRB-dynamic-function-names]: https://github.com/grammatech/gtirb-dynamic-function-names
 [to-static]: {{ "/prj/to-static"|url }}
+[Byte-Equivalent Decompilation]: http://storm-country.com/blog/evo-deco
 
 ## Rewriting binaries with GTIRB
 
