@@ -67,13 +67,13 @@
   \node[ext,below=1em of ghidra] (retdec) {RetDec};
 
   %% Use Cases
-  \node[use, below=16em of uses] (defense) {Defense};
-  \node[use, below=24em of defense] (listing) {Interactive\\Analysis/Rewriting};
+  \node[use, below=16em of uses] (defense) {Defense\\DevSecOps};
+  \node[use, below=18em of defense] (listing) {Interactive\\Analysis/Rewriting};
   %% \node[use, below=16em of listing] (malware) {Malware ID};
 
   %% Connections
-  %% libfilter, sysfilter
-  \foreach \repo in {to-static, stack-stamp, redact, devirt, pgo, peephole, lep, twit, asan, viz, delta, shuffle}{
+  %% libfilter, sysfilter, redact
+  \foreach \repo in {to-static, stack-stamp, devirt, pgo, peephole, lep, twit, asan, viz, delta, shuffle}{
     \draw[move] (gtrw.east) to (\repo.west);
   }
   %% libfilter, sysfilter
