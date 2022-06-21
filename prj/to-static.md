@@ -1,6 +1,6 @@
 ---
 layout: prj
-tags: [prj, gtirb-proprietary]
+tags: prj
 title: To Static Binary Consolidation
 trl: 4
 support:

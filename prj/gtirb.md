@@ -35,16 +35,20 @@ reassembleable disassembler.  Both GTIRB and DDisasm are open source
 software.
 
 ## GTIRB Ecosystem
-A growing number of open-source tools and libraries are emerging that
-emit and consume GTIRB:
 
-<center style="margin:1em;">
+A growing ecosystem of tools, libraries, analyses, and transforms are
+emerging that emit and consume GTIRB:
+
+<center>
   <img src="{{ "/img/gtirb-ecosystem.svg"|url }}" class="gt-smaller-on-small">
   <!-- {% include '../img/gtirb-ecosystem.svg' %} -->
 </center>
 
+### Open-Source GTIRB Repositories
+GrammaTech continues to release and maintain foundational GTIRB
+tooling as open-source software.
+
 <center>
-<span style="margin:auto;padding-top:1em;padding-bottom:1em;">Open Source Repositories</span>
 
 | Repository                       | Description                                                         |
 |----------------------------------|---------------------------------------------------------------------|
@@ -63,47 +67,41 @@ emit and consume GTIRB:
 | [GTIRB-dynamic-function-names][] | Recover dynamic function names in a binary from linking information |
 | [gtirb-ghidra-plugin][]          | Import/Export GTIRB files to/from Ghidra                            |
 
-<span style="margin:auto;padding-top:1em;padding-bottom:1em;">Closed Source Tools</span>
-| Tool             | Description                                                               |
-|------------------|---------------------------------------------------------------------------|
-| Expr             | Add TSL Semantics to instructions in GTIRB                                |
-| Live Reg         | Live register analysis for GTIRB                                          |
-| StackVar         | Stack variable analysis for GTIRB                                         |
-| RegParam         | Parameter analysis for GTIRB                                              |
-| iBranch          | Indirect branch target annotation for GTIRB                               |
-| [to-static][]    | Convert a dynamically linked binary to static                             |
-| gtirb-merge      | Merge two GTIRB files, used by [to-static][]                              |
-| GLibC to MUSL    | Replace GLibC with MUSL in a binary, used by [to-static][]                |
-| Devirt           | Devirtualize indirect branches to direct branches                         |
-| PGO              | Profile guided optimization in GTIRB                                      |
-| Peephole         | Peephole replacement in GTIRB                                             |
-| shuffle          | Shuffle function layout in GTIRB                                          |
-| delta-debug      | Delta-debugging reduction of GTIRB                                        |
-| LEP              | Instrument GTIRB for lossy edge profiling to support graybox fuzz testing |
-| Twitcher         | Memory access protection in GTIRB                                         |
-| binary-asan      | Address Sanitizer for GTIRB                                               |
-| prof-viz         | Profile visualization over GTIRB                                          |
-| GTIRB-server     | REST server for GTIRB analyses and transforms                             |
-| BED              | Byte-Equivalent Decompilation for re-compilable decompilation             |
-| Fuzzer Framework | Fuzz testing framework                                                    |
-| function-names   | ML-driven identification of known functions in GTIRB                      |
-| libsweep         | Pattern-driven identification of known functions in GTIRB                 |
-
 </center>
 
-## Proprietary GTIRB transforms
+### Proprietary GTIRB Tools
 
 GrammaTech maintains the following proprietary GTIRB transforms which
 may be used to secure binaries in production settings and are designed
 to easily slot into existing CI/CD or Dev-Sec-Ops pipelines.
 
-<table><thead><tr><th>Tool</th><th>Description</th></tr></thead><tbody>
-{% for pass in collections.gtirb-proprietary %}
-<tr><td><a href="{{ pass.url|url }}">{{ pass.data.title }}</a></td><td>{{ pass.data.brief }}</td></tr>
-{% endfor %}
-</tbody>
-</table>
+| Tool             | Description                                                                            |
+|------------------|----------------------------------------------------------------------------------------|
+| [Reduce][]       | Remove unused code from a binary either conservatively or aggressively                 |
+| Expr             | Add TSL Semantics to instructions in GTIRB                                             |
+| Live Reg         | Live register analysis for GTIRB                                                       |
+| StackVar         | Stack variable analysis for GTIRB                                                      |
+| RegParam         | Parameter analysis for GTIRB                                                           |
+| iBranch          | Indirect branch target annotation for GTIRB                                            |
+| [to-static][]    | Rewrite a binary and it's dynamic libraries into a single statically linked executable |
+| merge            | Merge two GTIRB files, used by [to-static][]                                           |
+| GLibC to MUSL    | Replace GLibC with MUSL in a binary, used by [to-static][]                             |
+| Devirt           | Devirtualize indirect branches to direct branches                                      |
+| PGO              | Profile guided optimization in GTIRB                                                   |
+| Peephole         | Peephole replacement in GTIRB                                                          |
+| shuffle          | Shuffle function layout in GTIRB                                                       |
+| delta-debug      | Delta-debugging reduction of GTIRB                                                     |
+| LEP              | Instrument GTIRB for lossy edge profiling to support graybox fuzz testing              |
+| Twitcher         | Memory access protection in GTIRB                                                      |
+| binary-asan      | Address Sanitizer for GTIRB                                                            |
+| prof-viz         | Profile visualization over GTIRB                                                       |
+| GTIRB-server     | REST server for GTIRB analyses and transforms                                          |
+| BED              | Byte-Equivalent Decompilation for re-compilable decompilation                          |
+| Fuzzer Framework | Fuzz testing framework                                                                 |
+| function-names   | ML-driven identification of known functions in GTIRB                                   |
+| libsweep         | Pattern-driven identification of known functions in GTIRB                              |
 
+[Reduce]: {{ "/prj/binary-reduce"|url }}
 [blog]: https://blogs.grammatech.com/open-source-tools-for-binary-analysis-and-rewriting
 [whitepaper]: https://arxiv.org/abs/1907.02859
 [manual]: https://grammatech.github.io/gtirb

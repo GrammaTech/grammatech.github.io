@@ -1,6 +1,6 @@
 ---
 layout: prj
-tags: [prj, gtirb-proprietary]
+tags: prj
 title: Stack Stamp Binary Hardening
 support:
   agencies:
