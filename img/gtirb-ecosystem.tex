@@ -14,20 +14,14 @@
   ]
 
   \node[font=\Huge] (repos) {\underline{Repositories}};
-  \node[font=\Huge,right=32em of repos] (uses) {\underline{Use Cases}};
-  \node[font=\Large, below left=2em and 8em of repos, text width=12em] (key) {\underline{Key}\\
-    \begin{itemize}
-    \item {\color{gt@cyan}Open Source}
-    \item \colorbox{gt@dkred}{\color{white}{External}}
-    \end{itemize}
-};
+  \node[font=\Huge,right=20em of repos] (uses) {\underline{Use Cases}};
 
   %% Repos
   \node[repo, open, below=of repos] (ddisasm) {DDisasm};
   \node[repo, open, left=of ddisasm] (gtirb) {GTIRB};
   \node[repo, open, right=of ddisasm] (pprinter) {PPrinter};
 
-  \node[repo, below left=8em and 0 of gtirb] (expr) {Expr};
+  \node[repo, below left=8em and -2em of gtirb] (expr) {Expr};
   \node[repo, below=1em of expr] (live-reg) {Live Reg};
   \node[repo, below=1em of live-reg] (stack-var) {StackVar};
   \node[repo, below=1em of stack-var] (reg-param) {RegParam};
@@ -38,7 +32,7 @@
   \node[repo, open, below=1em of functions] (capstone) {gtirb-capstone};
   \node[repo, open, below=1em of capstone] (types) {gtirb-types};
 
-  \node[repo, right=8em of gtrw] (to-static) {to-static};
+  \node[repo, right=4em of gtrw] (to-static) {to-static};
   \node[repo, above=1em of to-static] (merge) {gtirb-merge};
   \node[repo, above=1em of merge] (glibc-to-musl) {GLibC to MUSL};
 %%   \node[repo, open, above=1em of glibc-to-musl] (libfilter) {Libfilter};
@@ -56,7 +50,7 @@
   \node[repo, below=1em of twit] (asan) {binary-asan};
   \node[repo, below=1em of asan] (viz) {prof-viz};
 
-  \node[repo, right=8em of to-static] (gtirb-server) {GTIRB-server};
+  \node[repo, right=4em of to-static] (gtirb-server) {GTIRB-server};
 
   \node[repo, open, below=20em of gtirb-server] (vscode) {GTIRB VSCode};
   \node[repo, below=of vscode] (bed) {BED};
@@ -68,7 +62,7 @@
   \node[repo, open, below=2em of retypd] (prototypes) {function-prototypes};
   \node[repo, below=1em of prototypes] (function-names) {function-names};
   \node[repo, open, below=1em of function-names] (dynamic-function-names) {dynamic-function-names};
-  \node[repo, left=6em of function-names] (libsweep) {libsweep};
+  \node[repo, left=4em of function-names] (libsweep) {libsweep};
 %%   \node[repo, below=1em of libsweep] (libmatch) {libmatch};
 
   \node[ext,below=30em of to-static] (ghidra) {Ghidra};
@@ -79,6 +73,14 @@
   \node[use, below=12em of devsecops] (fuzz) {Automated Analysis};
   \node[use, below=6em of fuzz] (listing) {Interactive\\Analysis/Rewriting};
   %% \node[use, below=16em of listing] (malware) {Malware ID};
+
+  %% Key
+  \node[font=\Large, below=of listing, text width=12em, draw=alum-1, dotted, inner sep=1em] (key) {\underline{Key}\\
+    \begin{itemize}
+    \item {\color{gt@cyan}Open Source}
+    \item \colorbox{gt@dkred}{\color{white}{External}}
+    \end{itemize}
+  };
 
   %% Connections
   %% libfilter, sysfilter, redact
