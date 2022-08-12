@@ -40,9 +40,13 @@ https://grammatech.github.io/
    markdown files next to each one.  Bonus, if we ever want any
    web-page specific commentary we can add it to these empty markdown
    files and it will appear as `content` in the bibtex template.
-   
+
    ```shell
    for file in bib/*.bib;do
        touch ${file%.bib}.md
    done
    ```
+
+## Adding videos
+
+Videos should be added via upload to GrammaTech's static file server, in the `/static/files/research` subdirectory. For credentials to upload to that server, please contact IT. They can then be linked from website pages using the url `https://static.grammatech.com/research/filename`.
