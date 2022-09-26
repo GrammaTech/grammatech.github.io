@@ -1,0 +1,32 @@
+name: Pages
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 1
+      - name: build-site
+        shell: bash
+        run: |
+          curl -sL https://deb.nodesource.com/setup_16.x -o /tmp/nodesource_setup.sh
+          sudo bash /tmp/nodesource_setup.sh
+          sudo apt-get update -y
+          DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true sudo apt-get install -y nodejs
+          npm install @11ty/eleventy -g
+          npm install markdown-it markdown-it-anchor markdown-it-deflist markdown-it-mermaid-plugin bibtex-parse
+          eleventy
+      - uses: actions/upload-pages-artifact@v1.0.4
+  deploy:
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/deploy-pages@v1.2.0
