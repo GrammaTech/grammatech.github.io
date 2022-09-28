@@ -83,7 +83,7 @@ to easily slot into existing CI/CD or Dev-Sec-Ops pipelines.
 | StackVar         | Stack variable analysis for GTIRB                                                      |
 | RegParam         | Parameter analysis for GTIRB                                                           |
 | iBranch          | Indirect branch target annotation for GTIRB                                            |
-| [to-static][]    | Rewrite a binary and it's dynamic libraries into a single statically linked executable |
+| [to-static][]    | Rewrite a binary and its dynamic libraries into a single statically linked executable |
 | merge            | Merge two GTIRB files, used by [to-static][]                                           |
 | GLibC to MUSL    | Replace GLibC with MUSL in a binary, used by [to-static][]                             |
 | Devirt           | Devirtualize indirect branches to direct branches                                      |
