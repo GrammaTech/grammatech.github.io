@@ -25,6 +25,8 @@ AMBER (Autonomic Monitoring and Mitigation with Blockchain-Enabled Reporting) is
  secure, redundant real-time reporting as well as forensic playback
 * a Reasoning Engine server software application and tools. These perform secondary, offline forensic and remediation efforts to mitigate future attacks, as well as reporting suspected attacks to system administrators and analysts.
 
+[![AMBER diagram](/img/amber-diagram.jpg)](/img/amber-diagram.jpg)
+
 AMBER works by identifying expected (correct) device-specific behavior and reporting deviations. Unlike many state-of-the-art techniques that only attempt to identify previously-seen attacks, AMBER's approach allows protecting against both *known* and *unknown* attacks. AMBER provides comprehensive and persistent cyber protection for devices and software, without interfering with the ability to carry out mission-essential functions.
 
 The video below is a presentation of Tiffin and mgen, core technologies underlying AMBER and other GrammaTech autonomic projects. The presentation was originally given at the [HCSS](https://cps-vo.org/group/hcss_conference) 2022 conference.

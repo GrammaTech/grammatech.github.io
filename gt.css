@@ -248,3 +248,7 @@ th, td {
 table {
     font-weight: 400;
 }
+
+p img {
+    width: 100%;
+}

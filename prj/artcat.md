@@ -18,6 +18,8 @@ brief: |
 
 ARTCAT (Autonomic Response To Cyber-Attack) is a defense-in-depth solution that monitors running applications and ensures they act as expected. At the core of ARTCAT are specifications that describe correct behavior for individual applications. These are automatically mined from correct program executions, with optional human input. When a program violates a specification, ARTCAT mitigates the problem with an automatic response. Response capabilities range from fast, simple fixes at the time and location of the error, to process-level actions and long-term repairs directed by a Reasoning Engine.
 
+[![ARTCAT diagram](/img/artcat-diagram.jpg)](/img/artcat-diagram.jpg)
+
 The full ARTCAT system includes:
 
 * semi-automated program policy generation tools, to quickly develop and deploy policies for target applications to monitor at runtime
