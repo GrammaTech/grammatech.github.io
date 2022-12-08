@@ -18,8 +18,8 @@ brief: |
 
 GenPatcher uses a suite of automatic program modifications to modify a
 program so that it passes a provided test suite which the original
-program could not pass.  GenPatcher uses this automatic modifications
-to build a population of program variants, an iterative search process
+program could not pass.  GenPatcher uses automatic modifications
+to build a population of program variants; an iterative search process
 mimicking natural selection improves this population until a version
 of the program is found which passes all tests in the test suite.
 Automated program repair done in this manner has been show able to fix
