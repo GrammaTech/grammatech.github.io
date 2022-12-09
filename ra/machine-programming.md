@@ -52,8 +52,7 @@ evaluation, and transformation.
   a sophisticated object system to enable a range of activities from
   fast-paced experimentation to development and maintenance of
   polished high-performance libraries and tools.
-- We leverage leading industrial front-ends for the languages SEL
-  supports including [Acorn](https://github.com/acornjs/acorn) for
-  JavaScript and [Clang](https://clang.llvm.org) for C/C++.  We have
-  upstreamed our own code into Clang adding JSON AST export which
-  drives SEL's C/C++ front-end.
+- We leverage the [tree-sitter](https://tree-sitter.github.io/tree-sitter/)
+  library to parse and transform source code representations from
+  a variety of languages, including C/C++, Rust, Python, Java,
+  JavaScript/TypeScript, and Go.
