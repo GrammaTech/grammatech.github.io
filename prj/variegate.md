@@ -44,4 +44,4 @@ executable compiled from SOURCE as its only argument and should exit 0
 if the executables successfully passes the regression tests.
 
 [SEL]: {{ "/prj/sel"|url }}
-[machine programming]: {{ "/ra/machine-programming"|url }}
+[automated software engineering]: {{ "/ra/automated-software-engineering"|url }}

@@ -56,4 +56,4 @@ catastrophic effects on the detection rate of SAST/DAST tools.
 </center>
 
 [SEL]: {{ "/prj/sel"|url }}
-[machine programming]: {{ "/ra/machine-programming"|url }}
+[automated software engineering]: {{ "/ra/automated-software-engineering"|url }}

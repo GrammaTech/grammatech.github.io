@@ -43,4 +43,4 @@ foundation allows SSR to support all languages supported by SEL,
 including C, C++, JavaScript, Java, and Common-Lisp.
 
 [SEL]: {{ "/prj/sel"|url }}
-[machine programming]: {{ "/ra/machine-programming"|url }}
+[automated software engineering]: {{ "/ra/automated-software-engineering"|url }}

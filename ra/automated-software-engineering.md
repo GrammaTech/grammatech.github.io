@@ -1,9 +1,9 @@
 ---
 layout: ra
 tags: ra
-title: Machine Programming
+title: Automated Software Engineering
 image: /img/synthesis.png
-slug: mp
+slug: ase
 prjs:
   - name: Mnemosyne
     slug: mnemosyne

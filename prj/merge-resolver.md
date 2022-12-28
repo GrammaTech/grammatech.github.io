@@ -32,10 +32,10 @@ is sufficient to resolve merge conflicts.  When conflicts remain
 MergeResolver searches the space of possible conflict resolutions
 until it finds a resolution which passes the program's test suite.
 
-MergeResolver continues GrammaTech's [machine programming][] mission
+MergeResolver continues GrammaTech's [automated software engineering][] mission
 to free developers from the tedious and automatable work of
 professional software development.
 
 [https://mergeresolver.github.io]: https://mergeresolver.github.io
 [SEL]: {{ "/prj/sel"|url }}
-[machine programming]: {{ "/ra/machine-programming"|url }}
+[automated software engineering]: {{ "/ra/automated-software-engineering"|url }}
