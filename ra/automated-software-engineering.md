@@ -22,37 +22,39 @@ prjs:
   - name: Variegate
     slug: variegate
 brief: |
-    Leverage machine-learning, formal methods, and evolutionary
-    computation to automate the software-development lifecycle through
-    source-code synthesis, evaluation, and transformation.  Build
-    automated tools that integrate into the modern software development
-    environment.
+    Leverage the latest research advances to automate software development through
+    source code analysis, transformation, and synthesis. Build
+    tools that integrate into modern
+    workflows to support collaborative, human/automated software development.
 ---
 
 ## About the area
 
-Automation of software development through source code synthesis,
-evaluation, and transformation.
+In the Automated Software Engineering team, we apply the latest research
+advances to create tools for source code analysis, transformation, and synthesis.
+We integrate them into IDEs and DevSecOps workflows to support collaborative,
+human/automated software development.
+
 
 ## Benefits
-- Industry leading source code transformation built on our open-source
-  software evolution library.
-- Providing an integrated developer's assistant leveraging formal,
-  evolutionary, and statistical machine learning tools to suggest and
-  check tests, types, code, and documentation for software projects.
-- Tools to automate mundane software development tasks including merge
-  conflict resolution and upgrading third-party dependencies.
+- Source code transformation and synthesis tools help achieve *faster*
+ development of *better* software via: automating mundane software development
+ tasks, software hardening and diversification, cross-language migration, and
+ helping stress-test DevSecOps tooling.
+- Our [Mnemosyne][] framework allows every programmer to leverage cutting edge
+research in automated software development, right in their IDE.
 
 ## Technologies
-- SEL leverages evolutionary computation techniques to search the
-  space of alternate implementations of software projects enabling
-  applications ranging from optimization to automated program repair.
-- SEL is implemented in Common Lisp.  We leverage the many powerful
-  features of CL from interactive programming to generic functions and
-  a sophisticated object system to enable a range of activities from
-  fast-paced experimentation to development and maintenance of
-  polished high-performance libraries and tools.
-- We leverage the [tree-sitter](https://tree-sitter.github.io/tree-sitter/)
-  library to parse and transform source code representations from
+- The [Software Evolution Library][SEL] together with
+[tree-sitter](https://tree-sitter.github.io/tree-sitter/)
+  allows us to parse and transform source code representations from
   a variety of languages, including C/C++, Rust, Python, Java,
-  JavaScript/TypeScript, and Go.
+  JavaScript/TypeScript, and Go. We use evolutionary computation techniques
+  to search the space of alternate implementations of software projects, supporting
+  applications from optimization to automated program repair.
+- [Mnemosyne][]'s Argot protocol allows integration of programmer assistant
+tools into multiple IDEs via extensions of the [Language Server Protocol].
+
+[Mnemosyne]: {{ "/prj/mnemosyne"|url }}
+[SEL]: {{ "/prj/sel"|url }}
+[Language Server Protocol]: {{ "https://microsoft.github.io/language-server-protocol/"|url }}

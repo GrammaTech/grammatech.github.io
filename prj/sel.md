@@ -25,9 +25,9 @@ support:
   - HR001120C0159
   - FA8750-20-C-0208
 brief: |
-    Software Evolution Library (SEL) provides a programmatic interface
+    The Software Evolution Library (SEL) provides a programmatic interface
     for the parsing, analysis, and rewriting of software source code in
-    *many* programming languages through a single generic API.
+    many programming languages through a single generic API.
 ---
 
 SEL uses GitHub's [tree-sitter][] generated parsers to parse dozens of
@@ -48,23 +48,6 @@ SEL APIs are available in:
 
 <center class="gt-smaller-on-small">
   {% include '../img/sel-asts.svg' %}
-</center>
-
-## Presentation and demo
-
-<center>
-<p>The following video introduces SEL's tree-sitter-based ASTs
-and ends with a demo of the Python API.</p>
-<div class="w3-hide-medium w3-hide-large">
-<video width=300px height=187px playsinline controls muted>
-<source src="https://static.grammatech.com/research/sel-asts-tree-sitter.mp4#t=0.01" type="video/mp4">
-</video>
-</div>
-<div class="w3-hide-small">
-<video width=800px height=500px playsinline controls muted>
-<source src="https://static.grammatech.com/research/sel-asts-tree-sitter.mp4#t=0.01" type="video/mp4">
-</video>
-</div>
 </center>
 
 [tree-sitter]: https://tree-sitter.github.io/tree-sitter/

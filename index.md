@@ -99,14 +99,7 @@ customers require.
 
 {% endfor %}
 
-We not only publish but *participate* in the open-source community,
-through
-[multiple](https://github.com/angr/angr/commit/8a13278d5bd54b0ea45d492eb0a56aa745f8b24f)
-[contributions](https://github.com/souffle-lang/souffle) to
-[significant](https://github.com/llvm/llvm-project/blob/master/clang/include/clang/AST/JSONNodeDumper.h)
-open-source projects, and [accepting significant
-contributions](https://github.com/GrammaTech/ddisasm/blob/master/README.md#external-contributors)
-to projects we maintain in return.  Find more of our open-source
+Find more of our open-source
 repositories on [GitHub/GrammaTech](https://github.com/GrammaTech) and
 [GitLab/GrammaTech](https://gitlab.com/GrammaTech).
 
