@@ -23,7 +23,7 @@ prjs:
     slug: variegate
 brief: |
     Leverage the latest research advances to automate software development through
-    source code analysis, transformation, and synthesis. Build
+    source code transformation and synthesis. Build
     tools that integrate into modern
     workflows to support collaborative, human/automated software development.
 ---
@@ -31,7 +31,7 @@ brief: |
 ## About the area
 
 In the Automated Software Engineering team, we apply the latest research
-advances to create tools for source code analysis, transformation, and synthesis.
+advances to create tools for source code transformation, and synthesis.
 We integrate them into IDEs and DevSecOps workflows to support collaborative,
 human/automated software development.
 

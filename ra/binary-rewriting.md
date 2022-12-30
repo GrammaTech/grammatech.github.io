@@ -4,24 +4,22 @@ tags: ra
 title: Binary Rewriting
 slug: rw
 prjs:
+  - name: Binary-Reduce
+    slug: binary-reduce
   - name: DDisasm
     slug: ddisasm
   - name: GTIRB
     slug: gtirb
   - name: GTIRB VSCode
     slug: gtirb-vscode
-  - name: To Static binary transform
-    slug: to-static
   - name: Stack Stamp binary transform
     slug: stack-stamp
-  - name: Binary-Reduce
-    slug: binary-reduce
+  - name: To Static binary transform
+    slug: to-static
 brief: |
-    Using high-fidelity binary ingestion, perform automated
-    transformation of binary software executables and libraries to
+    Based on high-fidelity binary ingestion and analysis, automatically
+    transform binary software executables and libraries to
     improve functionality, security, maintainability, and performance.
-    Specific aims include software hardening, optimization,
-    diversification, and attack-surface reduction.
 ---
 
 ## About the area
@@ -30,7 +28,7 @@ to improve functionality, security, and efficiency.
 
 ## Benefits
 - Industry leading binary analysis and transformation built on our
-  revolutionary datalog-driven reassembleable disassembler and our
+  revolutionary Datalog-driven reassembleable disassembler and our
   open-source binary intermediate representation.
 - Binary security through hardening, diversification, and attack
   surface minimization.

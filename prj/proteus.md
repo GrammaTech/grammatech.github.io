@@ -24,8 +24,8 @@ support:
   - HR0011-18-C-0061
   - N68335-17-C-0700
 brief: |
-    Automatically _find_ and _fix_ vulnerabilities in software binaries.
-    Use _exploitability analysis_ to prioritize software weaknesses for
+    Proteus automatically finds and fixes vulnerabilities in software binaries.
+    It uses exploitability analysis to prioritize software weaknesses for
     remediation.
 ---
 
