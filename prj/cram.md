@@ -8,7 +8,7 @@ support:
   contracts:
   - HR001122C0025
 brief: |
-    Semi-automatically migrate well-designed, general-purpose C++ code
+    CRAM semi-automatically migrates well-designed, general-purpose C++ code
     into the Rust programming language.
 ---
 
