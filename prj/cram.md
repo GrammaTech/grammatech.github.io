@@ -12,10 +12,9 @@ brief: |
     into the Rust programming language.
 ---
 
-The goal of GrammaTech's "C++ to Rust Assisted Migration" ("CRAM")
-project is to semi-automatically migrate well-designed,
+GrammaTech's "C++ to Rust Assisted Migration" ("CRAM")
+project semi-automatically migrates well-designed,
 general-purpose C++ code into the Rust programming language. See
 [CRAM's website][] for more information.
 
 [CRAM's website]: https://cpp-rust-assisted-migration.gitlab.io
-

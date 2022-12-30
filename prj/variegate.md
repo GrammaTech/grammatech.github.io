@@ -17,31 +17,24 @@ brief: |
     Variegate applies source-to-source transformations for binary diversification.
 ---
 
-Variegate is a source-to-source software transformation tool which
-takes in an original program and a test suite and produces a set of
-program variants that retain functionality on the test suite while
-achieving binary diversity.  Binary diversity is measured by compiling
-the software variants to binary executables and then comparing the
-results against the compiled binary of the original program.
-Diversity is achieved by repeatedly selecting a *mutation* from a
-large set of candidates and applying it to the source code of the
-original program.  Mutations range from simple (e.g., `delete`) to
-complex (e.g., structured software refactorings such as variable or
-function inlining or extraction).  Repeated application of mutations
-in a search-based algorithm that maximizes diversity can evolve a
-population of functionally equivalent variants with significant
-differences from the original binary and from one another
+Variegate is a source code diversification tool. It addresses the problem of
+IT monocultures, where malware attacks that succeed on one instance of a
+deployed program often succeed against all instances. By diversifying the
+deployed programs in a functionality-preserving way, Variegate creates a population
+of correct versions of the same program with a varied attack surface.
 
-<center class="w3-text-light-grey gt-smaller-on-small">
-  {% include '../img/variegate.svg' %}
-</center>
+Variegate takes in an original program and a test suite, and produces a set of
+program variants that retain functionality while achieving binary diversity.
+Variegate works by applying *mutations* to the source code of the original
+program. Mutations range from simple (code deletions) to
+complex (structured refactorings such as variable or
+function inlining or extraction).
 
-## Usage
-
-The `variegate` executable takes a SOURCE path to a source tree and a
-TEST-SCRIPT.  The second, TEST-SCRIPT, argument should take an
-executable compiled from SOURCE as its only argument and should exit 0
-if the executables successfully passes the regression tests.
+Variegate ensures that mutations do not affect the program's functionality,
+by checking that the transformed program behaves correctly on the test suite.
+If an extensive test suite is not available, Variegate can sill be used if it
+is restricted to safe, functionality-preserving mutations, such as those that
+mimic refactoring code changes.
 
 [SEL]: {{ "/prj/sel"|url }}
 [automated software engineering]: {{ "/ra/automated-software-engineering"|url }}

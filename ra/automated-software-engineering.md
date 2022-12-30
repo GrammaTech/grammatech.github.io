@@ -5,22 +5,22 @@ title: Automated Software Engineering
 image: /img/synthesis.png
 slug: ase
 prjs:
-  - name: Mnemosyne
-    slug: mnemosyne
-  - name: CRAM
-    slug: cram
-  - name: Spec-Map
-    slug: spec-map
-  - name: Merge Resolver
-    slug: merge-resolver
-  - name: Variegate
-    slug: variegate
-  - name: Software Search Replace
-    slug: ssr
-  - name: GenPatcher
-    slug: genpatcher
   - name: Bug-Injector
     slug: bug-injector
+  - name: CRAM
+    slug: cram
+  - name: GenPatcher
+    slug: genpatcher
+  - name: MergeResolver
+    slug: merge-resolver
+  - name: Mnemosyne
+    slug: mnemosyne
+  - name: Software Search Replace
+    slug: ssr
+  - name: Spec-Map
+    slug: spec-map
+  - name: Variegate
+    slug: variegate
 brief: |
     Leverage machine-learning, formal methods, and evolutionary
     computation to automate the software-development lifecycle through

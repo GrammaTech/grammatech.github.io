@@ -49,7 +49,7 @@ anchors:
 
 |           | Develop                                                        | Test/Integrate                                                                            | Deploy/Execute                                  | Reuse                                                                                                                          |
 |-----------|----------------------------------------------------------------|-------------------------------------------------------------------------------------------|-------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| Automate  | [Merge Resolver][], [Mnemosyne][], [Software Search Replace][] | [Bindle][], [Bug-Injector][], [Mnemosyne][], [Proteus][], [REAFFIRM][], [Swap Detector][] |                                                 |                                                                                                                                |
+| Automate  | [MergeResolver][], [Mnemosyne][], [Software Search Replace][] | [Bindle][], [Bug-Injector][], [Mnemosyne][], [Proteus][], [REAFFIRM][], [Swap Detector][] |                                                 |                                                                                                                                |
 | Optimize  |                                                                | [Binary-Reduce][]                                                                         |                                                 | [Binary-Reduce][]                                                                                                              |
 | Repair    | [GenPatcher][]                                                 | [Proteus][], [REAFFIRM][]                                                                 | [AMBER][], [ARTCAT][],  [SySense][]             | [Proteus][], [REAFFIRM][], [GTIRB-VSCode][]                                                                                    |
 | Diversify | [Variegate][]                                                  |                                                                                           |                                                 |                                                                                                                                |
@@ -128,7 +128,7 @@ repositories on [GitHub/GrammaTech](https://github.com/GrammaTech) and
 [Spec-Map]: {{ "/prj/spec-map"|url }}
 [Variegate]: {{ "/prj/variegate"|url }}
 [Bug-Injector]: {{ "/prj/bug-injector"|url }}
-[Merge Resolver]: {{ "/prj/merge-resolver"|url }}
+[MergeResolver]: {{ "/prj/merge-resolver"|url }}
 [Software Search Replace]: {{ "/prj/ssr"|url }}
 [DDisasm]: {{ "/prj/ddisasm"|url }}
 [To-Static]: {{ "/prj/to-static"|url }}

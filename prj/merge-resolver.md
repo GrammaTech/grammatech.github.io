@@ -1,7 +1,7 @@
 ---
 layout: prj
 tags: prj
-title: Merge Resolver
+title: MergeResolver
 support:
   projects:
   - BUGINJECTOR
@@ -24,17 +24,21 @@ Available at [https://mergeresolver.github.io][].
 
 </center>
 
-MergeResolver parses source code into abstract syntax trees (ASTs)
-using GrammaTech's [SEL][].  It then performs a custom tree-based
-difference over these trees which is tailored for good performance
-over source code.  In some cases simply differencing at the tree level
-is sufficient to resolve merge conflicts.  When conflicts remain
-MergeResolver searches the space of possible conflict resolutions
-until it finds a resolution which passes the program's test suite.
+MergeResolver is a tool to automate the resolution of merge conflicts that arise
+during development. MergeResolver is a sophisticated tool that is aware of the
+code's syntax and semantics. This allows automated conflict resolution in cases
+where simple text-based differencing would fail.
 
-MergeResolver continues GrammaTech's [automated software engineering][] mission
-to free developers from the tedious and automatable work of
-professional software development.
+MergeResolver works by parsing the source code into abstract syntax trees (ASTs)
+using GrammaTech's [SEL][]. It then computes a custom tree-based
+difference over these trees, tailored for good performance
+over source code. The developer can view the result in an intuitive
+and standard workflow, such as via the GitHub Checks API.
+
+In some cases, this approach is not sufficient to resolve merge conflicts. In
+this case, optionally,  MergeResolver is able to search the space of possible
+conflict resolutions until it finds one that passes the program's test suite.
+It can present this resolution to a developer for review and further modification.
 
 [https://mergeresolver.github.io]: https://mergeresolver.github.io
 [SEL]: {{ "/prj/sel"|url }}
