@@ -23,8 +23,8 @@ brief: |
 ---
 
 ## About the area
-Automatic transformation of binary software executables and libraries
-to improve functionality, security, and efficiency.
+Automatic disassembly, analysis, and transformation of binary software
+ executables and libraries to improve functionality, security, and efficiency.
 
 ## Benefits
 - Industry leading binary analysis and transformation built on our

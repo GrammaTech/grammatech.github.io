@@ -9,16 +9,18 @@ support:
   contracts:
   - N68335-17-C-0700
 brief: |
-    A fast and accurate disassembler.  DDisasm is able to disassemble
+    A fast and accurate disassembler.  DDisasm can disassemble
     real-world stripped binaries with accuracy sufficient to enable modification
     and reassembly.
 ---
 
 DDisasm is a *fast* disassembler which is *accurate* enough for the
 resulting assembly code to be reassembled.  DDisasm is implemented
-using the datalog ([souffle](https://github.com/souffle-lang/souffle))
+using the Datalog ([souffle](https://github.com/souffle-lang/souffle))
 declarative logic programming language to compile disassembly rules
-and heuristics.  The disassembler first parses ELF file information
+and heuristics.  
+
+The disassembler first parses ELF file information
 and decodes a superset of possible instructions to create an initial
 set of datalog facts.  These facts are analyzed to identify *code
 location*, *symbolization*, and *function boundaries*.  The results of

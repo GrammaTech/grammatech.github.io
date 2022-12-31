@@ -20,7 +20,7 @@ brief: |
 
 ## About the area
 
-Our Big Code technologies combine statistical/machine learning techniques with program analysis techniques to improve bug finding, program synthesis, and code search. We aim to mine the collective wisdom in openly available code repositories, with applications to software security, reliability, construction, and maintenance.
+Our Big Code technologies combine statistical/machine learning techniques with program analysis to improve bug finding, program synthesis, and code search. We mine the collective wisdom in openly available code repositories, with applications to software security, reliability, construction, and maintenance.
 
 ## Benefits
 
@@ -33,5 +33,4 @@ Our Big Code technologies combine statistical/machine learning techniques with p
 
 - Advanced binary analysis to extract features from machine code, and machine learning to discover the library components in a binary application.
 - Statistical and machine learning on the semantic information extracted from sophisticated static analysis tools to further improve bug-finding tools.
-- Statistical learning on natural language information in code to find new kinds of bugs in programs. 
-
+- Statistical learning on natural language information in code to find new kinds of bugs in programs.

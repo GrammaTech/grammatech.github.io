@@ -15,8 +15,8 @@ support:
   - W15QKN-18-9-1013
   - HR0011-18-C-0061
 brief: |
-    Bindle enables automatic harness generation and seed-input collection. This
-    makes dynamic testing of software binaries easier, by reducing the need
+    Bindle enables automatic fuzzing harness generation and seed-input collection. This
+    makes dynamic testing of software binaries more accessible, by reducing the need
     for reverse engineering and domain knowledge.
 ---
 

@@ -22,7 +22,7 @@ prjs:
   - name: Variegate
     slug: variegate
 brief: |
-    Leverage the latest research advances to automate software development through
+    Automate aspects of software development through
     source code transformation and synthesis. Build
     tools that integrate into modern
     workflows to support collaborative, human/automated software development.
@@ -31,7 +31,7 @@ brief: |
 ## About the area
 
 In the Automated Software Engineering team, we apply the latest research
-advances to create tools for source code transformation, and synthesis.
+advances to create tools for source code transformation and synthesis.
 We integrate them into IDEs and DevSecOps workflows to support collaborative,
 human/automated software development.
 
@@ -41,7 +41,7 @@ human/automated software development.
  development of *better* software via: automating mundane software development
  tasks, software hardening and diversification, cross-language migration, and
  helping stress-test DevSecOps tooling.
-- Our [Mnemosyne][] framework allows every programmer to leverage cutting edge
+- Our [Mnemosyne][] framework allows every programmer to access cutting edge
 research in automated software development, right in their IDE.
 
 ## Technologies

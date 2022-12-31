@@ -35,8 +35,8 @@ difference over these trees, tailored for good performance
 over source code. The developer can view the result in an intuitive
 and standard workflow, such as via the GitHub Checks API.
 
-In some cases, this approach is not sufficient to resolve merge conflicts. In
-this case, optionally,  MergeResolver can search the space of possible
+In some cases, this approach is not sufficient to resolve merge conflicts. If
+desired, MergeResolver can next search the space of possible
 conflict resolutions until it finds one that passes the program's test suite.
 It can present this resolution to a developer for review and further modification.
 

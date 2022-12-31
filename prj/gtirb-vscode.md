@@ -9,7 +9,7 @@ support:
   contracts:
   - N68335-17-C-0700
 brief: |
-    Read, navigate, and (re)write GTIRB files through VSCode.
+    VSCode extension allowing users to read, navigate, and (re)write GTIRB files.
 ---
 
 The GTIRB VSCode extension allows VSCode to open a [GTIRB][] file,
