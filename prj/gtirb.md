@@ -17,8 +17,8 @@ brief: |
 GTIRB is GrammaTech's Intermediate Representation for Binary analysis
 and rewriting.  It seeks to be for binaries what LLVM is for source -
 allowing researchers and developers to compose tools and leverage each
-other's work. GTIRB is described in a [blog][], [whitepaper][],
-[tutorial][], and in its [manual][].  
+other's work. GTIRB is described in a [blog post][], in a [whitepaper][],
+and in its [manual][].  
 
 We have built an ecosystem of tools around GTIRB,
   many of them available as open source and listed in the table below. In
@@ -52,7 +52,7 @@ We have built an ecosystem of tools around GTIRB,
 
 
 [Reduce]: {{ "/prj/binary-reduce"|url }}
-[blog]: https://blogs.grammatech.com/open-source-tools-for-binary-analysis-and-rewriting
+[blog post]: https://blogs.grammatech.com/open-source-tools-for-binary-analysis-and-rewriting
 [whitepaper]: https://arxiv.org/abs/1907.02859
 [manual]: https://grammatech.github.io/gtirb
 [tutorial]: https://grammatech.github.io/gtirb/md_stack-stamp.html
