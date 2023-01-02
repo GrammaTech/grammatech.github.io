@@ -43,8 +43,6 @@ We have built an ecosystem of tools around GTIRB,
  | [gtirb-types][]                  | APIs for working with types in GTIRB files                          |
  | [Retypd][]                       | Binary type analysis                                                |
  | [GTIRB-ddisasm-retypd][]         | DDisasm front-end for Retypd type analysis                                        |
- | [GTIRB-function-prototypes][]    | Maps known functions to their prototypes                             |
- | [GTIRB-dynamic-function-names][] | Recovers dynamic function names in a binary from linking information |
  | [gtirb-rewriting][]              | Python API for rewriting GTIRB files                                |
  | [gtirb-stack-stamp][]            | Hardening transform over GTIRB                                      |
  | [GTIRB-VSCode][]                 | VSCode extension to read, navigate, and (re)write GTIRB files       |
