@@ -51,7 +51,7 @@ anchors:
 |-----------|----------------------------------------------------------------|-------------------------------------------------------------------------------------------|-------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
 | Automate  | [MergeResolver][], [Mnemosyne][], [Software Search Replace][] | [Bindle][], [Bug-Injector][], [Mnemosyne][], [Proteus][], [REAFFIRM][], [Swap Detector][] |                                                 |                                                                                                                                |
 | Optimize  |                                                                | [Binary-Reduce][]                                                                         |                                                 | [Binary-Reduce][]                                                                                                              |
-| Repair    | [GenPatcher][]                                                 | [Proteus][], [REAFFIRM][]                                                                 | [AMBER][], [ARTCAT][],  [SySense][]             | [Proteus][], [REAFFIRM][], [GTIRB-VSCode][]                                                                                    |
+| Repair    |                                                 | [Proteus][], [REAFFIRM][]                                                                 | [AMBER][], [ARTCAT][],  [SySense][]             | [Proteus][], [REAFFIRM][], [GTIRB-VSCode][]                                                                                    |
 | Diversify | [Variegate][]                                                  |                                                                                           |                                                 |                                                                                                                                |
 | Harden    | [Mnemosyne][], [CRAM][]                                        | [Binary-Reduce][], [Proteus][], [REAFFIRM][], [Stack-Stamp][], [To-Static][]              | [AMBER][], [ARTCAT][], [ConfINE][], [SySense][] | [Binary-Reduce][], [Proteus][], [REAFFIRM][], [Stack-Stamp][], [To-Static][]                                                   |
 | Assure    |                                                                | [A-CERT][]                                                                                |                                                 | [A-CERT][]                                                                                                                     |
@@ -107,7 +107,6 @@ repositories on [GitHub/GrammaTech](https://github.com/GrammaTech) and
 [Discover]: {{ "/prj/discover"|url }}
 [TBDC]: {{ "/prj/tbdc"|url }}
 [Swap Detector]: {{ "/prj/swap-detector"|url }}
-[GenPatcher]: {{ "/prj/genpatcher"|url }}
 [Mnemosyne]: {{ "/prj/mnemosyne"|url }}
 [CRAM]: {{ "/prj/cram"|url }}
 [Spec-Map]: {{ "/prj/spec-map"|url }}

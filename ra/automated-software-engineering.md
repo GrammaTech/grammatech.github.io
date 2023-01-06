@@ -9,8 +9,6 @@ prjs:
     slug: bug-injector
   - name: CRAM
     slug: cram
-  - name: GenPatcher
-    slug: genpatcher
   - name: MergeResolver
     slug: merge-resolver
   - name: Mnemosyne
