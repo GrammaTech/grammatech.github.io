@@ -31,6 +31,8 @@ We have built an ecosystem of tools around GTIRB,
   [GTIRB-VSCode][] allows developers to work with GTIRB
  files in the VSCode IDE, while [gtirb-ghidra-plugin][] suports Ghidra integrations.
 
+GTIRB-based tools that are not open source are available to approved users via the GTIRB Omnibus image v 0.2.0.
+
  <center>
 
  | Repository                       | Description                                                         |
