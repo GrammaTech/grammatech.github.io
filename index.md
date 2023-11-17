@@ -5,8 +5,8 @@ brief: GrammaTech
 anchors:
   - text: Cyber Security Solutions
     slug: cyber-security-solutions
-  - text: Research Areas
-    slug: research-areas
+  - text: Areas of Expertise
+    slug: expertise-areas
   - text: Open Source Software
     slug: open-source-software
   - text: Publications
@@ -42,7 +42,7 @@ anchors:
 
 <div class="gt-bottom-line">
 
-### Research Areas
+### Areas of Expertise
 
 {% assign row = 0 %}
 {% for ra in collections.ra %}
