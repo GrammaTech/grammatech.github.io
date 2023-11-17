@@ -1,7 +1,7 @@
 ---
 layout: index
-title: GrammaTech Research
-brief: GrammaTech Research
+title: GrammaTech
+brief: GrammaTech
 anchors:
   - text: Cyber Security Solutions
     slug: cyber-security-solutions
