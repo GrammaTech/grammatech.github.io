@@ -2,12 +2,11 @@ default:
   image: node
   tags: [shared]
   before_script:
-    - npm install @11ty/eleventy -g
-    - npm install markdown-it markdown-it-anchor markdown-it-deflist markdown-it-mermaid-plugin bibtex-parse
+    - npm install
 
 pages:
   script:
-    - eleventy --pathprefix=grammatech.github.io/ --output=./public
+    - npx eleventy --pathprefix=grammatech.github.io/ --output=./public
   artifacts:
     paths:
       - public

@@ -10,14 +10,13 @@ https://grammatech.github.io/
 1. Run this to install the required software.
 
     ```shell
-    npm install @11ty/eleventy -g
-    npm install markdown-it markdown-it-anchor markdown-it-deflist markdown-it-mermaid-plugin bibtex-parse
+    npm install
     ```
 
 2. Run the following to launch a local server to preview the built site.
 
     ```shell
-    eleventy --serve
+    npx eleventy --serve
     ```
 
 ## Dealing with Bibtex
