@@ -44,21 +44,6 @@ anchors:
 
 ### Research Areas
 
-<div id="use-case-table" class="w3-table w3-margin-bottom">
-<center>Projects by use case, development stage, and research area.</center>
-
-|           | Develop                                                        | Test/Integrate                                                                            | Deploy/Execute                                  | Reuse                                                                                                                          |
-|-----------|----------------------------------------------------------------|-------------------------------------------------------------------------------------------|-------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| Automate  | [MergeResolver][], [Mnemosyne][], [Software Search Replace][] | [Bindle][], [Bug-Injector][], [Mnemosyne][], [Proteus][], [REAFFIRM][], [Swap Detector][] |                                                 |                                                                                                                                |
-| Optimize  |                                                                | [Binary-Reduce][]                                                                         |                                                 | [Binary-Reduce][]                                                                                                              |
-| Repair    |                                                 | [Proteus][], [REAFFIRM][]                                                                 | [AMBER][], [ARTCAT][],  [SySense][]             | [Proteus][], [REAFFIRM][], [GTIRB-VSCode][]                                                                                    |
-| Diversify | [Variegate][]                                                  |                                                                                           |                                                 |                                                                                                                                |
-| Harden    | [Mnemosyne][], [CRAM][]                                        | [Binary-Reduce][], [Proteus][], [REAFFIRM][], [Stack-Stamp][], [To-Static][]              | [AMBER][], [ARTCAT][], [ConfINE][], [SySense][] | [Binary-Reduce][], [Proteus][], [REAFFIRM][], [Stack-Stamp][], [To-Static][]                                                   |
-| Assure    |                                                                | [A-CERT][]                                                                                |                                                 | [A-CERT][]                                                                                                                     |
-| Assess    | [Spec-Map][]                                                   | [A-CERT][], [Discover][], [Mnemosyne][], [Proteus][], [REAFFIRM][]                        | [AMBER][], [ARTCAT][], [ConfINE][], [SySense][] | [A-CERT][], [Bin2Math][], [DDisasm][], [Discover][], [FVA][], [Proteus][], [REAFFIRM][], [TBDC][], [TFPGA][], [GTIRB-VSCode][] |
-
-</div>
-
 {% assign row = 0 %}
 {% for ra in collections.ra %}
 {% if row == 0 %}

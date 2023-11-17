@@ -99,19 +99,5 @@
     })
   }
 
-  // RA highlight in use-case table
-  var uc_table = document.getElementById("use-case-table").children[1];
-  for (var i = 0, row; row = uc_table.rows[i]; i++) {
-    for (var j = 0, cell; cell = row.cells[j]; j++) {
-      var contents = cell.innerHTML.toLowerCase();
-      for (var k = 0, prj; prj = Object.keys(project_areas)[k]; k++) {
-        if ( contents.includes(prj.toLowerCase()) ){
-          var area = project_areas[prj];
-          cell.classList.add("gt-area-cell-"+area);
-          cell_highlight(cell, area);
-        }
-      }
-    }
-  }
 </script>
 </html>
